@@ -1,0 +1,114 @@
+{
+  "legal-compliance": {
+    "entity": {
+      "form": {
+        "create": {
+          "title": "Créer une Entité Légale",
+          "subtitle": "Enregistrer une nouvelle entité légale",
+          "fields": {
+            "name": {
+              "label": "Nom",
+              "placeholder": "Saisissez le nom légal complet",
+              "tooltip": "Saisissez le nom légal complet de l'entité",
+              "description": "Nom légal complet de l'entité"
+            },
+            "number": {
+              "label": "Numéro",
+              "placeholder": "Saisissez le numéro",
+              "tooltip": "Numéro d'identification unique pour l'entité",
+              "description": "Numéro de l'entité"
+            },
+            "email": {
+              "label": "E-mail",
+              "placeholder": "Saisissez un e-mail de contact",
+              "tooltip": "Adresse e-mail de contact principal pour cette entité",
+              "description": "E-mail de contact pour l'entité"
+            },
+            "type": {
+              "label": "Type",
+              "placeholder": "Sélectionnez le type d'entité",
+              "tooltip": "Choisissez si cette entité représente une personne ou une organisation",
+              "description": "Spécifiez si l'entité est une personne ou une organisation",
+              "options": {
+                "person": "Individu",
+                "organization": "Organisation"
+              }
+            },
+            "surname": {
+              "label": "Nom de famille",
+              "placeholder": "Saisissez le nom de famille",
+              "tooltip": "Nom de famille de l'individu",
+              "description": "Nom de famille de l'entité"
+            },
+            "description": {
+              "label": "Description",
+              "placeholder": "Saisissez la description",
+              "tooltip": "Détails supplémentaires ou notes concernant cette entité",
+              "description": "Description de l'entité"
+            }
+          },
+          "actions": {
+            "submit": "Créer l'Entité",
+            "cancel": "Annuler",
+            "reset": "Réinitialiser le Formulaire"
+          }
+        },
+        "update": {
+          "title": "Mettre à jour l'Entité Légale",
+          "subtitle": "Mettre à jour les informations de l'entité",
+          "fields": {
+            "name": {
+              "label": "Nom",
+              "placeholder": "Saisissez le nom légal complet",
+              "tooltip": "Saisissez le nom légal complet de l'entité",
+              "description": "Nom légal complet de l'entité"
+            },
+            "email": {
+              "label": "E-mail",
+              "placeholder": "Saisissez un e-mail de contact",
+              "tooltip": "Adresse e-mail de contact principal pour cette entité",
+              "description": "E-mail de contact pour l'entité"
+            },
+            "type": {
+              "label": "Type",
+              "placeholder": "Sélectionnez le type d'entité",
+              "tooltip": "Choisissez si cette entité représente une personne ou une organisation",
+              "description": "Spécifiez si l'entité est une personne ou une organisation"
+            },
+            "surname": {
+              "label": "Nom de famille",
+              "placeholder": "Saisissez le nom de famille",
+              "tooltip": "Nom de famille de l'individu",
+              "description": "Nom de famille de l'entité"
+            },
+            "description": {
+              "label": "Description",
+              "placeholder": "Saisissez la description",
+              "tooltip": "Détails supplémentaires ou notes concernant cette entité",
+              "description": "Description de l'entité"
+            }
+          },
+          "actions": {
+            "submit": "Mettre à jour l'Entité",
+            "cancel": "Annuler",
+            "reset": "Réinitialiser le Formulaire"
+          }
+        }
+      },
+      "validation": {
+        "name_too_short": "Le nom de l'entité est trop court (minimum {{min}} caractères)",
+        "name_too_long": "Le nom de l'entité est trop long (maximum {{max}} caractères)",
+        "number_required": "Le numéro de l'entité est requis",
+        "number_too_long": "Le numéro de l'entité est trop long (maximum {{max}} caractères)",
+        "invalid_type": "Type d'entité invalide",
+        "surname_required": "Le nom de famille est requis pour les organisations",
+        "description_required": "La description est requise",
+        "description_too_long": "La description est trop longue (maximum {{max}} caractères)",
+        "email": {
+          "invalid_format": "Format d'e-mail invalide",
+          "required": "L'e-mail est requis"
+        }
+      }
+    }
+  }
+}

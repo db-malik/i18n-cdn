@@ -1,0 +1,52 @@
+{
+  "api-errors": {
+    "common": {
+      "external": {
+        "dfns": {
+          "user_not_found": "DFNS user not found",
+          "user_already_registered": "DFNS user already registered",
+          "wallet_not_found": "DFNS wallet not found",
+          "authentication_failed": "DFNS authentication failed",
+          "permission_denied": "DFNS permission denied",
+          "network_error": "DFNS network error",
+          "timeout": "DFNS operation timeout",
+          "rate_limited": "DFNS rate limit exceeded",
+          "transfer_failed": "DFNS transfer failed"
+        },
+        "clerk": {
+          "user_not_found": "Clerk user not found",
+          "session_expired": "Clerk session expired",
+          "unauthorized": "Clerk unauthorized access"
+        },
+        "system": {
+          "validation": {
+            "required": "Field is required",
+            "invalid_type": "Invalid field type",
+            "invalid_format": "Invalid field format",
+            "too_short": "Field is too short",
+            "too_long": "Field is too long",
+            "invalid_email": "Invalid email address"
+          },
+          "http": {
+            "bad_request": "Bad request",
+            "unauthorized": "Unauthorized access",
+            "forbidden": "Access forbidden",
+            "not_found": "Resource not found",
+            "conflict": "Resource conflict",
+            "internal_error": "Internal server error"
+          },
+          "database": {
+            "connection_error": "Database connection error",
+            "query_failed": "Database query failed",
+            "constraint_violation": "Database constraint violation",
+            "timeout": "Database operation timeout"
+          },
+          "unknown": {
+            "error": "Unknown error occurred",
+            "transform_error": "Error transformation failed"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "validation": {
+    "common": {
+      "required": "This field is required",
+      "field_required": "{{field}} is required",
+      "too_long": "Value is too long (maximum {{max}} characters)",
+      "too_short": "Value is too short (minimum {{min}} characters)",
+      "invalid_format": "Invalid format",
+      "not_found": "Item not found",
+      "access_denied": "Access denied",
+      "too_long_description": "Description must be at most {{max}} characters"
+    }
+  }
+}

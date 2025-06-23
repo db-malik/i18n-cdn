@@ -1,0 +1,65 @@
+{
+  "ui": {
+    "pages": {
+      "dashboard": {
+        "title": "Dashboard",
+        "subtitle": "Overview of your account",
+        "widgets": {
+          "recent_activity": "Recent Activity",
+          "quick_stats": "Quick Statistics",
+          "notifications": "Notifications"
+        }
+      },
+      "entities": {
+        "title": "Legal Entities",
+        "subtitle": "Manage your legal entities",
+        "create_new": "Create New Entity",
+        "list": {
+          "empty": "No entities found. Create your first entity to get started.",
+          "total": "{{count}} entities total"
+        }
+      },
+      "wallet_view": {
+        "title": "Your Wallets",
+        "subtitle": "Manage your crypto wallets",
+        "total_assets": "Total assets: {{amount}} {{currency}}",
+        "add_new_wallet": "Add new wallet",
+        "empty": {
+          "title": "No wallet or creation pending",
+          "description": "Add wallet or wait until creation process is complete"
+        },
+        "errors": {
+          "load_failed": "An error has occurred",
+          "reload_message": "Please reload the page"
+        },
+        "transactions": {
+          "title": "Transactions",
+          "select_wallet": "Select a wallet",
+          "search_placeholder": "Search",
+          "past_transactions": "Past transactions",
+          "no_transactions": {
+            "title": "No past transactions",
+            "description": "You can initiate transactions to other users"
+          }
+        }
+      },
+      "error": {
+        "404": {
+          "title": "Page Not Found",
+          "message": "The page you're looking for doesn't exist.",
+          "go_home": "Go to Dashboard"
+        },
+        "500": {
+          "title": "Server Error",
+          "message": "Something went wrong on our end.",
+          "try_again": "Try Again"
+        },
+        "403": {
+          "title": "Access Denied",
+          "message": "You don't have permission to access this page.",
+          "contact_admin": "Contact Administrator"
+        }
+      }
+    }
+  }
+}

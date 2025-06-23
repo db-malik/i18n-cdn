@@ -1,0 +1,42 @@
+{
+  "api_errors": {
+    "banking_crypto": {
+      "wallet": {
+        "not_found": "Portefeuille introuvable",
+        "already_exists": "Le portefeuille existe déjà",
+        "creation_failed": "Échec de la création du portefeuille",
+        "insufficient_balance": "Solde insuffisant du portefeuille",
+        "sync_failed": "Échec de la synchronisation du portefeuille"
+      },
+      "transfer": {
+        "failed": "Échec du transfert",
+        "invalid_amount": "Montant de transfert invalide",
+        "invalid_recipient": "Adresse de destinataire invalide",
+        "insufficient_funds": "Fonds insuffisants pour le transfert",
+        "limit_exceeded": "Limite de transfert dépassée"
+      },
+      "transaction": {
+        "not_found": "Transaction introuvable",
+        "failed": "Échec de la transaction",
+        "invalid_status": "Statut de transaction invalide",
+        "confirmation_timeout": "Délai de confirmation de transaction expiré"
+      },
+      "smart_contract": {
+        "deployment_failed": "Échec du déploiement du contrat intelligent",
+        "execution_failed": "Échec de l'exécution du contrat intelligent",
+        "invalid_abi": "ABI de contrat intelligent invalide",
+        "not_found": "Contrat intelligent introuvable"
+      },
+      "asset": {
+        "not_found": "Actif introuvable",
+        "invalid_type": "Type d'actif invalide",
+        "verification_failed": "Échec de la vérification de l'actif"
+      },
+      "task": {
+        "not_found": "Tâche introuvable",
+        "execution_failed": "Échec de l'exécution de la tâche",
+        "invalid_status": "Statut de tâche invalide"
+      }
+    }
+  }
+}

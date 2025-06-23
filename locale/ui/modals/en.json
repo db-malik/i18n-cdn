@@ -1,0 +1,29 @@
+{
+  "ui": {
+    "modals": {
+      "confirmation": {
+        "title": "Confirm Action",
+        "message": "Are you sure you want to proceed?",
+        "confirm": "Yes, proceed",
+        "cancel": "Cancel"
+      },
+      "delete": {
+        "title": "Confirm Delete",
+        "message": "This action cannot be undone. Are you sure you want to delete {{item}}?",
+        "confirm": "Yes, delete",
+        "cancel": "Cancel"
+      },
+      "save_changes": {
+        "title": "Save Changes",
+        "message": "You have unsaved changes. What would you like to do?",
+        "save": "Save Changes",
+        "discard": "Discard Changes",
+        "cancel": "Continue Editing"
+      },
+      "loading": {
+        "title": "Processing",
+        "message": "Please wait while we process your request..."
+      }
+    }
+  }
+}

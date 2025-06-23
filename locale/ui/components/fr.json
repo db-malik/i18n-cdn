@@ -1,0 +1,50 @@
+{
+  "ui": {
+    "components": {
+      "table": {
+        "headers": {
+          "select_all": "Tout sélectionner",
+          "actions": "Actions"
+        },
+        "pagination": {
+          "showing": "Affichage de {{start}} à {{end}} sur {{total}} entrées",
+          "rows_per_page": "Lignes par page :",
+          "first_page": "Première page",
+          "last_page": "Dernière page",
+          "next_page": "Page suivante",
+          "previous_page": "Page précédente"
+        },
+        "sort": {
+          "ascending": "Tri croissant",
+          "descending": "Tri décroissant",
+          "remove": "Supprimer le tri"
+        }
+      },
+      "form": {
+        "validation": {
+          "field_required": "Ce champ est obligatoire",
+          "invalid_email": "Veuillez saisir une adresse e-mail valide",
+          "invalid_url": "Veuillez saisir une URL valide",
+          "min_length": "Minimum {{min}} caractères requis",
+          "max_length": "Maximum {{max}} caractères autorisés"
+        },
+        "file_upload": {
+          "drag_drop": "Glissez-déposez des fichiers ici ou cliquez pour parcourir",
+          "file_selected": "{{count}} fichier(s) sélectionné(s)",
+          "max_size": "Taille maximale du fichier : {{size}}",
+          "allowed_types": "Types autorisés : {{types}}"
+        }
+      },
+      "search": {
+        "placeholder": "Rechercher...",
+        "clear": "Effacer la recherche",
+        "results_count": "{{count}} résultats trouvés"
+      },
+      "filter": {
+        "apply": "Appliquer les filtres",
+        "clear": "Effacer les filtres",
+        "show_all": "Tout afficher"
+      }
+    }
+  }
+}

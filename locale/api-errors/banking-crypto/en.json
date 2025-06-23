@@ -1,0 +1,42 @@
+{
+  "api_errors": {
+    "banking_crypto": {
+        "wallet": {
+          "not_found": "Wallet not found",
+          "already_exists": "Wallet already exists",
+          "creation_failed": "Failed to create wallet",
+          "insufficient_balance": "Insufficient wallet balance",
+          "sync_failed": "Failed to synchronize wallet"
+        },
+        "transfer": {
+          "failed": "Transfer failed",
+          "invalid_amount": "Invalid transfer amount",
+          "invalid_recipient": "Invalid recipient address",
+          "insufficient_funds": "Insufficient funds for transfer",
+          "limit_exceeded": "Transfer limit exceeded"
+        },
+        "transaction": {
+          "not_found": "Transaction not found",
+          "failed": "Transaction failed",
+          "invalid_status": "Invalid transaction status",
+          "confirmation_timeout": "Transaction confirmation timeout"
+        },
+        "smart_contract": {
+          "deployment_failed": "Smart contract deployment failed",
+          "execution_failed": "Smart contract execution failed",
+          "invalid_abi": "Invalid smart contract ABI",
+          "not_found": "Smart contract not found"
+        },
+        "asset": {
+          "not_found": "Asset not found",
+          "invalid_type": "Invalid asset type",
+          "verification_failed": "Asset verification failed"
+        },
+        "task": {
+          "not_found": "Task not found",
+          "execution_failed": "Task execution failed",
+          "invalid_status": "Invalid task status"
+        }
+      }
+    }
+  }

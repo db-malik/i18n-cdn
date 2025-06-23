@@ -1,0 +1,60 @@
+{
+  "ui": {
+    "pages": {
+      "dashboard": {
+        "title": "Tableau de bord",
+        "subtitle": "Aperçu de votre compte",
+        "widgets": {
+          "recent_activity": "Activité récente",
+          "quick_stats": "Statistiques rapides",
+          "notifications": "Notifications"
+        }
+      },
+      "entities": {
+        "title": "Entités légales",
+        "subtitle": "Gérez vos entités légales",
+        "create_new": "Créer une nouvelle entité",
+        "list": {
+          "empty": "Aucune entité trouvée. Créez votre première entité pour commencer.",
+          "total": "{{count}} entités au total"
+        }
+      },
+      "wallet_view": {
+        "title": "Vue de portefeuille",
+        "subtitle": "Gérez votre portefeuille",
+        "total_assets": "Total des actifs: {{amount}} {{currency}} ",
+        "create_new": "Créer un nouveau portefeuille",
+        "list": {
+          "empty": "Aucun portefeuille trouvé. Créez votre premier portefeuille pour commencer.",
+          "total": "{{count}} portefeuilles au total"
+        }
+      },
+      "wallet_detail_view": {
+        "title": "Détail du portefeuille",
+        "subtitle": "Gérez votre portefeuille",
+        "create_new": "Créer un nouveau portefeuille",
+        "list": {
+          "empty": "Aucun portefeuille trouvé. Créez votre premier portefeuille pour commencer.",
+          "total": "{{count}} portefeuilles au total"
+        }
+      },
+      "error": {
+        "404": {
+          "title": "Page introuvable",
+          "message": "La page que vous recherchez n'existe pas.",
+          "go_home": "Aller au tableau de bord"
+        },
+        "500": {
+          "title": "Erreur du serveur",
+          "message": "Quelque chose s'est mal passé de notre côté.",
+          "try_again": "Réessayer"
+        },
+        "403": {
+          "title": "Accès refusé",
+          "message": "Vous n'avez pas l'autorisation d'accéder à cette page.",
+          "contact_admin": "Contacter l'administrateur"
+        }
+      }
+    }
+  }
+}

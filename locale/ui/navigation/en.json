@@ -1,0 +1,28 @@
+{
+  "ui": {
+    "navigation": {
+      "main": {
+        "dashboard": "Dashboard",
+        "entities": "Entities",
+        "transactions": "Transactions",
+        "wallets": "Wallets",
+        "reports": "Reports",
+        "settings": "Settings",
+        "profile": "Profile",
+        "logout": "Logout"
+      },
+      "breadcrumb": {
+        "home": "Home"
+      },
+      "sidebar": {
+        "collapse": "Collapse sidebar",
+        "expand": "Expand sidebar"
+      },
+      "tabs": {
+        "close": "Close tab",
+        "close_all": "Close all tabs",
+        "close_others": "Close other tabs"
+      }
+    }
+  }
+}
