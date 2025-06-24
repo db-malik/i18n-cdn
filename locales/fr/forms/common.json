@@ -5,7 +5,8 @@
       "field_required": "{{field}} est obligatoire",
       "too_long": "Valeur trop longue (maximum {{max}} caractères)",
       "too_short": "Valeur trop courte (minimum {{min}} caractères)",
-      "invalid_format": "Format invalide",
+      "invalid_type": "Type de données invalide",
+      "invalid_format": "Format invalide",        
       "not_found": "Élément introuvable",
       "access_denied": "Accès refusé",
       "too_long_description": "La description doit contenir au maximum {{max}} caractères"
