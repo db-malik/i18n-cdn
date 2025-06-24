@@ -101,6 +101,7 @@
         "number_required": "Le numéro de l'entité est requis",
         "number_too_long": "Le numéro de l'entité est trop long (maximum {{max}} caractères)",
         "invalid_type": "Type d'entité invalide",
+        "invalid_format": "Format invalide",
         "surname_required": "Le nom de famille est requis pour les organisations",
         "description_required": "La description est requise",
         "description_too_long": "La description est trop longue (maximum {{max}} caractères)",

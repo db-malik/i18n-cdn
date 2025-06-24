@@ -104,6 +104,7 @@
         "number_required": "Entity number is required",
         "number_too_long": "Entity number is too long (maximum {{max}} characters)",
         "invalid_type": "Invalid entity type",
+        "invalid_format": "Invalid format",
         "surname_required": "Surname is required for organizations",
         "description_required": "Description is required",
         "description_too_long": "Description is too long (maximum {{max}} characters)",
