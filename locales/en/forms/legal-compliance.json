@@ -5,6 +5,7 @@
         "create": {
           "title": "Create Legal Entity",
           "subtitle": "Register a new legal entity",
+          "description": "Fill out the form below to create a new legal entity",
           "fields": {
             "name": {
               "label": "Name",
@@ -50,7 +51,9 @@
           "actions": {
             "submit": "Create Entity",
             "cancel": "Cancel",
-            "reset": "Reset Form"
+            "reset": "Reset Form",
+            "error": "An error occurred while creating the entity",
+            "success": "Entity created successfully"
           }
         },
         "update": {
