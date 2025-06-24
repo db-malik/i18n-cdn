@@ -1,0 +1,30 @@
+{
+  "ui": {
+    "pages": {
+      "wallet_view": {
+        "title": "Your Wallets",
+        "subtitle": "Manage your crypto wallets",
+        "total_assets": "Total assets: {{amount}} {{currency}}",
+        "add_new_wallet": "Add new wallet",
+        "empty": {
+          "title": "No wallet or creation pending",
+          "description": "Add wallet or wait until creation process is complete"
+        },
+        "errors": {
+          "load_failed": "An error has occurred",
+          "reload_message": "Please reload the page"
+        },
+        "transactions": {
+          "title": "Transactions",
+          "select_wallet": "Select a wallet",
+          "search_placeholder": "Search",
+          "past_transactions": "Past transactions",
+          "no_transactions": {
+            "title": "No past transactions",
+            "description": "You can initiate transactions to other users"
+          }
+        }
+      }
+    }
+  }
+}

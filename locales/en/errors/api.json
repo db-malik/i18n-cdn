@@ -1,0 +1,193 @@
+{
+  "api-errors": {
+    "common": {
+      "external": {
+        "dfns": {
+          "user_not_found": "DFNS user not found",
+          "user_already_registered": "DFNS user already registered",
+          "wallet_not_found": "DFNS wallet not found",
+          "authentication_failed": "DFNS authentication failed",
+          "permission_denied": "DFNS permission denied",
+          "network_error": "DFNS network error",
+          "timeout": "DFNS operation timeout",
+          "rate_limited": "DFNS rate limit exceeded",
+          "transfer_failed": "DFNS transfer failed"
+        },
+        "clerk": {
+          "user_not_found": "Clerk user not found",
+          "session_expired": "Clerk session expired",
+          "unauthorized": "Clerk unauthorized access"
+        },
+        "system": {
+          "validation": {
+            "required": "Field is required",
+            "invalid_type": "Invalid field type",
+            "invalid_format": "Invalid field format",
+            "too_short": "Field is too short",
+            "too_long": "Field is too long",
+            "invalid_email": "Invalid email address"
+          },
+          "http": {
+            "bad_request": "Bad request",
+            "unauthorized": "Unauthorized access",
+            "forbidden": "Access forbidden",
+            "not_found": "Resource not found",
+            "conflict": "Resource conflict",
+            "internal_error": "Internal server error"
+          },
+          "database": {
+            "connection_error": "Database connection error",
+            "query_failed": "Database query failed",
+            "constraint_violation": "Database constraint violation",
+            "timeout": "Database operation timeout"
+          },
+          "unknown": {
+            "error": "Unknown error occurred",
+            "transform_error": "Error transformation failed"
+          }
+        }
+      }
+    },
+    "banking_crypto": {
+      "wallet": {
+        "not_found": "Wallet not found",
+        "already_exists": "Wallet already exists",
+        "creation_failed": "Failed to create wallet",
+        "insufficient_balance": "Insufficient wallet balance",
+        "sync_failed": "Failed to synchronize wallet"
+      },
+      "transfer": {
+        "failed": "Transfer failed",
+        "invalid_amount": "Invalid transfer amount",
+        "invalid_recipient": "Invalid recipient address",
+        "insufficient_funds": "Insufficient funds for transfer",
+        "limit_exceeded": "Transfer limit exceeded"
+      },
+      "transaction": {
+        "not_found": "Transaction not found",
+        "failed": "Transaction failed",
+        "invalid_status": "Invalid transaction status",
+        "confirmation_timeout": "Transaction confirmation timeout"
+      },
+      "smart_contract": {
+        "deployment_failed": "Smart contract deployment failed",
+        "execution_failed": "Smart contract execution failed",
+        "invalid_abi": "Invalid smart contract ABI",
+        "not_found": "Smart contract not found"
+      },
+      "asset": {
+        "not_found": "Asset not found",
+        "invalid_type": "Invalid asset type",
+        "verification_failed": "Asset verification failed"
+      },
+      "task": {
+        "not_found": "Task not found",
+        "execution_failed": "Task execution failed",
+        "invalid_status": "Invalid task status"
+      }
+    },
+    "legal_compliance": {
+      "entity": {
+        "not_found": "Entity not found",
+        "already_exists": "Entity already exists",
+        "validation_failed": "Entity validation failed",
+        "inactive": "Entity is inactive",
+        "creation_failed": "Failed to create entity"
+      },
+      "signature": {
+        "invalid": "Invalid signature",
+        "expired": "Signature has expired",
+        "verification_failed": "Signature verification failed",
+        "creation_failed": "Failed to create signature"
+      },
+      "kyc": {
+        "not_found": "KYC record not found",
+        "verification_failed": "KYC verification failed",
+        "document_invalid": "Invalid KYC document",
+        "status_invalid": "Invalid KYC status"
+      }
+    },
+    "identity_access_management": {
+      "person": {
+        "not_found": "Person not found",
+        "already_exists": "Person already exists",
+        "inactive": "Person is inactive",
+        "validation_failed": "Person validation failed"
+      },
+      "organization": {
+        "not_found": "Organization not found",
+        "already_exists": "Organization already exists",
+        "inactive": "Organization is inactive"
+      },
+      "role": {
+        "not_found": "Role not found",
+        "already_exists": "Role already exists",
+        "insufficient_permissions": "Insufficient role permissions"
+      },
+      "permission": {
+        "not_found": "Permission not found",
+        "access_denied": "Access denied",
+        "invalid_scope": "Invalid permission scope"
+      },
+      "groupe_permission": {
+        "not_found": "Group permission not found",
+        "already_exists": "Group permission already exists",
+        "assignment_failed": "Permission assignment failed"
+      },
+      "invitation": {
+        "not_found": "Invitation not found",
+        "expired": "Invitation has expired",
+        "already_accepted": "Invitation already accepted",
+        "send_failed": "Failed to send invitation"
+      },
+      "credential": {
+        "not_found": "Credential not found",
+        "invalid": "Invalid credential",
+        "expired": "Credential has expired",
+        "verification_failed": "Credential verification failed"
+      },
+      "workspace": {
+        "not_found": "Workspace not found",
+        "access_denied": "Workspace access denied",
+        "quota_exceeded": "Workspace quota exceeded"
+      },
+      "feature": {
+        "not_found": "Feature not found",
+        "disabled": "Feature is disabled",
+        "access_denied": "Feature access denied"
+      }
+    },
+    "financial_operation": {
+      "subscription": {
+        "not_found": "Subscription not found",
+        "already_exists": "Subscription already exists",
+        "payment_failed": "Subscription payment failed",
+        "expired": "Subscription has expired"
+      },
+      "token_distribution": {
+        "not_found": "Token distribution not found",
+        "insufficient_supply": "Insufficient token supply",
+        "distribution_failed": "Token distribution failed",
+        "invalid_allocation": "Invalid token allocation"
+      },
+      "otc": {
+        "not_found": "OTC trade not found",
+        "trade_failed": "OTC trade failed",
+        "invalid_price": "Invalid OTC price",
+        "insufficient_liquidity": "Insufficient OTC liquidity"
+      },
+      "fundraising": {
+        "not_found": "Fundraising campaign not found",
+        "campaign_ended": "Fundraising campaign has ended",
+        "target_reached": "Fundraising target already reached",
+        "contribution_failed": "Contribution failed"
+      },
+      "fundraising_escrow": {
+        "not_found": "Fundraising escrow not found",
+        "release_failed": "Escrow release failed",
+        "insufficient_funds": "Insufficient escrow funds",
+        "invalid_conditions": "Invalid escrow conditions"
+      }
+    }
+  }
+}

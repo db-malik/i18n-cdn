@@ -1,0 +1,193 @@
+{
+  "api-errors": {
+    "common": {
+      "external": {
+        "dfns": {
+          "user_not_found": "Utilisateur DFNS introuvable",
+          "user_already_registered": "Utilisateur DFNS déjà enregistré",
+          "wallet_not_found": "Portefeuille DFNS introuvable",
+          "authentication_failed": "Échec de l'authentification DFNS",
+          "permission_denied": "Permission DFNS refusée",
+          "network_error": "Erreur réseau DFNS",
+          "timeout": "Délai d'attente de l'opération DFNS dépassé",
+          "rate_limited": "Limite de taux DFNS dépassée",
+          "transfer_failed": "Échec du transfert DFNS"
+        },
+        "clerk": {
+          "user_not_found": "Utilisateur Clerk introuvable",
+          "session_expired": "Session Clerk expirée",
+          "unauthorized": "Accès non autorisé Clerk"
+        },
+        "system": {
+          "validation": {
+            "required": "Le champ est obligatoire",
+            "invalid_type": "Type de champ invalide",
+            "invalid_format": "Format de champ invalide",
+            "too_short": "Le champ est trop court",
+            "too_long": "Le champ est trop long",
+            "invalid_email": "Adresse email invalide"
+          },
+          "http": {
+            "bad_request": "Requête incorrecte",
+            "unauthorized": "Accès non autorisé",
+            "forbidden": "Accès interdit",
+            "not_found": "Ressource introuvable",
+            "conflict": "Conflit de ressource",
+            "internal_error": "Erreur interne du serveur"
+          },
+          "database": {
+            "connection_error": "Erreur de connexion à la base de données",
+            "query_failed": "Échec de la requête de base de données",
+            "constraint_violation": "Violation de contrainte de base de données",
+            "timeout": "Délai d'attente de l'opération de base de données dépassé"
+          },
+          "unknown": {
+            "error": "Erreur inconnue survenue",
+            "transform_error": "Échec de la transformation d'erreur"
+          }
+        }
+      }
+    },
+    "banking_crypto": {
+      "wallet": {
+        "not_found": "Portefeuille introuvable",
+        "already_exists": "Le portefeuille existe déjà",
+        "creation_failed": "Échec de la création du portefeuille",
+        "insufficient_balance": "Solde insuffisant du portefeuille",
+        "sync_failed": "Échec de la synchronisation du portefeuille"
+      },
+      "transfer": {
+        "failed": "Échec du transfert",
+        "invalid_amount": "Montant de transfert invalide",
+        "invalid_recipient": "Adresse de destinataire invalide",
+        "insufficient_funds": "Fonds insuffisants pour le transfert",
+        "limit_exceeded": "Limite de transfert dépassée"
+      },
+      "transaction": {
+        "not_found": "Transaction introuvable",
+        "failed": "Échec de la transaction",
+        "invalid_status": "Statut de transaction invalide",
+        "confirmation_timeout": "Délai de confirmation de transaction expiré"
+      },
+      "smart_contract": {
+        "deployment_failed": "Échec du déploiement du contrat intelligent",
+        "execution_failed": "Échec de l'exécution du contrat intelligent",
+        "invalid_abi": "ABI de contrat intelligent invalide",
+        "not_found": "Contrat intelligent introuvable"
+      },
+      "asset": {
+        "not_found": "Actif introuvable",
+        "invalid_type": "Type d'actif invalide",
+        "verification_failed": "Échec de la vérification de l'actif"
+      },
+      "task": {
+        "not_found": "Tâche introuvable",
+        "execution_failed": "Échec de l'exécution de la tâche",
+        "invalid_status": "Statut de tâche invalide"
+      }
+    },
+    "legal_compliance": {
+      "entity": {
+        "not_found": "Entité introuvable",
+        "already_exists": "L'entité existe déjà",
+        "validation_failed": "Échec de la validation de l'entité",
+        "inactive": "L'entité est inactive",
+        "creation_failed": "Échec de la création de l'entité"
+      },
+      "signature": {
+        "invalid": "Signature invalide",
+        "expired": "La signature a expiré",
+        "verification_failed": "Échec de la vérification de la signature",
+        "creation_failed": "Échec de la création de la signature"
+      },
+      "kyc": {
+        "not_found": "Enregistrement KYC introuvable",
+        "verification_failed": "Échec de la vérification KYC",
+        "document_invalid": "Document KYC invalide",
+        "status_invalid": "Statut KYC invalide"
+      }
+    },
+    "identity_access_management": {
+      "person": {
+        "not_found": "Personne introuvable",
+        "already_exists": "La personne existe déjà",
+        "inactive": "La personne est inactive",
+        "validation_failed": "Échec de la validation de la personne"
+      },
+      "organization": {
+        "not_found": "Organisation introuvable",
+        "already_exists": "L'organisation existe déjà",
+        "inactive": "L'organisation est inactive"
+      },
+      "role": {
+        "not_found": "Rôle introuvable",
+        "already_exists": "Le rôle existe déjà",
+        "insufficient_permissions": "Permissions de rôle insuffisantes"
+      },
+      "permission": {
+        "not_found": "Permission introuvable",
+        "access_denied": "Accès refusé",
+        "invalid_scope": "Portée de permission invalide"
+      },
+      "groupe_permission": {
+        "not_found": "Permission de groupe introuvable",
+        "already_exists": "La permission de groupe existe déjà",
+        "assignment_failed": "Échec de l'attribution de permission"
+      },
+      "invitation": {
+        "not_found": "Invitation introuvable",
+        "expired": "L'invitation a expiré",
+        "already_accepted": "Invitation déjà acceptée",
+        "send_failed": "Échec de l'envoi de l'invitation"
+      },
+      "credential": {
+        "not_found": "Identifiant introuvable",
+        "invalid": "Identifiant invalide",
+        "expired": "L'identifiant a expiré",
+        "verification_failed": "Échec de la vérification de l'identifiant"
+      },
+      "workspace": {
+        "not_found": "Espace de travail introuvable",
+        "access_denied": "Accès à l'espace de travail refusé",
+        "quota_exceeded": "Quota d'espace de travail dépassé"
+      },
+      "feature": {
+        "not_found": "Fonctionnalité introuvable",
+        "disabled": "La fonctionnalité est désactivée",
+        "access_denied": "Accès à la fonctionnalité refusé"
+      }
+    },
+    "financial_operation": {
+      "subscription": {
+        "not_found": "Abonnement introuvable",
+        "already_exists": "L'abonnement existe déjà",
+        "payment_failed": "Échec du paiement de l'abonnement",
+        "expired": "L'abonnement a expiré"
+      },
+      "token_distribution": {
+        "not_found": "Distribution de jetons introuvable",
+        "insufficient_supply": "Approvisionnement en jetons insuffisant",
+        "distribution_failed": "Échec de la distribution de jetons",
+        "invalid_allocation": "Allocation de jetons invalide"
+      },
+      "otc": {
+        "not_found": "Transaction OTC introuvable",
+        "trade_failed": "Échec de la transaction OTC",
+        "invalid_price": "Prix OTC invalide",
+        "insufficient_liquidity": "Liquidité OTC insuffisante"
+      },
+      "fundraising": {
+        "not_found": "Campagne de collecte de fonds introuvable",
+        "campaign_ended": "La campagne de collecte de fonds est terminée",
+        "target_reached": "Objectif de collecte de fonds déjà atteint",
+        "contribution_failed": "Échec de la contribution"
+      },
+      "fundraising_escrow": {
+        "not_found": "Séquestre de collecte de fonds introuvable",
+        "release_failed": "Échec de la libération du séquestre",
+        "insufficient_funds": "Fonds de séquestre insuffisants",
+        "invalid_conditions": "Conditions de séquestre invalides"
+      }
+    }
+  }
+}

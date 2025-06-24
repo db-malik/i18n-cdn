@@ -1,0 +1,23 @@
+{
+  "ui": {
+    "pages": {
+      "error": {
+        "404": {
+          "title": "Page introuvable",
+          "message": "La page que vous recherchez n'existe pas.",
+          "go_home": "Aller au tableau de bord"
+        },
+        "500": {
+          "title": "Erreur du serveur",
+          "message": "Quelque chose s'est mal passé de notre côté.",
+          "try_again": "Réessayer"
+        },
+        "403": {
+          "title": "Accès refusé",
+          "message": "Vous n'avez pas l'autorisation d'accéder à cette page.",
+          "contact_admin": "Contacter l'administrateur"
+        }
+      }
+    }
+  }
+}

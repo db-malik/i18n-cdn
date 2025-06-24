@@ -1,0 +1,15 @@
+{
+  "ui": {
+    "pages": {
+      "dashboard": {
+        "title": "Tableau de bord",
+        "subtitle": "Aperçu de votre compte",
+        "widgets": {
+          "recent_activity": "Activité récente",
+          "quick_stats": "Statistiques rapides",
+          "notifications": "Notifications"
+        }
+      }
+    }
+  }
+}
