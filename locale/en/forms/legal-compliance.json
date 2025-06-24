@@ -5,6 +5,7 @@
         "create": {
           "title": "Create Legal Entity",
           "subtitle": "Register a new legal entity",
+          "footer": "All fields marked with * are required. Please ensure all information is accurate.",
           "description": "Fill out the form below to create a new legal entity",
           "fields": {
             "name": {
@@ -53,7 +54,8 @@
             "cancel": "Cancel",
             "reset": "Reset Form",
             "error": "An error occurred while creating the entity",
-            "success": "Entity created successfully"
+            "success": "Entity created successfully",
+            "warning": "Please review the information before submitting"
           }
         },
         "update": {
@@ -94,7 +96,10 @@
           "actions": {
             "submit": "Update Entity",
             "cancel": "Cancel",
-            "reset": "Reset Form"
+            "reset": "Reset Form",
+            "error": "An error occurred while updating the entity",
+            "success": "Entity updated successfully",
+            "warning": "Please review the changes before submitting"
           }
         }
       },
@@ -104,7 +109,6 @@
         "number_required": "Entity number is required",
         "number_too_long": "Entity number is too long (maximum {{max}} characters)",
         "invalid_type": "Invalid entity type",
-        "invalid_format": "Invalid format",
         "surname_required": "Surname is required for organizations",
         "description_required": "Description is required",
         "description_too_long": "Description is too long (maximum {{max}} characters)",
