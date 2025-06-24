@@ -1,6 +1,22 @@
 {
   "ui": {
     "pages": {
+      "dashboard": {
+        "title": "Dashboard",
+        "subtitle": "Overview of your account",
+        "widgets": {
+          "recent_activity": "Recent Activity",
+          "quick_stats": "Quick Statistics",
+          "notifications": "Notifications"
+        }
+      },
+      "error": {
+        "404": {
+          "title": "Page Not Found",
+          "message": "The page you're looking for doesn't exist.",
+          "go_home": "Go to Dashboard"
+        }
+      },
       "wallet_view": {
         "title": "Your Wallets",
         "subtitle": "Manage your crypto wallets",
@@ -24,7 +40,10 @@
             "description": "You can initiate transactions to other users"
           }
         }
-      }
+      },
+      "home": {},
+      "profile": {},
+      "settings": {}
     }
   }
-}
+} 
