@@ -20,7 +20,7 @@
       "wallet_view": {
         "title": "Your Wallets",
         "subtitle": "Manage your crypto wallets",
-        "total_assets": "Total assets",
+        "total_assets": "Total assets ",
         "add_new_wallet": "Add new wallet",
         "empty": {
           "title": "No wallet or creation pending",
