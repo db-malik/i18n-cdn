@@ -20,7 +20,7 @@
       "wallet_view": {
         "title": "Vue de portefeuille",
         "subtitle": "Gérez votre portefeuille",
-        "total_assets": "Total des actifs: {{amount}} {{currency}} ",
+        "total_assets": "Total des actifs",
         "create_new": "Créer un nouveau portefeuille",
         "list": {
           "empty": "Aucun portefeuille trouvé. Créez votre premier portefeuille pour commencer.",
