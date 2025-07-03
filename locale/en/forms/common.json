@@ -11,5 +11,32 @@
       "access_denied": "Access denied",
       "too_long_description": "Description must be at most {{max}} characters"
     }
+  },
+  "buttons": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "save_and_continue": "Save & Continue",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "add": "Add",
+    "update": "Update",
+    "back": "Back",
+    "next": "Next",
+    "continue": "Continue",
+    "finish": "Finish",
+    "reset": "Reset",
+    "clear": "Clear",
+    "upload": "Upload",
+    "browse": "Browse",
+    "confirm": "Confirm",
+    "close": "Close",
+    "retry": "Retry",
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up",
+    "register": "Register"
   }
 }

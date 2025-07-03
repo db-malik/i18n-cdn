@@ -6,10 +6,37 @@
       "too_long": "Valeur trop longue (maximum {{max}} caractères)",
       "too_short": "Valeur trop courte (minimum {{min}} caractères)",
       "invalid_type": "Type de données invalide",
-      "invalid_format": "Format invalide",        
+      "invalid_format": "Format invalide",
       "not_found": "Élément introuvable",
       "access_denied": "Accès refusé",
       "too_long_description": "La description doit contenir au maximum {{max}} caractères"
     }
+  },
+  "buttons": {
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "save_and_continue": "Enregistrer et continuer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "add": "Ajouter",
+    "update": "Mettre à jour",
+    "back": "Retour",
+    "next": "Suivant",
+    "continue": "Continuer",
+    "finish": "Terminer",
+    "reset": "Réinitialiser",
+    "clear": "Effacer",
+    "upload": "Télécharger",
+    "browse": "Parcourir",
+    "confirm": "Confirmer",
+    "close": "Fermer",
+    "retry": "Réessayer",
+    "loading": "Chargement...",
+    "saving": "Enregistrement...",
+    "sign_in": "Se connecter",
+    "sign_up": "S'inscrire",
+    "register": "S'inscrire"
   }
 }
