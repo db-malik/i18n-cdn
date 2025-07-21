@@ -1,0 +1,121 @@
+{
+  "banking-crypto": {
+    "claim": {
+      "form": {
+        "create": {
+          "title": "Créer une Réclamation Crypto",
+          "subtitle": "Enregistrer une nouvelle réclamation de cryptomonnaie",
+          "description": "Remplissez le formulaire ci-dessous pour créer une nouvelle réclamation d'actif crypto",
+          "footer": "Tous les champs marqués d'un * sont obligatoires. Veuillez vous assurer que toutes les informations sont exactes.",
+          "fields": {
+            "name": {
+              "label": "Nom de la Réclamation",
+              "placeholder": "Entrez le nom de la réclamation",
+              "description": "Nom de la réclamation crypto",
+              "tooltip": "Entrez un nom descriptif pour cette réclamation de cryptomonnaie"
+            },
+            "start_date": {
+              "label": "Date de Début",
+              "placeholder": "Sélectionnez la date de début",
+              "description": "Quand la période de réclamation commence",
+              "tooltip": "La date à laquelle cette réclamation crypto devient active"
+            },
+            "end_date": {
+              "label": "Date de Fin",
+              "placeholder": "Sélectionnez la date de fin",
+              "description": "Quand la période de réclamation se termine",
+              "tooltip": "La date à laquelle cette réclamation crypto expire"
+            },
+            "asset_id": {
+              "label": "ID de l'Actif",
+              "placeholder": "Entrez l'identifiant de l'actif",
+              "description": "Identifiant unique pour l'actif crypto",
+              "tooltip": "L'identifiant unique ou le symbole pour l'actif de cryptomonnaie"
+            },
+            "smart_contract_status": {
+              "label": "Statut du Contrat Intelligent",
+              "placeholder": "Sélectionnez le statut du contrat",
+              "description": "Statut actuel du contrat intelligent",
+              "tooltip": "Le statut opérationnel actuel du contrat intelligent associé"
+            },
+            "amount": {
+              "label": "Montant",
+              "placeholder": "Entrez le montant",
+              "description": "Montant de cryptomonnaie",
+              "tooltip": "La quantité de cryptomonnaie impliquée dans cette réclamation"
+            }
+          },
+          "actions": {
+            "submit": "Créer la Réclamation",
+            "cancel": "Annuler",
+            "reset": "Réinitialiser le Formulaire",
+            "review": "Examiner la Réclamation",
+            "error": "Une erreur s'est produite lors de la création de la réclamation",
+            "success": "Réclamation créée avec succès",
+            "warning": "Veuillez examiner les informations avant de soumettre"
+          }
+        },
+        "update": {
+          "title": "Mettre à Jour la Réclamation Crypto",
+          "subtitle": "Mettre à jour les informations de la réclamation",
+          "fields": {
+            "name": {
+              "label": "Nom de la Réclamation",
+              "placeholder": "Entrez le nom de la réclamation",
+              "description": "Nom de la réclamation crypto",
+              "tooltip": "Entrez un nom descriptif pour cette réclamation de cryptomonnaie"
+            },
+            "start_date": {
+              "label": "Date de Début",
+              "placeholder": "Sélectionnez la date de début",
+              "description": "Quand la période de réclamation commence",
+              "tooltip": "La date à laquelle cette réclamation crypto devient active"
+            },
+            "end_date": {
+              "label": "Date de Fin",
+              "placeholder": "Sélectionnez la date de fin",
+              "description": "Quand la période de réclamation se termine",
+              "tooltip": "La date à laquelle cette réclamation crypto expire"
+            },
+            "asset_id": {
+              "label": "ID de l'Actif",
+              "placeholder": "Entrez l'identifiant de l'actif",
+              "description": "Identifiant unique pour l'actif crypto",
+              "tooltip": "L'identifiant unique ou le symbole pour l'actif de cryptomonnaie"
+            },
+            "smart_contract_status": {
+              "label": "Statut du Contrat Intelligent",
+              "placeholder": "Sélectionnez le statut du contrat",
+              "description": "Statut actuel du contrat intelligent",
+              "tooltip": "Le statut opérationnel actuel du contrat intelligent associé"
+            },
+            "amount": {
+              "label": "Montant",
+              "placeholder": "Entrez le montant",
+              "description": "Montant de cryptomonnaie",
+              "tooltip": "La quantité de cryptomonnaie impliquée dans cette réclamation"
+            }
+          },
+          "actions": {
+            "submit": "Mettre à Jour la Réclamation",
+            "cancel": "Annuler",
+            "reset": "Réinitialiser le Formulaire",
+            "error": "Une erreur s'est produite lors de la mise à jour de la réclamation",
+            "success": "Réclamation mise à jour avec succès",
+            "warning": "Veuillez examiner les modifications avant de soumettre"
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Le nom de la réclamation est obligatoire",
+        "nameTooShort": "Le nom de la réclamation est trop court (minimum {{min}} caractères)",
+        "nameTooLong": "Le nom de la réclamation est trop long (maximum {{max}} caractères)",
+        "dateRequired": "La date est obligatoire",
+        "assetIdRequired": "L'ID de l'actif est obligatoire",
+        "smartContractStatusRequired": "Le statut du contrat intelligent est obligatoire",
+        "amountRequired": "Le montant est obligatoire",
+        "amountTooLow": "Le montant doit être supérieur à {{min}}"
+      }
+    }
+  }
+}
