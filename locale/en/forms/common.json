@@ -2,14 +2,14 @@
   "validation": {
     "common": {
       "required": "This field is required",
-      "field_required": "{{field}} is required",
-      "too_long": "Value is too long (maximum {{max}} characters)",
-      "too_short": "Value is too short (minimum {{min}} characters)",
-      "invalid_format": "Invalid format",
-      "invalid_type": "Invalid data type",
-      "not_found": "Item not found",
-      "access_denied": "Access denied",
-      "too_long_description": "Description must be at most {{max}} characters"
+      "fieldRequired": "{{field}} is required",
+      "tooLong": "Value is too long (maximum {{max}} characters)",
+      "tooShort": "Value is too short (minimum {{min}} characters)",
+      "invalidFormat": "Invalid format",
+      "invalidType": "Invalid data type",
+      "notFound": "Item not found",
+      "accessDenied": "Access denied",
+      "tooLongDescription": "Description must be at most {{max}} characters"
     }
   },
   "buttons": {

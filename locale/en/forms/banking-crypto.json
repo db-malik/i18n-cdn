@@ -14,25 +14,25 @@
               "description": "Name of the crypto claim",
               "tooltip": "Enter a descriptive name for this cryptocurrency claim"
             },
-            "start_date": {
+            "startDate": {
               "label": "Start Date",
               "placeholder": "Select start date",
               "description": "When the claim period begins",
               "tooltip": "The date when this crypto claim becomes active"
             },
-            "end_date": {
+            "endDate": {
               "label": "End Date",
               "placeholder": "Select end date",
               "description": "When the claim period ends",
               "tooltip": "The date when this crypto claim expires"
             },
-            "asset_id": {
+            "assetId": {
               "label": "Asset ID",
               "placeholder": "Enter asset identifier",
               "description": "Unique identifier for the crypto asset",
               "tooltip": "The unique identifier or symbol for the cryptocurrency asset"
             },
-            "smart_contract_status": {
+            "smartContractStatus": {
               "label": "Smart Contract Status",
               "placeholder": "Select contract status",
               "description": "Current status of the smart contract",
@@ -65,25 +65,25 @@
               "description": "Name of the crypto claim",
               "tooltip": "Enter a descriptive name for this cryptocurrency claim"
             },
-            "start_date": {
+            "startDate": {
               "label": "Start Date",
               "placeholder": "Select start date",
               "description": "When the claim period begins",
               "tooltip": "The date when this crypto claim becomes active"
             },
-            "end_date": {
+            "endDate": {
               "label": "End Date",
               "placeholder": "Select end date",
               "description": "When the claim period ends",
               "tooltip": "The date when this crypto claim expires"
             },
-            "asset_id": {
+            "assetId": {
               "label": "Asset ID",
               "placeholder": "Enter asset identifier",
               "description": "Unique identifier for the crypto asset",
               "tooltip": "The unique identifier or symbol for the cryptocurrency asset"
             },
-            "smart_contract_status": {
+            "smartContractStatus": {
               "label": "Smart Contract Status",
               "placeholder": "Select contract status",
               "description": "Current status of the smart contract",
