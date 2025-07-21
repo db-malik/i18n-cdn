@@ -14,25 +14,25 @@
               "description": "Nom de la réclamation crypto",
               "tooltip": "Entrez un nom descriptif pour cette réclamation de cryptomonnaie"
             },
-            "start_date": {
+            "startDate": {
               "label": "Date de Début",
               "placeholder": "Sélectionnez la date de début",
               "description": "Quand la période de réclamation commence",
               "tooltip": "La date à laquelle cette réclamation crypto devient active"
             },
-            "end_date": {
+            "endDate": {
               "label": "Date de Fin",
               "placeholder": "Sélectionnez la date de fin",
               "description": "Quand la période de réclamation se termine",
               "tooltip": "La date à laquelle cette réclamation crypto expire"
             },
-            "asset_id": {
+            "assetId": {
               "label": "ID de l'Actif",
               "placeholder": "Entrez l'identifiant de l'actif",
               "description": "Identifiant unique pour l'actif crypto",
               "tooltip": "L'identifiant unique ou le symbole pour l'actif de cryptomonnaie"
             },
-            "smart_contract_status": {
+            "smartContractStatus": {
               "label": "Statut du Contrat Intelligent",
               "placeholder": "Sélectionnez le statut du contrat",
               "description": "Statut actuel du contrat intelligent",
