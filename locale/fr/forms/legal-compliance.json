@@ -96,17 +96,17 @@
         }
       },
       "validation": {
-        "name_too_short": "Le nom de l'entité est trop court (minimum {{min}} caractères)",
-        "name_too_long": "Le nom de l'entité est trop long (maximum {{max}} caractères)",
-        "number_required": "Le numéro de l'entité est requis",
-        "number_too_long": "Le numéro de l'entité est trop long (maximum {{max}} caractères)",
-        "invalid_type": "Type d'entité invalide",
-        "invalid_format": "Format invalide",
-        "surname_required": "Le nom de famille est requis pour les organisations",
-        "description_required": "La description est requise",
-        "description_too_long": "La description est trop longue (maximum {{max}} caractères)",
+        "nameTooShort": "Le nom de l'entité est trop court (minimum {{min}} caractères)",
+        "nameTooLong": "Le nom de l'entité est trop long (maximum {{max}} caractères)",
+        "numberRequired": "Le numéro de l'entité est requis",
+        "numberTooLong": "Le numéro de l'entité est trop long (maximum {{max}} caractères)",
+        "invalidType": "Type d'entité invalide",
+        "invalidFormat": "Format invalide",
+        "surnameRequired": "Le nom de famille est requis pour les organisations",
+        "descriptionRequired": "La description est requise",
+        "descriptionTooLong": "La description est trop longue (maximum {{max}} caractères)",
         "email": {
-          "invalid_format": "Format d'e-mail invalide",
+          "invalidFormat": "Format d'e-mail invalide",
           "required": "L'e-mail est requis"
         }
       }

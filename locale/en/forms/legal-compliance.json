@@ -106,14 +106,14 @@
       "validation": {
         "name_too_short": "Entity name is too short (minimum {{min}} characters)",
         "name_too_long": "Entity name is too long (maximum {{max}} characters)",
-        "number_required": "Entity number is required",
-        "number_too_long": "Entity number is too long (maximum {{max}} characters)",
-        "invalid_type": "Invalid entity type",
-        "surname_required": "Surname is required for organizations",
-        "description_required": "Description is required",
-        "description_too_long": "Description is too long (maximum {{max}} characters)",
+        "numberRequired": "Entity number is required",
+        "numberTooLong": "Entity number is too long (maximum {{max}} characters)",
+        "invalidType": "Invalid entity type",
+        "surnameRequired": "Surname is required for organizations",
+        "descriptionRequired": "Description is required",
+        "descriptionTooLong": "Description is too long (maximum {{max}} characters)",
         "email": {
-          "invalid_format": "Invalid email format",
+          "invalidFormat": "Invalid email format",
           "required": "Email is required"
         }
       }
