@@ -116,6 +116,86 @@
         "amountRequired": "Le montant est obligatoire",
         "amountTooLow": "Le montant doit être supérieur à {{min}}"
       }
+    },
+    "asset": {
+      "form": {
+        "create": {
+          "title": "Créer un Actif Crypto",
+          "subtitle": "Enregistrer un nouvel actif de cryptomonnaie",
+          "description": "Remplissez le formulaire ci-dessous pour créer un nouvel actif crypto",
+          "footer": "Tous les champs marqués d'un * sont obligatoires. Veuillez vous assurer que toutes les informations sont exactes.",
+          "fields": {
+            "name": {
+              "label": "Nom de l'Actif",
+              "placeholder": "Entrez le nom de l'actif",
+              "description": "Nom de l'actif crypto",
+              "tooltip": "Entrez un nom descriptif pour cet actif de cryptomonnaie"
+            },
+            "symbol": {
+              "label": "Symbole",
+              "placeholder": "Entrez le symbole de l'actif",
+              "description": "Symbole de l'actif crypto",
+              "tooltip": "Le symbole ou ticker de l'actif de cryptomonnaie"
+            },
+            "assetType": {
+              "label": "Type d'Actif",
+              "placeholder": "Sélectionnez le type d'actif",
+              "description": "Type de l'actif crypto",
+              "tooltip": "La catégorie ou le type de l'actif de cryptomonnaie"
+            },
+            "network": {
+              "label": "Réseau",
+              "placeholder": "Sélectionnez le réseau",
+              "description": "Réseau blockchain de l'actif",
+              "tooltip": "Le réseau blockchain sur lequel cet actif existe"
+            },
+            "picture": {
+              "label": "Image",
+              "placeholder": "Téléchargez l'image de l'actif",
+              "description": "Image représentant l'actif",
+              "tooltip": "Téléchargez un logo ou une image pour l'actif"
+            },
+            "decimal": {
+              "label": "Décimale",
+              "placeholder": "Entrez le nombre de décimales",
+              "description": "Nombre de décimales",
+              "tooltip": "Le nombre de décimales supporté par l'actif"
+            },
+            "totalSupply": {
+              "label": "Quantité Totale",
+              "placeholder": "Entrez la quantité totale",
+              "description": "Quantité totale de l'actif",
+              "tooltip": "Le nombre total d'unités pour cet actif"
+            },
+            "features": {
+              "label": "Fonctionnalités",
+              "placeholder": "Entrez les fonctionnalités",
+              "description": "Fonctionnalités spéciales de l'actif",
+              "tooltip": "Listez les fonctionnalités ou propriétés spéciales de l'actif"
+            }
+          },
+          "actions": {
+            "submit": "Créer l'Actif",
+            "cancel": "Annuler",
+            "reset": "Réinitialiser le Formulaire",
+            "error": "Une erreur s'est produite lors de la création de l'actif",
+            "success": "Actif créé avec succès"
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Le nom de l'actif est obligatoire",
+        "nameTooShort": "Le nom de l'actif est trop court (minimum {{min}} caractères)",
+        "nameTooLong": "Le nom de l'actif est trop long (maximum {{max}} caractères)",
+        "symbolRequired": "Le symbole est obligatoire",
+        "assetTypeRequired": "Le type d'actif est obligatoire",
+        "networkRequired": "Le réseau est obligatoire",
+        "decimalRequired": "La décimale est obligatoire",
+        "decimalTooLow": "La décimale doit être au moins {{min}}",
+        "decimalTooHigh": "La décimale doit être au plus {{max}}",
+        "totalSupplyRequired": "La quantité totale est obligatoire",
+        "totalSupplyTooLow": "La quantité totale doit être supérieure à {{min}}"
+      }
     }
   }
 }

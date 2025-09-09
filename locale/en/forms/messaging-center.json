@@ -1,0 +1,475 @@
+{
+  "messaging-center": {
+    "email": {
+      "form": {
+        "create": {
+          "title": "Create Email",
+          "subtitle": "Create a new email record linked to a template",
+          "description": "Create an email that will be sent using a predefined template",
+          "footer": "After creating this email, you'll be able to send it to recipients",
+
+          "fields": {
+            "name": {
+              "label": "Email Name",
+              "placeholder": "Enter email name",
+              "tooltip": "A descriptive name for this email record",
+              "description": "Primary name of the email record"
+            },
+            "template_id": {
+              "label": "Template",
+              "placeholder": "Select a template",
+              "tooltip": "Choose the email template to use for this email",
+              "description": "Email template that will be used for this email"
+            },
+            "context": {
+              "label": "Context",
+              "placeholder": "Enter email context (optional)",
+              "tooltip": "Additional context or notes about this email",
+              "description": "Optional context information about the email"
+            },
+            "to_user_id": {
+              "label": "User ID",
+              "placeholder": "Enter user ID (optional)",
+              "tooltip": "Specific user who will receive this email",
+              "description": "Target user who will receive this email"
+            },
+            "to_entity_id": {
+              "label": "Entity ID",
+              "placeholder": "Enter entity ID (optional)",
+              "tooltip": "Specific entity that will receive this email",
+              "description": "Target entity that will receive this email"
+            }
+          },
+
+          "actions": {
+            "submit": "Create Email",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error creating email",
+            "success": "Email created successfully",
+            "warning": "Please review your input"
+          }
+        },
+
+        "update": {
+          "title": "Update Email",
+          "subtitle": "Update an existing email record",
+          "description": "Modify the email record and its template association",
+          "footer": "Changes will be applied to future email sends",
+
+          "fields": {
+            "name": {
+              "label": "Email Name",
+              "placeholder": "Enter email name",
+              "tooltip": "A descriptive name for this email record",
+              "description": "Primary name of the email record"
+            },
+            "template_id": {
+              "label": "Template",
+              "placeholder": "Select a template",
+              "tooltip": "Choose the email template to use for this email",
+              "description": "Email template that will be used for this email"
+            },
+            "context": {
+              "label": "Context",
+              "placeholder": "Enter email context (optional)",
+              "tooltip": "Additional context or notes about this email",
+              "description": "Optional context information about the email"
+            },
+            "to_user_id": {
+              "label": "User ID",
+              "placeholder": "Enter user ID (optional)",
+              "tooltip": "Specific user who will receive this email",
+              "description": "Target user who will receive this email"
+            },
+            "to_entity_id": {
+              "label": "Entity ID",
+              "placeholder": "Enter entity ID (optional)",
+              "tooltip": "Specific entity that will receive this email",
+              "description": "Target entity that will receive this email"
+            }
+          },
+
+          "actions": {
+            "submit": "Update Email",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error updating email",
+            "success": "Email updated successfully",
+            "warning": "Please review your changes"
+          }
+        }
+      },
+
+      "validation": {
+        "nameRequired": "Email name is required",
+        "nameTooShort": "Email name is too short (minimum 3 characters)",
+        "nameTooLong": "Email name is too long (maximum 100 characters)",
+        "templateIdRequired": "Template is required",
+        "invalidTemplateId": "Invalid template ID format",
+        "contextTooLong": "Context is too long (maximum 500 characters)",
+        "invalidUserId": "Invalid user ID format",
+        "invalidEntityId": "Invalid entity ID format"
+      }
+    },
+
+    "email-template": {
+      "form": {
+        "create": {
+          "title": "Create Email Template",
+          "subtitle": "Create a new email template",
+          "description": "Design and configure an email template for your campaigns",
+          "footer": "Templates can be reused across multiple email campaigns",
+
+          "fields": {
+            "name": {
+              "label": "Template Name",
+              "placeholder": "Enter template name",
+              "tooltip": "A descriptive name for this email template",
+              "description": "Primary name of the email template"
+            },
+            "subject": {
+              "label": "Subject Line",
+              "placeholder": "Enter email subject",
+              "tooltip": "The subject line that will appear in the email",
+              "description": "Email subject line for this template"
+            },
+            "structure": {
+              "label": "Template Structure",
+              "placeholder": "Configure template structure",
+              "tooltip": "Define the template structure and variables",
+              "description": "Template structure configuration",
+              "variables": {
+                "label": "Variables",
+                "placeholder": "Add template variables",
+                "tooltip": "Define variables that can be used in the template",
+                "description": "Template variables configuration"
+              },
+              "template_config": {
+                "label": "Template Configuration",
+                "placeholder": "Configure template settings",
+                "tooltip": "Advanced template configuration options",
+                "description": "Template configuration settings"
+              },
+              "conditions": {
+                "label": "Conditions",
+                "placeholder": "Set template conditions",
+                "tooltip": "Define conditions for template usage",
+                "description": "Template usage conditions"
+              }
+            },
+            "description": {
+              "label": "Description",
+              "placeholder": "Enter template description",
+              "tooltip": "Optional description of the template purpose",
+              "description": "Template description and notes"
+            },
+            "layout_id": {
+              "label": "Layout",
+              "placeholder": "Select a layout",
+              "tooltip": "Choose the email layout for this template",
+              "description": "Email layout to use with this template"
+            },
+            "html_content": {
+              "label": "HTML Content",
+              "placeholder": "Enter HTML content",
+              "tooltip": "The HTML content of the email template",
+              "description": "Email template HTML content"
+            }
+          },
+
+          "actions": {
+            "submit": "Create Template",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error creating template",
+            "success": "Template created successfully",
+            "warning": "Please review your template"
+          }
+        },
+
+        "update": {
+          "title": "Update Email Template",
+          "subtitle": "Update an existing email template",
+          "description": "Modify the template structure and content",
+          "footer": "Changes will affect all emails using this template",
+
+          "fields": {
+            "name": {
+              "label": "Template Name",
+              "placeholder": "Enter template name",
+              "tooltip": "A descriptive name for this email template",
+              "description": "Primary name of the email template"
+            },
+            "subject": {
+              "label": "Subject Line",
+              "placeholder": "Enter email subject",
+              "tooltip": "The subject line that will appear in the email",
+              "description": "Email subject line for this template"
+            },
+            "variables": {
+              "label": "Variables",
+              "placeholder": "Configure variables",
+              "tooltip": "Manage template variables",
+              "description": "Template variables configuration"
+            },
+            "structure": {
+              "label": "Template Structure",
+              "placeholder": "Configure template structure",
+              "tooltip": "Define the template structure and variables",
+              "description": "Template structure configuration"
+            },
+            "description": {
+              "label": "Description",
+              "placeholder": "Enter template description",
+              "tooltip": "Optional description of the template purpose",
+              "description": "Template description and notes"
+            }
+          },
+
+          "actions": {
+            "submit": "Update Template",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error updating template",
+            "success": "Template updated successfully",
+            "warning": "Please review your changes"
+          }
+        }
+      },
+
+      "validation": {
+        "nameRequired": "Template name is required",
+        "nameTooShort": "Template name is too short (minimum 3 characters)",
+        "nameTooLong": "Template name is too long (maximum 100 characters)",
+        "subjectRequired": "Subject line is required",
+        "subjectTooShort": "Subject line is too short (minimum 3 characters)",
+        "subjectTooLong": "Subject line is too long (maximum 200 characters)",
+        "descriptionTooLong": "Description is too long (maximum 500 characters)",
+        "invalidVariables": "Invalid variables configuration",
+        "invalidStructure": "Invalid template structure",
+        "layoutIdRequired": "Layout is required",
+        "invalidLayoutId": "Invalid layout ID format",
+        "structureInvalid": "Template structure is invalid",
+        "variablesInvalid": "Variables configuration is invalid",
+        "templateConfigInvalid": "Template configuration is invalid",
+        "conditionsInvalid": "Conditions configuration is invalid"
+      }
+    },
+
+    "email-layout": {
+      "form": {
+        "create": {
+          "title": "Create Email Layout",
+          "subtitle": "Create a new email layout",
+          "description": "Design the visual structure and styling for email templates",
+          "footer": "Layouts provide consistent styling across multiple templates",
+
+          "fields": {
+            "name": {
+              "label": "Layout Name",
+              "placeholder": "Enter layout name",
+              "tooltip": "A descriptive name for this email layout",
+              "description": "Primary name of the email layout"
+            },
+            "html_content": {
+              "label": "HTML Content",
+              "placeholder": "Enter HTML content",
+              "tooltip": "The HTML structure of the email layout",
+              "description": "Email layout HTML content"
+            },
+            "description": {
+              "label": "Description",
+              "placeholder": "Enter layout description",
+              "tooltip": "Optional description of the layout purpose",
+              "description": "Layout description and notes"
+            },
+            "structure": {
+              "label": "Layout Structure",
+              "placeholder": "Configure layout structure",
+              "tooltip": "Define the layout structure and components",
+              "description": "Layout structure configuration"
+            },
+            "provider": {
+              "label": "Provider",
+              "placeholder": "Select email provider",
+              "tooltip": "Choose the email service provider",
+              "description": "Email service provider for this layout"
+            }
+          },
+
+          "actions": {
+            "submit": "Create Layout",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error creating layout",
+            "success": "Layout created successfully",
+            "warning": "Please review your layout"
+          }
+        },
+
+        "update": {
+          "title": "Update Email Layout",
+          "subtitle": "Update an existing email layout",
+          "description": "Modify the layout structure and styling",
+          "footer": "Changes will affect all templates using this layout",
+
+          "fields": {
+            "name": {
+              "label": "Layout Name",
+              "placeholder": "Enter layout name",
+              "tooltip": "A descriptive name for this email layout",
+              "description": "Primary name of the email layout"
+            },
+            "html_content": {
+              "label": "HTML Content",
+              "placeholder": "Enter HTML content",
+              "tooltip": "The HTML structure of the email layout",
+              "description": "Email layout HTML content"
+            },
+            "description": {
+              "label": "Description",
+              "placeholder": "Enter layout description",
+              "tooltip": "Optional description of the layout purpose",
+              "description": "Layout description and notes"
+            },
+            "structure": {
+              "label": "Layout Structure",
+              "placeholder": "Configure layout structure",
+              "tooltip": "Define the layout structure and components",
+              "description": "Layout structure configuration"
+            }
+          },
+
+          "actions": {
+            "submit": "Update Layout",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error updating layout",
+            "success": "Layout updated successfully",
+            "warning": "Please review your changes"
+          }
+        }
+      },
+
+      "validation": {
+        "nameRequired": "Layout name is required",
+        "nameTooShort": "Layout name is too short (minimum 3 characters)",
+        "nameTooLong": "Layout name is too long (maximum 100 characters)",
+        "nameInvalidFormat": "Layout name contains invalid characters",
+        "htmlContentRequired": "HTML content is required",
+        "htmlContentTooShort": "HTML content is too short (minimum 10 characters)",
+        "htmlContentTooLong": "HTML content is too long (maximum 10000 characters)",
+        "descriptionTooLong": "Description is too long (maximum 500 characters)",
+        "invalidStructure": "Invalid layout structure",
+        "providerRequired": "Provider is required",
+        "providerInvalid": "Invalid provider selection"
+      }
+    },
+
+    "send-email": {
+      "form": {
+        "create": {
+          "title": "Send Email",
+          "subtitle": "Send an email to recipients",
+          "description": "Send an email using a template to selected recipients",
+          "footer": "Email will be queued for delivery",
+
+          "fields": {
+            "email_id": {
+              "label": "Email",
+              "placeholder": "Select email to send",
+              "tooltip": "Choose the email record to send",
+              "description": "Email record to send"
+            },
+            "template_id": {
+              "label": "Template",
+              "placeholder": "Select template",
+              "tooltip": "Choose the email template to use",
+              "description": "Email template for sending"
+            },
+            "recipients": {
+              "label": "Recipients",
+              "placeholder": "Add recipient email addresses",
+              "tooltip": "Email addresses of the recipients",
+              "description": "List of email recipients"
+            },
+            "cc": {
+              "label": "CC",
+              "placeholder": "Add CC email addresses",
+              "tooltip": "Email addresses to copy",
+              "description": "CC recipients"
+            },
+            "cci": {
+              "label": "BCC",
+              "placeholder": "Add BCC email addresses",
+              "tooltip": "Email addresses to blind copy",
+              "description": "BCC recipients"
+            },
+            "subject": {
+              "label": "Subject",
+              "placeholder": "Enter email subject",
+              "tooltip": "Subject line for the email",
+              "description": "Email subject line"
+            },
+            "pre_header": {
+              "label": "Pre-header",
+              "placeholder": "Enter pre-header text",
+              "tooltip": "Pre-header text shown in email preview",
+              "description": "Email pre-header text"
+            },
+            "text": {
+              "label": "Text Content",
+              "placeholder": "Enter text content",
+              "tooltip": "Plain text version of the email",
+              "description": "Plain text email content"
+            },
+            "global_variables": {
+              "label": "Global Variables",
+              "placeholder": "Configure global variables",
+              "tooltip": "Global variables for template rendering",
+              "description": "Global template variables"
+            },
+            "from_email_id": {
+              "label": "From Email",
+              "placeholder": "Select sender email",
+              "tooltip": "Email address to send from",
+              "description": "Sender email address"
+            },
+            "provider": {
+              "label": "Provider",
+              "placeholder": "Select email provider",
+              "tooltip": "Email service provider",
+              "description": "Email service provider"
+            }
+          },
+
+          "actions": {
+            "submit": "Send Email",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error sending email",
+            "success": "Email sent successfully",
+            "warning": "Please review your email"
+          }
+        }
+      },
+
+      "validation": {
+        "emailIdRequired": "Email is required",
+        "invalidEmailId": "Invalid email ID format",
+        "invalidTemplateId": "Invalid template ID format",
+        "recipientsRequired": "Recipients are required",
+        "recipientsTooFew": "At least one recipient is required",
+        "recipientsTooMany": "Too many recipients (maximum 100)",
+        "invalidEmailFormat": "Invalid email address format",
+        "subjectRequired": "Subject is required",
+        "subjectTooShort": "Subject is too short (minimum 3 characters)",
+        "subjectTooLong": "Subject is too long (maximum 200 characters)",
+        "preHeaderTooLong": "Pre-header is too long (maximum 100 characters)",
+        "textTooLong": "Text content is too long (maximum 5000 characters)",
+        "invalidFromEmailId": "Invalid sender email ID format"
+      }
+    }
+  }
+}

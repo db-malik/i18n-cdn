@@ -116,6 +116,86 @@
         "amountRequired": "Amount is required",
         "amountTooLow": "Amount must be greater than {{min}}"
       }
+    },
+    "asset": {
+      "form": {
+        "create": {
+          "title": "Create Crypto Asset",
+          "subtitle": "Register a new cryptocurrency asset",
+          "description": "Fill out the form below to create a new crypto asset",
+          "footer": "All fields marked with * are required. Please ensure all information is accurate.",
+          "fields": {
+            "name": {
+              "label": "Asset Name",
+              "placeholder": "Enter the asset name",
+              "description": "Name of the crypto asset",
+              "tooltip": "Enter a descriptive name for this cryptocurrency asset"
+            },
+            "symbol": {
+              "label": "Symbol",
+              "placeholder": "Enter the asset symbol",
+              "description": "Symbol of the crypto asset",
+              "tooltip": "The symbol or ticker for the cryptocurrency asset"
+            },
+            "assetType": {
+              "label": "Asset Type",
+              "placeholder": "Select asset type",
+              "description": "Type of the crypto asset",
+              "tooltip": "The category or type of the cryptocurrency asset"
+            },
+            "network": {
+              "label": "Network",
+              "placeholder": "Select network",
+              "description": "Blockchain network for the asset",
+              "tooltip": "The blockchain network on which this asset exists"
+            },
+            "picture": {
+              "label": "Picture",
+              "placeholder": "Upload asset image",
+              "description": "Image representing the asset",
+              "tooltip": "Upload a logo or image for the asset"
+            },
+            "decimal": {
+              "label": "Decimal",
+              "placeholder": "Enter decimal places",
+              "description": "Number of decimal places",
+              "tooltip": "The number of decimal places supported by the asset"
+            },
+            "totalSupply": {
+              "label": "Total Supply",
+              "placeholder": "Enter total supply",
+              "description": "Total supply of the asset",
+              "tooltip": "The total number of units for this asset"
+            },
+            "features": {
+              "label": "Features",
+              "placeholder": "Enter features",
+              "description": "Special features of the asset",
+              "tooltip": "List any special features or properties of the asset"
+            }
+          },
+          "actions": {
+            "submit": "Create Asset",
+            "cancel": "Cancel",
+            "reset": "Reset Form",
+            "error": "An error occurred while creating the asset",
+            "success": "Asset created successfully"
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Asset name is required",
+        "nameTooShort": "Asset name is too short (minimum {{min}} characters)",
+        "nameTooLong": "Asset name is too long (maximum {{max}} characters)",
+        "symbolRequired": "Symbol is required",
+        "assetTypeRequired": "Asset type is required",
+        "networkRequired": "Network is required",
+        "decimalRequired": "Decimal is required",
+        "decimalTooLow": "Decimal must be at least {{min}}",
+        "decimalTooHigh": "Decimal must be at most {{max}}",
+        "totalSupplyRequired": "Total supply is required",
+        "totalSupplyTooLow": "Total supply must be greater than {{min}}"
+      }
     }
   }
 }
