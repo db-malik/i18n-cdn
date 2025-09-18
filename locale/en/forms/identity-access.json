@@ -1,0 +1,348 @@
+{
+  "identity-access": {
+    "sign-in": {
+      "form": {
+        "create": {
+          "title": "Sign In",
+          "subtitle": "Access your account",
+          "description": "Enter your credentials to sign in to your account",
+          "footer": "Don't have an account? Sign up to get started",
+          "fields": {
+            "email": {
+              "label": "Email Address",
+              "placeholder": "Enter your email address",
+              "tooltip": "Your registered email address",
+              "description": "Email address used for account login"
+            },
+            "password": {
+              "label": "Password",
+              "placeholder": "Enter your password",
+              "tooltip": "Your account password",
+              "description": "Password for your account"
+            }
+          },
+          "actions": {
+            "submit": "Sign In",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "forgot_password": "Forgot Password?",
+            "create_account": "Create Account",
+            "error": "Sign in failed",
+            "success": "Successfully signed in",
+            "warning": "Please check your credentials"
+          }
+        }
+      },
+      "validation": {
+        "invalid_credentials": "Invalid email or password",
+        "account_locked": "Account is locked",
+        "session_expired": "Session has expired",
+        "email_required": "Email is required",
+        "password_required": "Password is required",
+        "invalid_email": "Invalid email format",
+        "password_too_short": "Password is too short"
+      }
+    },
+    "sign-up": {
+      "form": {
+        "create": {
+          "title": "Create Account",
+          "subtitle": "Join the platform",
+          "description": "Create your account to get started",
+          "footer": "Already have an account? Sign in here",
+          "fields": {
+            "first_name": {
+              "label": "First Name",
+              "placeholder": "Enter your first name",
+              "tooltip": "Your given name",
+              "description": "Your first name"
+            },
+            "last_name": {
+              "label": "Last Name",
+              "placeholder": "Enter your last name",
+              "tooltip": "Your family name",
+              "description": "Your last name"
+            },
+            "email": {
+              "label": "Email Address",
+              "placeholder": "Enter your email address",
+              "tooltip": "Your email address",
+              "description": "Email address for your account"
+            },
+            "password": {
+              "label": "Password",
+              "placeholder": "Create a password",
+              "tooltip": "Create a strong password",
+              "description": "Password for your account"
+            },
+            "confirm_password": {
+              "label": "Confirm Password",
+              "placeholder": "Confirm your password",
+              "tooltip": "Re-enter your password",
+              "description": "Confirm your password"
+            }
+          },
+          "actions": {
+            "submit": "Create Account",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "already_have_account": "Already have an account?",
+            "error": "Account creation failed",
+            "success": "Account created successfully",
+            "warning": "Please review your information"
+          }
+        }
+      },
+      "validation": {
+        "first_name_required": "First name is required",
+        "last_name_required": "Last name is required",
+        "email_required": "Email is required",
+        "password_required": "Password is required",
+        "confirm_password_required": "Password confirmation is required",
+        "invalid_email": "Invalid email format",
+        "password_too_short": "Password is too short",
+        "password_too_weak": "Password is too weak",
+        "passwords_do_not_match": "Passwords do not match",
+        "email_already_exists": "Email already exists"
+      }
+    },
+    "profile": {
+      "form": {
+        "update": {
+          "title": "Update Profile",
+          "subtitle": "Manage your profile information",
+          "description": "Update your personal information",
+          "footer": "Changes will be saved to your profile",
+          "fields": {
+            "first_name": {
+              "label": "First Name",
+              "placeholder": "Enter your first name",
+              "tooltip": "Your given name",
+              "description": "Your first name"
+            },
+            "last_name": {
+              "label": "Last Name",
+              "placeholder": "Enter your last name",
+              "tooltip": "Your family name",
+              "description": "Your last name"
+            },
+            "email": {
+              "label": "Email Address",
+              "placeholder": "Enter your email address",
+              "tooltip": "Your email address",
+              "description": "Email address for your account"
+            },
+            "phone": {
+              "label": "Phone Number",
+              "placeholder": "Enter your phone number",
+              "tooltip": "Your phone number",
+              "description": "Your contact phone number"
+            },
+            "upload_avatar": {
+              "label": "Profile Picture",
+              "placeholder": "Upload profile picture",
+              "tooltip": "Upload your profile picture",
+              "description": "Your profile picture"
+            }
+          },
+          "actions": {
+            "submit": "Update Profile",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Profile update failed",
+            "success": "Profile updated successfully",
+            "warning": "Please review your changes"
+          }
+        }
+      },
+      "validation": {
+        "first_name_required": "First name is required",
+        "first_name_too_long": "First name is too long",
+        "last_name_required": "Last name is required",
+        "last_name_too_long": "Last name is too long",
+        "email_required": "Email is required",
+        "invalid_email": "Invalid email format",
+        "invalid_phone": "Invalid phone number",
+        "email_already_exists": "Email already exists",
+        "file_too_large": "File is too large",
+        "invalid_file_type": "Invalid file type",
+        "upload_required": "File upload is required"
+      }
+    },
+    "add-email": {
+      "form": {
+        "create": {
+          "title": "Add Email",
+          "subtitle": "Add a new email address",
+          "description": "Add an additional email address to your account",
+          "footer": "You can add multiple email addresses",
+          "fields": {
+            "email": {
+              "label": "Email Address",
+              "placeholder": "Enter email address",
+              "tooltip": "Additional email address",
+              "description": "Email address to add to your account"
+            }
+          },
+          "actions": {
+            "submit": "Add Email",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Failed to add email",
+            "success": "Email added successfully",
+            "warning": "Please check the email address"
+          }
+        }
+      },
+      "validation": {
+        "email_required": "Email is required",
+        "invalid_email": "Invalid email format",
+        "email_already_exists": "Email already exists"
+      }
+    },
+    "add-phone": {
+      "form": {
+        "create": {
+          "title": "Add Phone",
+          "subtitle": "Add a phone number",
+          "description": "Add a phone number to your account",
+          "footer": "Phone number for account verification",
+          "fields": {
+            "phone": {
+              "label": "Phone Number",
+              "placeholder": "Enter phone number",
+              "tooltip": "Your phone number",
+              "description": "Phone number to add to your account"
+            }
+          },
+          "actions": {
+            "submit": "Add Phone",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Failed to add phone",
+            "success": "Phone added successfully",
+            "warning": "Please check the phone number"
+          }
+        }
+      },
+      "validation": {
+        "phone_required": "Phone number is required",
+        "phone_too_short": "Phone number is too short",
+        "phone_too_long": "Phone number is too long",
+        "invalid_phone": "Invalid phone number",
+        "phone_already_exists": "Phone number already exists"
+      }
+    },
+    "accept-invitation": {
+      "form": {
+        "create": {
+          "title": "Accept Invitation",
+          "subtitle": "Complete your account setup",
+          "description": "Accept the invitation and complete your account setup",
+          "footer": "Complete the form to join the platform",
+          "fields": {
+            "id": {
+              "label": "Invitation ID",
+              "placeholder": "Enter invitation ID",
+              "tooltip": "Invitation reference ID",
+              "description": "Unique invitation identifier"
+            },
+            "email": {
+              "label": "Email Address",
+              "placeholder": "Enter your email address",
+              "tooltip": "Your email address",
+              "description": "Email address for your account"
+            },
+            "first_name": {
+              "label": "First Name",
+              "placeholder": "Enter your first name",
+              "tooltip": "Your given name",
+              "description": "Your first name"
+            },
+            "last_name": {
+              "label": "Last Name",
+              "placeholder": "Enter your last name",
+              "tooltip": "Your family name",
+              "description": "Your last name"
+            },
+            "password": {
+              "label": "Password",
+              "placeholder": "Create a password",
+              "tooltip": "Create a strong password",
+              "description": "Password for your account"
+            },
+            "confirm_password": {
+              "label": "Confirm Password",
+              "placeholder": "Confirm your password",
+              "tooltip": "Re-enter your password",
+              "description": "Confirm your password"
+            }
+          },
+          "actions": {
+            "submit": "Accept Invitation",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Failed to accept invitation",
+            "success": "Invitation accepted successfully",
+            "warning": "Please review your information"
+          }
+        }
+      },
+      "validation": {
+        "id_required": "Invitation ID is required",
+        "invalid_id": "Invalid invitation ID",
+        "email_required": "Email is required",
+        "invalid_email": "Invalid email format",
+        "first_name_required": "First name is required",
+        "last_name_required": "Last name is required",
+        "password_required": "Password is required",
+        "password_too_short": "Password is too short",
+        "confirm_password_required": "Password confirmation is required",
+        "passwords_do_not_match": "Passwords do not match",
+        "invitation_expired": "Invitation has expired",
+        "invitation_not_found": "Invitation not found"
+      }
+    },
+    "feature": {
+      "form": {
+        "create": {
+          "title": "Create Feature",
+          "subtitle": "Add a new feature",
+          "description": "Create a new feature for the platform",
+          "footer": "Features define platform capabilities",
+          "fields": {
+            "name": {
+              "label": "Feature Name",
+              "placeholder": "Enter feature name",
+              "tooltip": "Name of the feature",
+              "description": "Unique name for the feature"
+            },
+            "description": {
+              "label": "Description",
+              "placeholder": "Enter feature description",
+              "tooltip": "Description of the feature",
+              "description": "Detailed description of the feature"
+            },
+            "permissions": {
+              "label": "Permissions",
+              "placeholder": "Select permissions",
+              "tooltip": "Permissions for this feature",
+              "description": "Permissions associated with this feature"
+            }
+          },
+          "actions": {
+            "submit": "Create Feature",
+            "cancel": "Cancel",
+            "reset": "Reset"
+          }
+        }
+      },
+      "validation": {
+        "description_too_long": "Description is too long",
+        "name_required": "Feature name is required",
+        "name_too_long": "Feature name is too long",
+        "description_required": "Description is required"
+      }
+    }
+  }
+}

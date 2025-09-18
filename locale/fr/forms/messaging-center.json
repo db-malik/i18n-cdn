@@ -1,474 +1,181 @@
 {
   "messaging-center": {
-    "email": {
+    "sendEmail": {
       "form": {
         "create": {
-          "title": "Créer un Email",
-          "subtitle": "Créer un nouvel enregistrement d'email lié à un modèle",
-          "description": "Créer un email qui sera envoyé en utilisant un modèle prédéfini",
-          "footer": "Après avoir créé cet email, vous pourrez l'envoyer aux destinataires",
-
+          "title": "Envoyer un Email",
+          "subtitle": "Composer et envoyer un email",
+          "description": "Créer et envoyer un email aux destinataires",
+          "footer": "Les emails sont envoyés via les fournisseurs configurés",
           "fields": {
-            "name": {
-              "label": "Nom de l'Email",
-              "placeholder": "Entrez le nom de l'email",
-              "tooltip": "Un nom descriptif pour cet enregistrement d'email",
-              "description": "Nom principal de l'enregistrement d'email"
+            "email_id": {
+              "label": "Modèle d'Email",
+              "description": "Sélectionnez le modèle d'email à utiliser",
+              "placeholder": "Choisir le modèle d'email"
             },
             "template_id": {
               "label": "Modèle",
-              "placeholder": "Sélectionnez un modèle",
-              "tooltip": "Choisissez le modèle d'email à utiliser pour cet email",
-              "description": "Modèle d'email qui sera utilisé pour cet email"
+              "description": "Sélectionnez le modèle d'email",
+              "placeholder": "Choisir le modèle"
             },
-            "context": {
-              "label": "Contexte",
-              "placeholder": "Entrez le contexte de l'email (optionnel)",
-              "tooltip": "Contexte ou notes supplémentaires sur cet email",
-              "description": "Informations contextuelles optionnelles sur l'email"
+            "recipients": {
+              "label": "Destinataires",
+              "description": "Ajouter des destinataires d'email",
+              "placeholder": "Ajouter des destinataires"
             },
-            "to_user_id": {
-              "label": "ID Utilisateur",
-              "placeholder": "Entrez l'ID utilisateur (optionnel)",
-              "tooltip": "Utilisateur spécifique qui recevra cet email",
-              "description": "Utilisateur cible qui recevra cet email"
+            "subject": {
+              "label": "Sujet",
+              "description": "Entrez le sujet de l'email",
+              "placeholder": "Entrez le sujet"
             },
-            "to_entity_id": {
-              "label": "ID Entité",
-              "placeholder": "Entrez l'ID entité (optionnel)",
-              "tooltip": "Entité spécifique qui recevra cet email",
-              "description": "Entité cible qui recevra cet email"
+            "pre_header": {
+              "label": "Pré-en-tête",
+              "description": "Texte de pré-en-tête optionnel",
+              "placeholder": "Entrez le pré-en-tête"
+            },
+            "text": {
+              "label": "Texte Brut",
+              "description": "Contenu en texte brut pour l'email",
+              "placeholder": "Entrez le contenu en texte brut"
+            },
+            "cc": {
+              "label": "CC",
+              "description": "Destinataires en copie",
+              "placeholder": "Ajouter des destinataires CC"
+            },
+            "cci": {
+              "label": "CCI",
+              "description": "Destinataires en copie cachée",
+              "placeholder": "Ajouter des destinataires CCI"
+            },
+            "from_email_id": {
+              "label": "Email Expéditeur",
+              "description": "Sélectionnez l'adresse email de l'expéditeur",
+              "placeholder": "Choisir l'email expéditeur"
             }
-          },
-
-          "actions": {
-            "submit": "Créer l'Email",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser",
-            "error": "Erreur lors de la création de l'email",
-            "success": "Email créé avec succès",
-            "warning": "Veuillez vérifier votre saisie"
-          }
-        },
-
-        "update": {
-          "title": "Modifier l'Email",
-          "subtitle": "Modifier un enregistrement d'email existant",
-          "description": "Modifier l'enregistrement d'email et son association de modèle",
-          "footer": "Les modifications seront appliquées aux futurs envois d'emails",
-
-          "fields": {
-            "name": {
-              "label": "Nom de l'Email",
-              "placeholder": "Entrez le nom de l'email",
-              "tooltip": "Un nom descriptif pour cet enregistrement d'email",
-              "description": "Nom principal de l'enregistrement d'email"
-            },
-            "template_id": {
-              "label": "Modèle",
-              "placeholder": "Sélectionnez un modèle",
-              "tooltip": "Choisissez le modèle d'email à utiliser pour cet email",
-              "description": "Modèle d'email qui sera utilisé pour cet email"
-            },
-            "context": {
-              "label": "Contexte",
-              "placeholder": "Entrez le contexte de l'email (optionnel)",
-              "tooltip": "Contexte ou notes supplémentaires sur cet email",
-              "description": "Informations contextuelles optionnelles sur l'email"
-            },
-            "to_user_id": {
-              "label": "ID Utilisateur",
-              "placeholder": "Entrez l'ID utilisateur (optionnel)",
-              "tooltip": "Utilisateur spécifique qui recevra cet email",
-              "description": "Utilisateur cible qui recevra cet email"
-            },
-            "to_entity_id": {
-              "label": "ID Entité",
-              "placeholder": "Entrez l'ID entité (optionnel)",
-              "tooltip": "Entité spécifique qui recevra cet email",
-              "description": "Entité cible qui recevra cet email"
-            }
-          },
-
-          "actions": {
-            "submit": "Modifier l'Email",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser",
-            "error": "Erreur lors de la modification de l'email",
-            "success": "Email modifié avec succès",
-            "warning": "Veuillez vérifier vos modifications"
           }
         }
       },
-
       "validation": {
-        "nameRequired": "Le nom de l'email est requis",
-        "nameTooShort": "Le nom de l'email est trop court (minimum 3 caractères)",
-        "nameTooLong": "Le nom de l'email est trop long (maximum 100 caractères)",
-        "templateIdRequired": "Le modèle est requis",
-        "invalidTemplateId": "Format d'ID de modèle invalide",
-        "contextTooLong": "Le contexte est trop long (maximum 500 caractères)",
-        "invalidUserId": "Format d'ID utilisateur invalide",
-        "invalidEntityId": "Format d'ID entité invalide"
+        "emailIdRequired": "L'ID de l'email est requis",
+        "recipientsRequired": "Au moins un destinataire est requis",
+        "subjectRequired": "Le sujet est requis",
+        "subjectTooLong": "Le sujet est trop long",
+        "preHeaderTooLong": "Le pré-en-tête est trop long",
+        "textTooLong": "Le contenu texte est trop long",
+        "invalidEmail": "Adresse email invalide",
+        "recipientsTooMany": "Trop de destinataires"
       }
     },
-
-    "email-template": {
+    "createEmailTemplate": {
       "form": {
         "create": {
           "title": "Créer un Modèle d'Email",
           "subtitle": "Créer un nouveau modèle d'email",
-          "description": "Concevoir et configurer un modèle d'email pour vos campagnes",
-          "footer": "Les modèles peuvent être réutilisés dans plusieurs campagnes d'email",
-
+          "description": "Créer un nouveau modèle d'email pour l'envoi d'emails",
+          "footer": "Les modèles peuvent être réutilisés pour plusieurs emails",
           "fields": {
             "name": {
               "label": "Nom du Modèle",
-              "placeholder": "Entrez le nom du modèle",
-              "tooltip": "Un nom descriptif pour ce modèle d'email",
-              "description": "Nom principal du modèle d'email"
+              "description": "Entrez un nom pour le modèle",
+              "placeholder": "Entrez le nom du modèle"
             },
             "subject": {
-              "label": "Ligne d'Objet",
-              "placeholder": "Entrez l'objet de l'email",
-              "tooltip": "La ligne d'objet qui apparaîtra dans l'email",
-              "description": "Ligne d'objet de l'email pour ce modèle"
+              "label": "Sujet",
+              "description": "Entrez le sujet de l'email",
+              "placeholder": "Entrez le sujet"
             },
-            "structure": {
-              "label": "Structure du Modèle",
-              "placeholder": "Configurer la structure du modèle",
-              "tooltip": "Définir la structure du modèle et les variables",
-              "description": "Configuration de la structure du modèle",
-              "variables": {
-                "label": "Variables",
-                "placeholder": "Ajouter des variables de modèle",
-                "tooltip": "Définir les variables utilisables dans le modèle",
-                "description": "Configuration des variables du modèle"
-              },
-              "template_config": {
-                "label": "Configuration du Modèle",
-                "placeholder": "Configurer les paramètres du modèle",
-                "tooltip": "Options de configuration avancées du modèle",
-                "description": "Paramètres de configuration du modèle"
-              },
-              "conditions": {
-                "label": "Conditions",
-                "placeholder": "Définir les conditions du modèle",
-                "tooltip": "Définir les conditions d'utilisation du modèle",
-                "description": "Conditions d'utilisation du modèle"
-              }
+            "html_content": {
+              "label": "Contenu HTML",
+              "description": "Entrez le contenu HTML",
+              "placeholder": "Entrez le contenu HTML"
             },
-            "description": {
-              "label": "Description",
-              "placeholder": "Entrez la description du modèle",
-              "tooltip": "Description optionnelle du but du modèle",
-              "description": "Description et notes du modèle"
+            "text_content": {
+              "label": "Contenu Texte",
+              "description": "Entrez le contenu en texte brut",
+              "placeholder": "Entrez le contenu texte"
             },
             "layout_id": {
               "label": "Mise en Page",
-              "placeholder": "Sélectionnez une mise en page",
-              "tooltip": "Choisir la mise en page d'email pour ce modèle",
-              "description": "Mise en page d'email à utiliser avec ce modèle"
+              "description": "Sélectionnez la mise en page de l'email",
+              "placeholder": "Choisir la mise en page"
             },
-            "html_content": {
-              "label": "Contenu HTML",
-              "placeholder": "Entrez le contenu HTML",
-              "tooltip": "Le contenu HTML du modèle d'email",
-              "description": "Contenu HTML du modèle d'email"
-            }
-          },
-
-          "actions": {
-            "submit": "Créer le Modèle",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser",
-            "error": "Erreur lors de la création du modèle",
-            "success": "Modèle créé avec succès",
-            "warning": "Veuillez vérifier votre modèle"
-          }
-        },
-
-        "update": {
-          "title": "Modifier le Modèle d'Email",
-          "subtitle": "Modifier un modèle d'email existant",
-          "description": "Modifier la structure et le contenu du modèle",
-          "footer": "Les modifications affecteront tous les emails utilisant ce modèle",
-
-          "fields": {
-            "name": {
-              "label": "Nom du Modèle",
-              "placeholder": "Entrez le nom du modèle",
-              "tooltip": "Un nom descriptif pour ce modèle d'email",
-              "description": "Nom principal du modèle d'email"
-            },
-            "subject": {
-              "label": "Ligne d'Objet",
-              "placeholder": "Entrez l'objet de l'email",
-              "tooltip": "La ligne d'objet qui apparaîtra dans l'email",
-              "description": "Ligne d'objet de l'email pour ce modèle"
+            "from_id": {
+              "label": "Email Expéditeur",
+              "description": "Sélectionnez l'email de l'expéditeur",
+              "placeholder": "Choisir l'email expéditeur"
             },
             "variables": {
               "label": "Variables",
-              "placeholder": "Configurer les variables",
-              "tooltip": "Gérer les variables du modèle",
-              "description": "Configuration des variables du modèle"
-            },
-            "structure": {
-              "label": "Structure du Modèle",
-              "placeholder": "Configurer la structure du modèle",
-              "tooltip": "Définir la structure du modèle et les variables",
-              "description": "Configuration de la structure du modèle"
+              "description": "Définir les variables du modèle",
+              "placeholder": "Ajouter des variables"
             },
             "description": {
               "label": "Description",
-              "placeholder": "Entrez la description du modèle",
-              "tooltip": "Description optionnelle du but du modèle",
-              "description": "Description et notes du modèle"
+              "description": "Entrez la description du modèle",
+              "placeholder": "Entrez la description"
             }
-          },
-
-          "actions": {
-            "submit": "Modifier le Modèle",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser",
-            "error": "Erreur lors de la modification du modèle",
-            "success": "Modèle modifié avec succès",
-            "warning": "Veuillez vérifier vos modifications"
           }
         }
-      },
-
-      "validation": {
-        "nameRequired": "Le nom du modèle est requis",
-        "nameTooShort": "Le nom du modèle est trop court (minimum 3 caractères)",
-        "nameTooLong": "Le nom du modèle est trop long (maximum 100 caractères)",
-        "subjectRequired": "La ligne d'objet est requise",
-        "subjectTooShort": "La ligne d'objet est trop courte (minimum 3 caractères)",
-        "subjectTooLong": "La ligne d'objet est trop longue (maximum 200 caractères)",
-        "descriptionTooLong": "La description est trop longue (maximum 500 caractères)",
-        "invalidVariables": "Configuration des variables invalide",
-        "invalidStructure": "Structure du modèle invalide",
-        "layoutIdRequired": "La mise en page est requise",
-        "invalidLayoutId": "Format d'ID de mise en page invalide",
-        "structureInvalid": "La structure du modèle est invalide",
-        "variablesInvalid": "La configuration des variables est invalide",
-        "templateConfigInvalid": "La configuration du modèle est invalide",
-        "conditionsInvalid": "La configuration des conditions est invalide"
       }
     },
-
-    "email-layout": {
+    "createEmailLayout": {
       "form": {
         "create": {
           "title": "Créer une Mise en Page d'Email",
-          "subtitle": "Créer une nouvelle mise en page d'email",
-          "description": "Concevoir la structure visuelle et le style pour les modèles d'email",
-          "footer": "Les mises en page fournissent un style cohérent à travers plusieurs modèles",
-
+          "subtitle": "Créer un nouveau modèle de mise en page d'email",
+          "description": "Créer un nouveau modèle de mise en page d'email",
+          "footer": "Les mises en page définissent la structure des modèles d'email",
           "fields": {
             "name": {
               "label": "Nom de la Mise en Page",
-              "placeholder": "Entrez le nom de la mise en page",
-              "tooltip": "Un nom descriptif pour cette mise en page d'email",
-              "description": "Nom principal de la mise en page d'email"
+              "description": "Entrez un nom pour la mise en page",
+              "placeholder": "Entrez le nom de la mise en page"
             },
             "html_content": {
               "label": "Contenu HTML",
-              "placeholder": "Entrez le contenu HTML",
-              "tooltip": "La structure HTML de la mise en page d'email",
-              "description": "Contenu HTML de la mise en page d'email"
+              "description": "Entrez le contenu HTML de la mise en page",
+              "placeholder": "Entrez le contenu HTML"
+            },
+            "variables": {
+              "label": "Variables",
+              "description": "Définir les variables de la mise en page",
+              "placeholder": "Ajouter des variables"
             },
             "description": {
               "label": "Description",
-              "placeholder": "Entrez la description de la mise en page",
-              "tooltip": "Description optionnelle du but de la mise en page",
-              "description": "Description et notes de la mise en page"
-            },
-            "structure": {
-              "label": "Structure de la Mise en Page",
-              "placeholder": "Configurer la structure de la mise en page",
-              "tooltip": "Définir la structure de la mise en page et les composants",
-              "description": "Configuration de la structure de la mise en page"
-            },
-            "provider": {
-              "label": "Fournisseur",
-              "placeholder": "Sélectionnez le fournisseur d'email",
-              "tooltip": "Choisir le fournisseur de service d'email",
-              "description": "Fournisseur de service d'email pour cette mise en page"
+              "description": "Entrez la description de la mise en page",
+              "placeholder": "Entrez la description"
             }
-          },
-
-          "actions": {
-            "submit": "Créer la Mise en Page",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser",
-            "error": "Erreur lors de la création de la mise en page",
-            "success": "Mise en page créée avec succès",
-            "warning": "Veuillez vérifier votre mise en page"
-          }
-        },
-
-        "update": {
-          "title": "Modifier la Mise en Page d'Email",
-          "subtitle": "Modifier une mise en page d'email existante",
-          "description": "Modifier la structure et le style de la mise en page",
-          "footer": "Les modifications affecteront tous les modèles utilisant cette mise en page",
-
-          "fields": {
-            "name": {
-              "label": "Nom de la Mise en Page",
-              "placeholder": "Entrez le nom de la mise en page",
-              "tooltip": "Un nom descriptif pour cette mise en page d'email",
-              "description": "Nom principal de la mise en page d'email"
-            },
-            "html_content": {
-              "label": "Contenu HTML",
-              "placeholder": "Entrez le contenu HTML",
-              "tooltip": "La structure HTML de la mise en page d'email",
-              "description": "Contenu HTML de la mise en page d'email"
-            },
-            "description": {
-              "label": "Description",
-              "placeholder": "Entrez la description de la mise en page",
-              "tooltip": "Description optionnelle du but de la mise en page",
-              "description": "Description et notes de la mise en page"
-            },
-            "structure": {
-              "label": "Structure de la Mise en Page",
-              "placeholder": "Configurer la structure de la mise en page",
-              "tooltip": "Définir la structure de la mise en page et les composants",
-              "description": "Configuration de la structure de la mise en page"
-            }
-          },
-
-          "actions": {
-            "submit": "Modifier la Mise en Page",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser",
-            "error": "Erreur lors de la modification de la mise en page",
-            "success": "Mise en page modifiée avec succès",
-            "warning": "Veuillez vérifier vos modifications"
           }
         }
-      },
-
-      "validation": {
-        "nameRequired": "Le nom de la mise en page est requis",
-        "nameTooShort": "Le nom de la mise en page est trop court (minimum 3 caractères)",
-        "nameTooLong": "Le nom de la mise en page est trop long (maximum 100 caractères)",
-        "nameInvalidFormat": "Le nom de la mise en page contient des caractères invalides",
-        "htmlContentRequired": "Le contenu HTML est requis",
-        "htmlContentTooShort": "Le contenu HTML est trop court (minimum 10 caractères)",
-        "htmlContentTooLong": "Le contenu HTML est trop long (maximum 10000 caractères)",
-        "descriptionTooLong": "La description est trop longue (maximum 500 caractères)",
-        "invalidStructure": "Structure de mise en page invalide",
-        "providerRequired": "Le fournisseur est requis",
-        "providerInvalid": "Sélection de fournisseur invalide"
       }
     },
-
-    "send-email": {
+    "createSender": {
       "form": {
         "create": {
-          "title": "Envoyer un Email",
-          "subtitle": "Envoyer un email aux destinataires",
-          "description": "Envoyer un email en utilisant un modèle aux destinataires sélectionnés",
-          "footer": "L'email sera mis en file d'attente pour la livraison",
-
+          "title": "Créer un Expéditeur",
+          "subtitle": "Ajouter une nouvelle adresse email d'expéditeur",
+          "description": "Créer une nouvelle adresse email d'expéditeur",
+          "footer": "Les expéditeurs sont des adresses email qui peuvent envoyer des emails",
           "fields": {
-            "email_id": {
-              "label": "Email",
-              "placeholder": "Sélectionnez l'email à envoyer",
-              "tooltip": "Choisir l'enregistrement d'email à envoyer",
-              "description": "Enregistrement d'email à envoyer"
+            "name": {
+              "label": "Nom de l'Expéditeur",
+              "description": "Entrez le nom de l'expéditeur",
+              "placeholder": "Entrez le nom de l'expéditeur"
             },
-            "template_id": {
-              "label": "Modèle",
-              "placeholder": "Sélectionnez le modèle",
-              "tooltip": "Choisir le modèle d'email à utiliser",
-              "description": "Modèle d'email pour l'envoi"
-            },
-            "recipients": {
-              "label": "Destinataires",
-              "placeholder": "Ajouter les adresses email des destinataires",
-              "tooltip": "Adresses email des destinataires",
-              "description": "Liste des destinataires d'email"
-            },
-            "cc": {
-              "label": "CC",
-              "placeholder": "Ajouter les adresses email en copie",
-              "tooltip": "Adresses email à copier",
-              "description": "Destinataires en copie"
-            },
-            "cci": {
-              "label": "CCI",
-              "placeholder": "Ajouter les adresses email en copie cachée",
-              "tooltip": "Adresses email à copier en aveugle",
-              "description": "Destinataires en copie cachée"
-            },
-            "subject": {
-              "label": "Objet",
-              "placeholder": "Entrez l'objet de l'email",
-              "tooltip": "Ligne d'objet pour l'email",
-              "description": "Ligne d'objet de l'email"
-            },
-            "pre_header": {
-              "label": "Pré-en-tête",
-              "placeholder": "Entrez le texte de pré-en-tête",
-              "tooltip": "Texte de pré-en-tête affiché dans l'aperçu de l'email",
-              "description": "Texte de pré-en-tête de l'email"
-            },
-            "text": {
-              "label": "Contenu Texte",
-              "placeholder": "Entrez le contenu texte",
-              "tooltip": "Version texte brut de l'email",
-              "description": "Contenu texte brut de l'email"
-            },
-            "global_variables": {
-              "label": "Variables Globales",
-              "placeholder": "Configurer les variables globales",
-              "tooltip": "Variables globales pour le rendu du modèle",
-              "description": "Variables globales du modèle"
-            },
-            "from_email_id": {
-              "label": "Email Expéditeur",
-              "placeholder": "Sélectionnez l'email expéditeur",
-              "tooltip": "Adresse email d'envoi",
-              "description": "Adresse email de l'expéditeur"
+            "email": {
+              "label": "Adresse Email",
+              "description": "Entrez l'adresse email",
+              "placeholder": "Entrez l'adresse email"
             },
             "provider": {
               "label": "Fournisseur",
-              "placeholder": "Sélectionnez le fournisseur d'email",
-              "tooltip": "Fournisseur de service d'email",
-              "description": "Fournisseur de service d'email"
+              "description": "Sélectionnez le fournisseur d'email",
+              "placeholder": "Choisir le fournisseur"
             }
-          },
-
-          "actions": {
-            "submit": "Envoyer l'Email",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser",
-            "error": "Erreur lors de l'envoi de l'email",
-            "success": "Email envoyé avec succès",
-            "warning": "Veuillez vérifier votre email"
           }
         }
-      },
-
-      "validation": {
-        "emailIdRequired": "L'email est requis",
-        "invalidEmailId": "Format d'ID d'email invalide",
-        "invalidTemplateId": "Format d'ID de modèle invalide",
-        "recipientsRequired": "Les destinataires sont requis",
-        "recipientsTooFew": "Au moins un destinataire est requis",
-        "recipientsTooMany": "Trop de destinataires (maximum 100)",
-        "invalidEmailFormat": "Format d'adresse email invalide",
-        "subjectRequired": "L'objet est requis",
-        "subjectTooShort": "L'objet est trop court (minimum 3 caractères)",
-        "subjectTooLong": "L'objet est trop long (maximum 200 caractères)",
-        "preHeaderTooLong": "Le pré-en-tête est trop long (maximum 100 caractères)",
-        "textTooLong": "Le contenu texte est trop long (maximum 5000 caractères)",
-        "invalidFromEmailId": "Format d'ID d'email expéditeur invalide"
       }
     }
   }

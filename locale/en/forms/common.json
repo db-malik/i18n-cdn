@@ -38,5 +38,118 @@
     "sign_in": "Sign In",
     "sign_up": "Sign Up",
     "register": "Register"
+  },
+  "common": {
+    "create-entity": {
+      "form": {
+        "create": {
+          "title": "Create Entity",
+          "subtitle": "Add a new legal entity",
+          "description": "Create a new legal entity in the system",
+          "footer": "Entities represent legal persons or organizations",
+          "fields": {
+            "name": {
+              "label": "Entity Name",
+              "description": "Enter the legal name of the entity",
+              "placeholder": "Enter entity name"
+            },
+            "type": {
+              "label": "Entity Type",
+              "description": "Select the type of legal entity",
+              "placeholder": "Choose entity type"
+            },
+            "registration_number": {
+              "label": "Registration Number",
+              "description": "Enter the official registration number",
+              "placeholder": "Enter registration number"
+            },
+            "country": {
+              "label": "Country",
+              "description": "Select the country of registration",
+              "placeholder": "Choose country"
+            },
+            "address": {
+              "label": "Address",
+              "description": "Enter the registered address",
+              "placeholder": "Enter address"
+            }
+          }
+        }
+      }
+    },
+    "create-contact": {
+      "form": {
+        "create": {
+          "title": "Create Contact",
+          "subtitle": "Add a new contact person",
+          "description": "Create a new contact person record",
+          "footer": "Contacts represent individuals associated with entities",
+          "fields": {
+            "first_name": {
+              "label": "First Name",
+              "description": "Enter the contact's first name",
+              "placeholder": "Enter first name"
+            },
+            "last_name": {
+              "label": "Last Name",
+              "description": "Enter the contact's last name",
+              "placeholder": "Enter last name"
+            },
+            "email": {
+              "label": "Email Address",
+              "description": "Enter the contact's email address",
+              "placeholder": "Enter email address"
+            },
+            "phone": {
+              "label": "Phone Number",
+              "description": "Enter the contact's phone number",
+              "placeholder": "Enter phone number"
+            },
+            "role": {
+              "label": "Role",
+              "description": "Select the contact's role",
+              "placeholder": "Choose role"
+            }
+          }
+        }
+      }
+    },
+    "create-postal-address": {
+      "form": {
+        "create": {
+          "title": "Create Address",
+          "subtitle": "Add a new postal address",
+          "description": "Create a new postal address record",
+          "footer": "Addresses are used for legal and communication purposes",
+          "fields": {
+            "street": {
+              "label": "Street Address",
+              "description": "Enter the street address",
+              "placeholder": "Enter street address"
+            },
+            "city": {
+              "label": "City",
+              "description": "Enter the city",
+              "placeholder": "Enter city"
+            },
+            "postal_code": {
+              "label": "Postal Code",
+              "description": "Enter the postal code",
+              "placeholder": "Enter postal code"
+            },
+            "country": {
+              "label": "Country",
+              "description": "Select the country",
+              "placeholder": "Choose country"
+            },
+            "type": {
+              "label": "Address Type",
+              "description": "Select the type of address",
+              "placeholder": "Choose address type"
+            }
+          }
+        }
+      }
+    }
   }
 }

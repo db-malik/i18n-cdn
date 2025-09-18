@@ -1,0 +1,183 @@
+{
+  "financial-operation": {
+    "wallet": {
+      "form": {
+        "create": {
+          "title": "Create Wallet",
+          "subtitle": "Add a new cryptocurrency wallet",
+          "description": "Create a new wallet for managing cryptocurrency assets",
+          "footer": "Wallets are used to store and manage your cryptocurrency assets",
+          "fields": {
+            "name": {
+              "label": "Wallet Name",
+              "description": "Enter a descriptive name for this wallet",
+              "placeholder": "e.g., Main Bitcoin Wallet",
+              "tooltip": "Name of the wallet"
+            },
+            "network": {
+              "label": "Network",
+              "description": "Blockchain network for the wallet",
+              "placeholder": "Select a network",
+              "tooltip": "Network"
+            },
+            "provider": {
+              "label": "Provider",
+              "description": "Wallet provider service",
+              "placeholder": "Select wallet provider",
+              "tooltip": "Choose the wallet provider service"
+            }
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Name is required",
+        "nameTooShort": "Name is too short",
+        "nameTooLong": "Name is too long",
+        "networkRequired": "Network is required",
+        "providerRequired": "Provider is required"
+      }
+    },
+    "transfer": {
+      "form": {
+        "create": {
+          "title": "Create Transfer",
+          "subtitle": "Initiate a new transfer",
+          "description": "Create a new transfer between accounts or entities",
+          "footer": "Transfers move funds between different accounts",
+          "fields": {
+            "amount": {
+              "label": "Amount",
+              "description": "Amount to transfer",
+              "placeholder": "Enter amount",
+              "tooltip": "Amount to transfer"
+            },
+            "asset": {
+              "label": "Asset",
+              "description": "Asset to transfer",
+              "placeholder": "Select asset",
+              "tooltip": "Asset to transfer"
+            },
+            "recipientType": {
+              "label": "Recipient Type",
+              "description": "Type of recipient",
+              "placeholder": "Select recipient type",
+              "tooltip": "Type of recipient"
+            },
+            "address": {
+              "label": "Address",
+              "description": "Recipient address",
+              "placeholder": "Paste or enter address",
+              "tooltip": "Recipient address"
+            }
+          }
+        }
+      },
+      "validation": {
+        "amountRequired": "Amount is required",
+        "assetRequired": "Asset is required",
+        "addressTooShort": "Address must be at least 3 characters"
+      }
+    },
+    "create-transfer": {
+      "form": {
+        "create": {
+          "title": "Create Transfer",
+          "subtitle": "Initiate a new transfer",
+          "description": "Create a new transfer between accounts or entities",
+          "footer": "Transfers move funds between different accounts",
+          "fields": {
+            "from_account": {
+              "label": "From Account",
+              "description": "Select the source account",
+              "placeholder": "Choose source account"
+            },
+            "to_account": {
+              "label": "To Account",
+              "description": "Select the destination account",
+              "placeholder": "Choose destination account"
+            },
+            "amount": {
+              "label": "Amount",
+              "description": "Enter the transfer amount",
+              "placeholder": "Enter amount"
+            },
+            "currency": {
+              "label": "Currency",
+              "description": "Select the currency",
+              "placeholder": "Choose currency"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Optional description for the transfer",
+              "placeholder": "Enter transfer description"
+            }
+          }
+        }
+      }
+    },
+    "create-swap": {
+      "form": {
+        "create": {
+          "title": "Create Swap",
+          "subtitle": "Initiate a new asset swap",
+          "description": "Create a new swap between different assets",
+          "footer": "Swaps exchange one asset for another",
+          "fields": {
+            "from_asset": {
+              "label": "From Asset",
+              "description": "Select the asset to swap from",
+              "placeholder": "Choose source asset"
+            },
+            "to_asset": {
+              "label": "To Asset",
+              "description": "Select the asset to swap to",
+              "placeholder": "Choose destination asset"
+            },
+            "amount": {
+              "label": "Amount",
+              "description": "Enter the swap amount",
+              "placeholder": "Enter amount"
+            },
+            "exchange_rate": {
+              "label": "Exchange Rate",
+              "description": "Enter the exchange rate",
+              "placeholder": "Enter exchange rate"
+            }
+          }
+        }
+      }
+    },
+    "create-shareholding": {
+      "form": {
+        "create": {
+          "title": "Create Shareholding",
+          "subtitle": "Add a new shareholding",
+          "description": "Create a new shareholding record",
+          "footer": "Shareholdings represent ownership stakes in entities",
+          "fields": {
+            "entity_id": {
+              "label": "Entity",
+              "description": "Select the entity",
+              "placeholder": "Choose entity"
+            },
+            "shareholder_id": {
+              "label": "Shareholder",
+              "description": "Select the shareholder",
+              "placeholder": "Choose shareholder"
+            },
+            "shares": {
+              "label": "Number of Shares",
+              "description": "Enter the number of shares",
+              "placeholder": "Enter number of shares"
+            },
+            "percentage": {
+              "label": "Ownership Percentage",
+              "description": "Enter the ownership percentage",
+              "placeholder": "Enter percentage"
+            }
+          }
+        }
+      }
+    }
+  }
+}

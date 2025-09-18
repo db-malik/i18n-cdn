@@ -1,200 +1,205 @@
 {
   "banking-crypto": {
-    "claim": {
+    "create-wallet": {
       "form": {
         "create": {
-          "title": "Créer une Réclamation Crypto",
-          "subtitle": "Enregistrer une nouvelle réclamation de cryptomonnaie",
-          "description": "Remplissez le formulaire ci-dessous pour créer une nouvelle réclamation d'actif crypto",
-          "footer": "Tous les champs marqués d'un * sont obligatoires. Veuillez vous assurer que toutes les informations sont exactes.",
+          "title": "Créer un Portefeuille",
+          "subtitle": "Ajouter un nouveau portefeuille de cryptomonnaie",
+          "description": "Créer un nouveau portefeuille pour gérer les actifs cryptographiques",
+          "footer": "Les portefeuilles sont utilisés pour stocker et gérer vos actifs cryptographiques",
           "fields": {
             "name": {
-              "label": "Nom de la Réclamation",
-              "placeholder": "Entrez le nom de la réclamation",
-              "description": "Nom de la réclamation crypto",
-              "tooltip": "Entrez un nom descriptif pour cette réclamation de cryptomonnaie"
-            },
-            "startDate": {
-              "label": "Date de Début",
-              "placeholder": "Sélectionnez la date de début",
-              "description": "Quand la période de réclamation commence",
-              "tooltip": "La date à laquelle cette réclamation crypto devient active"
-            },
-            "endDate": {
-              "label": "Date de Fin",
-              "placeholder": "Sélectionnez la date de fin",
-              "description": "Quand la période de réclamation se termine",
-              "tooltip": "La date à laquelle cette réclamation crypto expire"
-            },
-            "assetId": {
-              "label": "ID de l'Actif",
-              "placeholder": "Entrez l'identifiant de l'actif",
-              "description": "Identifiant unique pour l'actif crypto",
-              "tooltip": "L'identifiant unique ou le symbole pour l'actif de cryptomonnaie"
-            },
-            "smartContractStatus": {
-              "label": "Statut du Contrat Intelligent",
-              "placeholder": "Sélectionnez le statut du contrat",
-              "description": "Statut actuel du contrat intelligent",
-              "tooltip": "Le statut opérationnel actuel du contrat intelligent associé"
-            },
-            "amount": {
-              "label": "Montant",
-              "placeholder": "Entrez le montant",
-              "description": "Montant de cryptomonnaie",
-              "tooltip": "La quantité de cryptomonnaie impliquée dans cette réclamation"
-            }
-          },
-          "actions": {
-            "submit": "Créer la Réclamation",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser le Formulaire",
-            "review": "Examiner la Réclamation",
-            "error": "Une erreur s'est produite lors de la création de la réclamation",
-            "success": "Réclamation créée avec succès",
-            "warning": "Veuillez examiner les informations avant de soumettre"
-          }
-        },
-        "update": {
-          "title": "Mettre à Jour la Réclamation Crypto",
-          "subtitle": "Mettre à jour les informations de la réclamation",
-          "fields": {
-            "name": {
-              "label": "Nom de la Réclamation",
-              "placeholder": "Entrez le nom de la réclamation",
-              "description": "Nom de la réclamation crypto",
-              "tooltip": "Entrez un nom descriptif pour cette réclamation de cryptomonnaie"
-            },
-            "start_date": {
-              "label": "Date de Début",
-              "placeholder": "Sélectionnez la date de début",
-              "description": "Quand la période de réclamation commence",
-              "tooltip": "La date à laquelle cette réclamation crypto devient active"
-            },
-            "end_date": {
-              "label": "Date de Fin",
-              "placeholder": "Sélectionnez la date de fin",
-              "description": "Quand la période de réclamation se termine",
-              "tooltip": "La date à laquelle cette réclamation crypto expire"
-            },
-            "asset_id": {
-              "label": "ID de l'Actif",
-              "placeholder": "Entrez l'identifiant de l'actif",
-              "description": "Identifiant unique pour l'actif crypto",
-              "tooltip": "L'identifiant unique ou le symbole pour l'actif de cryptomonnaie"
-            },
-            "smart_contract_status": {
-              "label": "Statut du Contrat Intelligent",
-              "placeholder": "Sélectionnez le statut du contrat",
-              "description": "Statut actuel du contrat intelligent",
-              "tooltip": "Le statut opérationnel actuel du contrat intelligent associé"
-            },
-            "amount": {
-              "label": "Montant",
-              "placeholder": "Entrez le montant",
-              "description": "Montant de cryptomonnaie",
-              "tooltip": "La quantité de cryptomonnaie impliquée dans cette réclamation"
-            }
-          },
-          "actions": {
-            "submit": "Mettre à Jour la Réclamation",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser le Formulaire",
-            "error": "Une erreur s'est produite lors de la mise à jour de la réclamation",
-            "success": "Réclamation mise à jour avec succès",
-            "warning": "Veuillez examiner les modifications avant de soumettre"
-          }
-        }
-      },
-      "validation": {
-        "nameRequired": "Le nom de la réclamation est obligatoire",
-        "nameTooShort": "Le nom de la réclamation est trop court (minimum {{min}} caractères)",
-        "nameTooLong": "Le nom de la réclamation est trop long (maximum {{max}} caractères)",
-        "dateRequired": "La date est obligatoire",
-        "assetIdRequired": "L'ID de l'actif est obligatoire",
-        "smartContractStatusRequired": "Le statut du contrat intelligent est obligatoire",
-        "amountRequired": "Le montant est obligatoire",
-        "amountTooLow": "Le montant doit être supérieur à {{min}}"
-      }
-    },
-    "asset": {
-      "form": {
-        "create": {
-          "title": "Créer un Actif Crypto",
-          "subtitle": "Enregistrer un nouvel actif de cryptomonnaie",
-          "description": "Remplissez le formulaire ci-dessous pour créer un nouvel actif crypto",
-          "footer": "Tous les champs marqués d'un * sont obligatoires. Veuillez vous assurer que toutes les informations sont exactes.",
-          "fields": {
-            "name": {
-              "label": "Nom de l'Actif",
-              "placeholder": "Entrez le nom de l'actif",
-              "description": "Nom de l'actif crypto",
-              "tooltip": "Entrez un nom descriptif pour cet actif de cryptomonnaie"
-            },
-            "symbol": {
-              "label": "Symbole",
-              "placeholder": "Entrez le symbole de l'actif",
-              "description": "Symbole de l'actif crypto",
-              "tooltip": "Le symbole ou ticker de l'actif de cryptomonnaie"
-            },
-            "assetType": {
-              "label": "Type d'Actif",
-              "placeholder": "Sélectionnez le type d'actif",
-              "description": "Type de l'actif crypto",
-              "tooltip": "La catégorie ou le type de l'actif de cryptomonnaie"
+              "label": "Nom du Portefeuille",
+              "description": "Entrez un nom descriptif pour ce portefeuille",
+              "placeholder": "ex: Portefeuille Bitcoin Principal",
+              "tooltip": "Nom du portefeuille"
             },
             "network": {
               "label": "Réseau",
-              "placeholder": "Sélectionnez le réseau",
-              "description": "Réseau blockchain de l'actif",
-              "tooltip": "Le réseau blockchain sur lequel cet actif existe"
+              "description": "Réseau blockchain pour le portefeuille",
+              "placeholder": "Sélectionnez un réseau",
+              "tooltip": "Réseau"
             },
-            "picture": {
-              "label": "Image",
-              "placeholder": "Téléchargez l'image de l'actif",
-              "description": "Image représentant l'actif",
-              "tooltip": "Téléchargez un logo ou une image pour l'actif"
-            },
-            "decimal": {
-              "label": "Décimale",
-              "placeholder": "Entrez le nombre de décimales",
-              "description": "Nombre de décimales",
-              "tooltip": "Le nombre de décimales supporté par l'actif"
-            },
-            "totalSupply": {
-              "label": "Quantité Totale",
-              "placeholder": "Entrez la quantité totale",
-              "description": "Quantité totale de l'actif",
-              "tooltip": "Le nombre total d'unités pour cet actif"
-            },
-            "features": {
-              "label": "Fonctionnalités",
-              "placeholder": "Entrez les fonctionnalités",
-              "description": "Fonctionnalités spéciales de l'actif",
-              "tooltip": "Listez les fonctionnalités ou propriétés spéciales de l'actif"
+            "provider": {
+              "label": "Fournisseur",
+              "description": "Service de fournisseur de portefeuille",
+              "placeholder": "Sélectionnez le fournisseur de portefeuille",
+              "tooltip": "Choisissez le service de fournisseur de portefeuille"
             }
-          },
-          "actions": {
-            "submit": "Créer l'Actif",
-            "cancel": "Annuler",
-            "reset": "Réinitialiser le Formulaire",
-            "error": "Une erreur s'est produite lors de la création de l'actif",
-            "success": "Actif créé avec succès"
           }
         }
       },
       "validation": {
-        "nameRequired": "Le nom de l'actif est obligatoire",
-        "nameTooShort": "Le nom de l'actif est trop court (minimum {{min}} caractères)",
-        "nameTooLong": "Le nom de l'actif est trop long (maximum {{max}} caractères)",
-        "symbolRequired": "Le symbole est obligatoire",
-        "assetTypeRequired": "Le type d'actif est obligatoire",
-        "networkRequired": "Le réseau est obligatoire",
-        "decimalRequired": "La décimale est obligatoire",
-        "decimalTooLow": "La décimale doit être au moins {{min}}",
-        "decimalTooHigh": "La décimale doit être au plus {{max}}",
-        "totalSupplyRequired": "La quantité totale est obligatoire",
-        "totalSupplyTooLow": "La quantité totale doit être supérieure à {{min}}"
+        "nameRequired": "Le nom est requis",
+        "nameTooShort": "Le nom est trop court",
+        "nameTooLong": "Le nom est trop long",
+        "networkRequired": "Le réseau est requis",
+        "providerRequired": "Le fournisseur est requis"
+      }
+    },
+    "create-asset": {
+      "form": {
+        "create": {
+          "title": "Créer un Actif",
+          "subtitle": "Ajouter un nouvel actif de cryptomonnaie",
+          "description": "Créer un nouvel actif pour suivre les avoirs en cryptomonnaie",
+          "footer": "Les actifs représentent vos avoirs en cryptomonnaie",
+          "fields": {
+            "name": {
+              "label": "Nom de l'Actif",
+              "description": "Entrez le nom de la cryptomonnaie",
+              "placeholder": "ex: Bitcoin, Ethereum",
+              "tooltip": "Nom de l'actif"
+            },
+            "symbol": {
+              "label": "Symbole",
+              "description": "Entrez le symbole de l'actif",
+              "placeholder": "ex: BTC, ETH",
+              "tooltip": "Symbole de l'actif"
+            },
+            "asset_type": {
+              "label": "Type d'Actif",
+              "description": "Sélectionnez le type d'actif",
+              "placeholder": "Choisir le type d'actif",
+              "tooltip": "Type de l'actif"
+            },
+            "network": {
+              "label": "Réseau",
+              "description": "Entrez le réseau",
+              "placeholder": "Entrez le réseau",
+              "tooltip": "Réseau de l'actif"
+            },
+            "picture": {
+              "label": "Image",
+              "description": "Entrez l'image",
+              "placeholder": "Entrez l'image",
+              "tooltip": "Image de l'actif"
+            },
+            "decimal": {
+              "label": "Décimales",
+              "description": "Entrez les décimales",
+              "placeholder": "Entrez les décimales",
+              "tooltip": "Décimales de l'actif"
+            },
+            "total_supply": {
+              "label": "Offre Totale",
+              "description": "Entrez l'offre totale",
+              "placeholder": "Entrez l'offre totale",
+              "tooltip": "Offre totale de l'actif"
+            },
+            "features": {
+              "label": "Fonctionnalités",
+              "description": "Entrez les fonctionnalités",
+              "placeholder": "Entrez les fonctionnalités",
+              "tooltip": "Fonctionnalités de l'actif"
+            }
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Le nom est requis",
+        "nameTooShort": "Le nom est trop court",
+        "nameTooLong": "Le nom doit faire au maximum 25 caractères",
+        "symbolRequired": "Le symbole est requis",
+        "assetTypeRequired": "Le type d'actif est requis",
+        "networkRequired": "Le réseau est requis",
+        "decimalRequired": "Les décimales sont requises",
+        "decimalTooLow": "Les décimales doivent être positives",
+        "decimalTooHigh": "Les décimales doivent être inférieures à 18",
+        "totalSupplyRequired": "L'offre totale est requise",
+        "totalSupplyTooLow": "L'offre totale doit être positive"
+      }
+    },
+    "create-wallet-address": {
+      "form": {
+        "create": {
+          "title": "Créer une Adresse de Portefeuille",
+          "subtitle": "Générer une nouvelle adresse de portefeuille",
+          "description": "Générer une nouvelle adresse pour un portefeuille existant",
+          "footer": "Chaque portefeuille peut avoir plusieurs adresses",
+          "fields": {
+            "wallet_id": {
+              "label": "Portefeuille",
+              "description": "Sélectionnez le portefeuille pour cette adresse",
+              "placeholder": "Choisir le portefeuille",
+              "tooltip": "Portefeuille pour cette adresse"
+            },
+            "address": {
+              "label": "Adresse",
+              "description": "Entrez l'adresse du portefeuille",
+              "placeholder": "Entrez l'adresse",
+              "tooltip": "Adresse du portefeuille"
+            },
+            "label": {
+              "label": "Étiquette d'Adresse",
+              "description": "Étiquette optionnelle pour cette adresse",
+              "placeholder": "ex: Adresse Principale",
+              "tooltip": "Étiquette pour cette adresse"
+            }
+          }
+        }
+      }
+    },
+    "claim": {
+      "form": {
+        "create": {
+          "title": "Créer une Campagne de Réclamation",
+          "subtitle": "Ajouter une nouvelle campagne de réclamation",
+          "description": "Créer une nouvelle campagne de réclamation pour la distribution d'actifs",
+          "footer": "Les campagnes de réclamation distribuent des actifs aux utilisateurs éligibles",
+          "fields": {
+            "name": {
+              "label": "Nom de la Campagne",
+              "description": "Entrez le nom de la campagne",
+              "placeholder": "Entrez le nom de la campagne",
+              "tooltip": "Nom de la campagne de réclamation"
+            },
+            "startDate": {
+              "label": "Date de Début",
+              "description": "Entrez la date de début",
+              "placeholder": "Entrez la date de début",
+              "tooltip": "Date de début de la campagne de réclamation"
+            },
+            "endDate": {
+              "label": "Date de Fin",
+              "description": "Entrez la date de fin",
+              "placeholder": "Entrez la date de fin",
+              "tooltip": "Date de fin de la campagne de réclamation"
+            },
+            "assetId": {
+              "label": "ID de l'Actif",
+              "description": "Entrez l'ID de l'actif",
+              "placeholder": "Entrez l'ID de l'actif",
+              "tooltip": "ID de l'actif de la campagne de réclamation"
+            },
+            "smartContractStatus": {
+              "label": "Statut du Contrat Intelligent",
+              "description": "Entrez le statut du contrat intelligent",
+              "placeholder": "Entrez le statut du contrat intelligent",
+              "tooltip": "Statut du contrat intelligent de la campagne de réclamation"
+            },
+            "amount": {
+              "label": "Montant",
+              "description": "Entrez le montant",
+              "placeholder": "Entrez le montant",
+              "tooltip": "Montant de la campagne de réclamation"
+            },
+            "owner": {
+              "label": "Propriétaire",
+              "description": "Entrez le propriétaire",
+              "placeholder": "Entrez le propriétaire",
+              "tooltip": "Propriétaire de la campagne de réclamation"
+            }
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Le nom est requis",
+        "nameTooLong": "Le nom doit faire au maximum 25 caractères",
+        "dateRequired": "La date est requise",
+        "assetIdRequired": "L'ID de l'actif est requis",
+        "smartContractStatusRequired": "Le statut du contrat intelligent est requis",
+        "amountRequired": "Le montant est requis"
       }
     }
   }

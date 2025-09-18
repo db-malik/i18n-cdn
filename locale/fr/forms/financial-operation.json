@@ -1,0 +1,105 @@
+{
+  "financial-operation": {
+    "create-transfer": {
+      "form": {
+        "create": {
+          "title": "Créer un Transfert",
+          "subtitle": "Initier un nouveau transfert",
+          "description": "Créer un nouveau transfert entre comptes ou entités",
+          "footer": "Les transferts déplacent les fonds entre différents comptes",
+          "fields": {
+            "from_account": {
+              "label": "Compte Source",
+              "description": "Sélectionnez le compte source",
+              "placeholder": "Choisir le compte source"
+            },
+            "to_account": {
+              "label": "Compte Destination",
+              "description": "Sélectionnez le compte de destination",
+              "placeholder": "Choisir le compte de destination"
+            },
+            "amount": {
+              "label": "Montant",
+              "description": "Entrez le montant du transfert",
+              "placeholder": "Entrez le montant"
+            },
+            "currency": {
+              "label": "Devise",
+              "description": "Sélectionnez la devise",
+              "placeholder": "Choisir la devise"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Description optionnelle pour le transfert",
+              "placeholder": "Entrez la description du transfert"
+            }
+          }
+        }
+      }
+    },
+    "create-swap": {
+      "form": {
+        "create": {
+          "title": "Créer un Échange",
+          "subtitle": "Initier un nouvel échange d'actifs",
+          "description": "Créer un nouvel échange entre différents actifs",
+          "footer": "Les échanges échangent un actif contre un autre",
+          "fields": {
+            "from_asset": {
+              "label": "Actif Source",
+              "description": "Sélectionnez l'actif à échanger",
+              "placeholder": "Choisir l'actif source"
+            },
+            "to_asset": {
+              "label": "Actif Destination",
+              "description": "Sélectionnez l'actif de destination",
+              "placeholder": "Choisir l'actif de destination"
+            },
+            "amount": {
+              "label": "Montant",
+              "description": "Entrez le montant de l'échange",
+              "placeholder": "Entrez le montant"
+            },
+            "exchange_rate": {
+              "label": "Taux de Change",
+              "description": "Entrez le taux de change",
+              "placeholder": "Entrez le taux de change"
+            }
+          }
+        }
+      }
+    },
+    "create-shareholding": {
+      "form": {
+        "create": {
+          "title": "Créer une Participation",
+          "subtitle": "Ajouter une nouvelle participation",
+          "description": "Créer un nouvel enregistrement de participation",
+          "footer": "Les participations représentent les parts de propriété dans les entités",
+          "fields": {
+            "entity_id": {
+              "label": "Entité",
+              "description": "Sélectionnez l'entité",
+              "placeholder": "Choisir l'entité"
+            },
+            "shareholder_id": {
+              "label": "Actionnaire",
+              "description": "Sélectionnez l'actionnaire",
+              "placeholder": "Choisir l'actionnaire"
+            },
+            "shares": {
+              "label": "Nombre d'Actions",
+              "description": "Entrez le nombre d'actions",
+              "placeholder": "Entrez le nombre d'actions"
+            },
+            "percentage": {
+              "label": "Pourcentage de Propriété",
+              "description": "Entrez le pourcentage de propriété",
+              "placeholder": "Entrez le pourcentage"
+            }
+          }
+        }
+      }
+    }
+  }
+}

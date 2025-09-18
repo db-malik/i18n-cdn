@@ -38,5 +38,298 @@
     "sign_in": "Se connecter",
     "sign_up": "S'inscrire",
     "register": "S'inscrire"
+  },
+  "common": {
+    "create-entity": {
+      "form": {
+        "create": {
+          "title": "Créer une Entité",
+          "subtitle": "Ajouter une nouvelle entité légale",
+          "description": "Créer une nouvelle entité légale dans le système",
+          "footer": "Les entités représentent des personnes morales ou des organisations",
+          "fields": {
+            "name": {
+              "label": "Nom de l'Entité",
+              "description": "Entrez le nom légal de l'entité",
+              "placeholder": "Entrez le nom de l'entité"
+            },
+            "type": {
+              "label": "Type d'Entité",
+              "description": "Sélectionnez le type d'entité légale",
+              "placeholder": "Choisir le type d'entité"
+            },
+            "registration_number": {
+              "label": "Numéro d'Enregistrement",
+              "description": "Entrez le numéro d'enregistrement officiel",
+              "placeholder": "Entrez le numéro d'enregistrement"
+            },
+            "country": {
+              "label": "Pays",
+              "description": "Sélectionnez le pays d'enregistrement",
+              "placeholder": "Choisir le pays"
+            },
+            "address": {
+              "label": "Adresse",
+              "description": "Entrez l'adresse enregistrée",
+              "placeholder": "Entrez l'adresse"
+            }
+          }
+        }
+      }
+    },
+    "create-contact": {
+      "form": {
+        "create": {
+          "title": "Créer un Contact",
+          "subtitle": "Ajouter une nouvelle personne de contact",
+          "description": "Créer un nouvel enregistrement de personne de contact",
+          "footer": "Les contacts représentent des individus associés aux entités",
+          "fields": {
+            "first_name": {
+              "label": "Prénom",
+              "description": "Entrez le prénom du contact",
+              "placeholder": "Entrez le prénom"
+            },
+            "last_name": {
+              "label": "Nom de Famille",
+              "description": "Entrez le nom de famille du contact",
+              "placeholder": "Entrez le nom de famille"
+            },
+            "email": {
+              "label": "Adresse Email",
+              "description": "Entrez l'adresse email du contact",
+              "placeholder": "Entrez l'adresse email"
+            },
+            "phone": {
+              "label": "Numéro de Téléphone",
+              "description": "Entrez le numéro de téléphone du contact",
+              "placeholder": "Entrez le numéro de téléphone"
+            },
+            "role": {
+              "label": "Rôle",
+              "description": "Sélectionnez le rôle du contact",
+              "placeholder": "Choisir le rôle"
+            }
+          }
+        }
+      }
+    },
+    "create-postal-address": {
+      "form": {
+        "create": {
+          "title": "Créer une Adresse",
+          "subtitle": "Ajouter une nouvelle adresse postale",
+          "description": "Créer un nouvel enregistrement d'adresse postale",
+          "footer": "Les adresses sont utilisées à des fins légales et de communication",
+          "fields": {
+            "street": {
+              "label": "Adresse de Rue",
+              "description": "Entrez l'adresse de rue",
+              "placeholder": "Entrez l'adresse de rue"
+            },
+            "city": {
+              "label": "Ville",
+              "description": "Entrez la ville",
+              "placeholder": "Entrez la ville"
+            },
+            "postal_code": {
+              "label": "Code Postal",
+              "description": "Entrez le code postal",
+              "placeholder": "Entrez le code postal"
+            },
+            "country": {
+              "label": "Pays",
+              "description": "Sélectionnez le pays",
+              "placeholder": "Choisir le pays"
+            },
+            "type": {
+              "label": "Type d'Adresse",
+              "description": "Sélectionnez le type d'adresse",
+              "placeholder": "Choisir le type d'adresse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "messaging-center": {
+    "sendEmail": {
+      "form": {
+        "create": {
+          "title": "Envoyer un Email",
+          "subtitle": "Composer et envoyer un email",
+          "description": "Créer et envoyer un email aux destinataires",
+          "footer": "Les emails sont envoyés via les fournisseurs configurés",
+          "fields": {
+            "email_id": {
+              "label": "Modèle d'Email",
+              "description": "Sélectionnez le modèle d'email à utiliser",
+              "placeholder": "Choisir le modèle d'email"
+            },
+            "template_id": {
+              "label": "Modèle",
+              "description": "Sélectionnez le modèle d'email",
+              "placeholder": "Choisir le modèle"
+            },
+            "recipients": {
+              "label": "Destinataires",
+              "description": "Ajouter des destinataires d'email",
+              "placeholder": "Ajouter des destinataires"
+            },
+            "subject": {
+              "label": "Sujet",
+              "description": "Entrez le sujet de l'email",
+              "placeholder": "Entrez le sujet"
+            },
+            "pre_header": {
+              "label": "Pré-en-tête",
+              "description": "Texte de pré-en-tête optionnel",
+              "placeholder": "Entrez le pré-en-tête"
+            },
+            "text": {
+              "label": "Texte Brut",
+              "description": "Contenu en texte brut pour l'email",
+              "placeholder": "Entrez le contenu en texte brut"
+            },
+            "cc": {
+              "label": "CC",
+              "description": "Destinataires en copie",
+              "placeholder": "Ajouter des destinataires CC"
+            },
+            "cci": {
+              "label": "CCI",
+              "description": "Destinataires en copie cachée",
+              "placeholder": "Ajouter des destinataires CCI"
+            },
+            "from_email_id": {
+              "label": "Email Expéditeur",
+              "description": "Sélectionnez l'adresse email de l'expéditeur",
+              "placeholder": "Choisir l'email expéditeur"
+            }
+          }
+        }
+      },
+      "validation": {
+        "emailIdRequired": "L'ID de l'email est requis",
+        "recipientsRequired": "Au moins un destinataire est requis",
+        "subjectRequired": "Le sujet est requis",
+        "subjectTooLong": "Le sujet est trop long",
+        "preHeaderTooLong": "Le pré-en-tête est trop long",
+        "textTooLong": "Le contenu texte est trop long",
+        "invalidEmail": "Adresse email invalide",
+        "recipientsTooMany": "Trop de destinataires"
+      }
+    },
+    "createEmailTemplate": {
+      "form": {
+        "create": {
+          "title": "Créer un Modèle d'Email",
+          "subtitle": "Créer un nouveau modèle d'email",
+          "description": "Créer un nouveau modèle d'email pour l'envoi d'emails",
+          "footer": "Les modèles peuvent être réutilisés pour plusieurs emails",
+          "fields": {
+            "name": {
+              "label": "Nom du Modèle",
+              "description": "Entrez un nom pour le modèle",
+              "placeholder": "Entrez le nom du modèle"
+            },
+            "subject": {
+              "label": "Sujet",
+              "description": "Entrez le sujet de l'email",
+              "placeholder": "Entrez le sujet"
+            },
+            "html_content": {
+              "label": "Contenu HTML",
+              "description": "Entrez le contenu HTML",
+              "placeholder": "Entrez le contenu HTML"
+            },
+            "text_content": {
+              "label": "Contenu Texte",
+              "description": "Entrez le contenu en texte brut",
+              "placeholder": "Entrez le contenu texte"
+            },
+            "layout_id": {
+              "label": "Mise en Page",
+              "description": "Sélectionnez la mise en page de l'email",
+              "placeholder": "Choisir la mise en page"
+            },
+            "from_id": {
+              "label": "Email Expéditeur",
+              "description": "Sélectionnez l'email de l'expéditeur",
+              "placeholder": "Choisir l'email expéditeur"
+            },
+            "variables": {
+              "label": "Variables",
+              "description": "Définir les variables du modèle",
+              "placeholder": "Ajouter des variables"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Entrez la description du modèle",
+              "placeholder": "Entrez la description"
+            }
+          }
+        }
+      }
+    },
+    "createEmailLayout": {
+      "form": {
+        "create": {
+          "title": "Créer une Mise en Page d'Email",
+          "subtitle": "Créer un nouveau modèle de mise en page d'email",
+          "description": "Créer un nouveau modèle de mise en page d'email",
+          "footer": "Les mises en page définissent la structure des modèles d'email",
+          "fields": {
+            "name": {
+              "label": "Nom de la Mise en Page",
+              "description": "Entrez un nom pour la mise en page",
+              "placeholder": "Entrez le nom de la mise en page"
+            },
+            "html_content": {
+              "label": "Contenu HTML",
+              "description": "Entrez le contenu HTML de la mise en page",
+              "placeholder": "Entrez le contenu HTML"
+            },
+            "variables": {
+              "label": "Variables",
+              "description": "Définir les variables de la mise en page",
+              "placeholder": "Ajouter des variables"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Entrez la description de la mise en page",
+              "placeholder": "Entrez la description"
+            }
+          }
+        }
+      }
+    },
+    "createSender": {
+      "form": {
+        "create": {
+          "title": "Créer un Expéditeur",
+          "subtitle": "Ajouter une nouvelle adresse email d'expéditeur",
+          "description": "Créer une nouvelle adresse email d'expéditeur",
+          "footer": "Les expéditeurs sont des adresses email qui peuvent envoyer des emails",
+          "fields": {
+            "name": {
+              "label": "Nom de l'Expéditeur",
+              "description": "Entrez le nom de l'expéditeur",
+              "placeholder": "Entrez le nom de l'expéditeur"
+            },
+            "email": {
+              "label": "Adresse Email",
+              "description": "Entrez l'adresse email",
+              "placeholder": "Entrez l'adresse email"
+            },
+            "provider": {
+              "label": "Fournisseur",
+              "description": "Sélectionnez le fournisseur d'email",
+              "placeholder": "Choisir le fournisseur"
+            }
+          }
+        }
+      }
+    }
   }
 }

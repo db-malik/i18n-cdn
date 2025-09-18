@@ -1,200 +1,205 @@
 {
   "banking-crypto": {
-    "claim": {
+    "create-wallet": {
       "form": {
         "create": {
-          "title": "Create Crypto Claim",
-          "subtitle": "Register a new cryptocurrency claim",
-          "description": "Fill out the form below to create a new crypto asset claim",
-          "footer": "All fields marked with * are required. Please ensure all information is accurate.",
+          "title": "Create Wallet",
+          "subtitle": "Add a new cryptocurrency wallet",
+          "description": "Create a new wallet for managing cryptocurrency assets",
+          "footer": "Wallets are used to store and manage your cryptocurrency assets",
           "fields": {
             "name": {
-              "label": "Claim Name",
-              "placeholder": "Enter the claim name",
-              "description": "Name of the crypto claim",
-              "tooltip": "Enter a descriptive name for this cryptocurrency claim"
-            },
-            "startDate": {
-              "label": "Start Date",
-              "placeholder": "Select start date",
-              "description": "When the claim period begins",
-              "tooltip": "The date when this crypto claim becomes active"
-            },
-            "endDate": {
-              "label": "End Date",
-              "placeholder": "Select end date",
-              "description": "When the claim period ends",
-              "tooltip": "The date when this crypto claim expires"
-            },
-            "assetId": {
-              "label": "Asset ID",
-              "placeholder": "Enter asset identifier",
-              "description": "Unique identifier for the crypto asset",
-              "tooltip": "The unique identifier or symbol for the cryptocurrency asset"
-            },
-            "smartContractStatus": {
-              "label": "Smart Contract Status",
-              "placeholder": "Select contract status",
-              "description": "Current status of the smart contract",
-              "tooltip": "The current operational status of the associated smart contract"
-            },
-            "amount": {
-              "label": "Amount",
-              "placeholder": "Enter amount",
-              "description": "Amount of cryptocurrency",
-              "tooltip": "The quantity of cryptocurrency involved in this claim"
-            }
-          },
-          "actions": {
-            "submit": "Create Claim",
-            "cancel": "Cancel",
-            "reset": "Reset Form",
-            "review": "Review Claim",
-            "error": "An error occurred while creating the claim",
-            "success": "Claim created successfully",
-            "warning": "Please review the information before submitting"
-          }
-        },
-        "update": {
-          "title": "Update Crypto Claim",
-          "subtitle": "Update claim information",
-          "fields": {
-            "name": {
-              "label": "Claim Name",
-              "placeholder": "Enter the claim name",
-              "description": "Name of the crypto claim",
-              "tooltip": "Enter a descriptive name for this cryptocurrency claim"
-            },
-            "startDate": {
-              "label": "Start Date",
-              "placeholder": "Select start date",
-              "description": "When the claim period begins",
-              "tooltip": "The date when this crypto claim becomes active"
-            },
-            "endDate": {
-              "label": "End Date",
-              "placeholder": "Select end date",
-              "description": "When the claim period ends",
-              "tooltip": "The date when this crypto claim expires"
-            },
-            "assetId": {
-              "label": "Asset ID",
-              "placeholder": "Enter asset identifier",
-              "description": "Unique identifier for the crypto asset",
-              "tooltip": "The unique identifier or symbol for the cryptocurrency asset"
-            },
-            "smartContractStatus": {
-              "label": "Smart Contract Status",
-              "placeholder": "Select contract status",
-              "description": "Current status of the smart contract",
-              "tooltip": "The current operational status of the associated smart contract"
-            },
-            "amount": {
-              "label": "Amount",
-              "placeholder": "Enter amount",
-              "description": "Amount of cryptocurrency",
-              "tooltip": "The quantity of cryptocurrency involved in this claim"
-            }
-          },
-          "actions": {
-            "submit": "Update Claim",
-            "cancel": "Cancel",
-            "reset": "Reset Form",
-            "error": "An error occurred while updating the claim",
-            "success": "Claim updated successfully",
-            "warning": "Please review the changes before submitting"
-          }
-        }
-      },
-      "validation": {
-        "nameRequired": "Claim name is required",
-        "nameTooShort": "Claim name is too short (minimum {{min}} characters)",
-        "nameTooLong": "Claim name is too long (maximum {{max}} characters)",
-        "dateRequired": "Date is required",
-        "assetIdRequired": "Asset ID is required",
-        "smartContractStatusRequired": "Smart contract status is required",
-        "amountRequired": "Amount is required",
-        "amountTooLow": "Amount must be greater than {{min}}"
-      }
-    },
-    "asset": {
-      "form": {
-        "create": {
-          "title": "Create Crypto Asset",
-          "subtitle": "Register a new cryptocurrency asset",
-          "description": "Fill out the form below to create a new crypto asset",
-          "footer": "All fields marked with * are required. Please ensure all information is accurate.",
-          "fields": {
-            "name": {
-              "label": "Asset Name",
-              "placeholder": "Enter the asset name",
-              "description": "Name of the crypto asset",
-              "tooltip": "Enter a descriptive name for this cryptocurrency asset"
-            },
-            "symbol": {
-              "label": "Symbol",
-              "placeholder": "Enter the asset symbol",
-              "description": "Symbol of the crypto asset",
-              "tooltip": "The symbol or ticker for the cryptocurrency asset"
-            },
-            "assetType": {
-              "label": "Asset Type",
-              "placeholder": "Select asset type",
-              "description": "Type of the crypto asset",
-              "tooltip": "The category or type of the cryptocurrency asset"
+              "label": "Wallet Name",
+              "description": "Enter a descriptive name for this wallet",
+              "placeholder": "e.g., Main Bitcoin Wallet",
+              "tooltip": "Name of the wallet"
             },
             "network": {
               "label": "Network",
-              "placeholder": "Select network",
-              "description": "Blockchain network for the asset",
-              "tooltip": "The blockchain network on which this asset exists"
+              "description": "Blockchain network for the wallet",
+              "placeholder": "Select a network",
+              "tooltip": "Network"
             },
-            "picture": {
-              "label": "Picture",
-              "placeholder": "Upload asset image",
-              "description": "Image representing the asset",
-              "tooltip": "Upload a logo or image for the asset"
-            },
-            "decimal": {
-              "label": "Decimal",
-              "placeholder": "Enter decimal places",
-              "description": "Number of decimal places",
-              "tooltip": "The number of decimal places supported by the asset"
-            },
-            "totalSupply": {
-              "label": "Total Supply",
-              "placeholder": "Enter total supply",
-              "description": "Total supply of the asset",
-              "tooltip": "The total number of units for this asset"
-            },
-            "features": {
-              "label": "Features",
-              "placeholder": "Enter features",
-              "description": "Special features of the asset",
-              "tooltip": "List any special features or properties of the asset"
+            "provider": {
+              "label": "Provider",
+              "description": "Wallet provider service",
+              "placeholder": "Select wallet provider",
+              "tooltip": "Choose the wallet provider service"
             }
-          },
-          "actions": {
-            "submit": "Create Asset",
-            "cancel": "Cancel",
-            "reset": "Reset Form",
-            "error": "An error occurred while creating the asset",
-            "success": "Asset created successfully"
           }
         }
       },
       "validation": {
-        "nameRequired": "Asset name is required",
-        "nameTooShort": "Asset name is too short (minimum {{min}} characters)",
-        "nameTooLong": "Asset name is too long (maximum {{max}} characters)",
+        "nameRequired": "Name is required",
+        "nameTooShort": "Name is too short",
+        "nameTooLong": "Name is too long",
+        "networkRequired": "Network is required",
+        "providerRequired": "Provider is required"
+      }
+    },
+    "create-asset": {
+      "form": {
+        "create": {
+          "title": "Create Asset",
+          "subtitle": "Add a new cryptocurrency asset",
+          "description": "Create a new asset for tracking cryptocurrency holdings",
+          "footer": "Assets represent your cryptocurrency holdings",
+          "fields": {
+            "name": {
+              "label": "Asset Name",
+              "description": "Enter the name of the cryptocurrency",
+              "placeholder": "e.g., Bitcoin, Ethereum",
+              "tooltip": "Name of the asset"
+            },
+            "symbol": {
+              "label": "Symbol",
+              "description": "Enter the asset symbol",
+              "placeholder": "e.g., BTC, ETH",
+              "tooltip": "Symbol of the asset"
+            },
+            "asset_type": {
+              "label": "Asset Type",
+              "description": "Select the type of asset",
+              "placeholder": "Choose asset type",
+              "tooltip": "Type of the asset"
+            },
+            "network": {
+              "label": "Network",
+              "description": "Enter the network",
+              "placeholder": "Enter network",
+              "tooltip": "Network of the asset"
+            },
+            "picture": {
+              "label": "Picture",
+              "description": "Enter picture",
+              "placeholder": "Enter picture",
+              "tooltip": "Picture of the asset"
+            },
+            "decimal": {
+              "label": "Decimal",
+              "description": "Enter decimal",
+              "placeholder": "Enter decimal",
+              "tooltip": "Decimal of the asset"
+            },
+            "total_supply": {
+              "label": "Total Supply",
+              "description": "Enter total supply",
+              "placeholder": "Enter total supply",
+              "tooltip": "Total supply of the asset"
+            },
+            "features": {
+              "label": "Features",
+              "description": "Enter features",
+              "placeholder": "Enter features",
+              "tooltip": "Features of the asset"
+            }
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Name is required",
+        "nameTooShort": "Name is too short",
+        "nameTooLong": "Name must be at most 25 characters long",
         "symbolRequired": "Symbol is required",
         "assetTypeRequired": "Asset type is required",
         "networkRequired": "Network is required",
         "decimalRequired": "Decimal is required",
-        "decimalTooLow": "Decimal must be at least {{min}}",
-        "decimalTooHigh": "Decimal must be at most {{max}}",
+        "decimalTooLow": "Decimal must be positive",
+        "decimalTooHigh": "Decimal must be less than 18",
         "totalSupplyRequired": "Total supply is required",
-        "totalSupplyTooLow": "Total supply must be greater than {{min}}"
+        "totalSupplyTooLow": "Total supply must be positive"
+      }
+    },
+    "create-wallet-address": {
+      "form": {
+        "create": {
+          "title": "Create Wallet Address",
+          "subtitle": "Generate a new wallet address",
+          "description": "Generate a new address for an existing wallet",
+          "footer": "Each wallet can have multiple addresses",
+          "fields": {
+            "wallet_id": {
+              "label": "Wallet",
+              "description": "Select the wallet for this address",
+              "placeholder": "Choose wallet",
+              "tooltip": "Wallet for this address"
+            },
+            "address": {
+              "label": "Address",
+              "description": "Enter the wallet address",
+              "placeholder": "Enter address",
+              "tooltip": "Address of the wallet"
+            },
+            "label": {
+              "label": "Address Label",
+              "description": "Optional label for this address",
+              "placeholder": "e.g., Main Address",
+              "tooltip": "Label for this address"
+            }
+          }
+        }
+      }
+    },
+    "claim": {
+      "form": {
+        "create": {
+          "title": "Create Claim Campaign",
+          "subtitle": "Add a new claim campaign",
+          "description": "Create a new claim campaign for asset distribution",
+          "footer": "Claim campaigns distribute assets to eligible users",
+          "fields": {
+            "name": {
+              "label": "Campaign Name",
+              "description": "Enter the name of the campaign",
+              "placeholder": "Enter campaign name",
+              "tooltip": "Name of the claim campaign"
+            },
+            "startDate": {
+              "label": "Start Date",
+              "description": "Enter start date",
+              "placeholder": "Enter start date",
+              "tooltip": "Start date of the claim campaign"
+            },
+            "endDate": {
+              "label": "End Date",
+              "description": "Enter end date",
+              "placeholder": "Enter end date",
+              "tooltip": "End date of the claim campaign"
+            },
+            "assetId": {
+              "label": "Asset ID",
+              "description": "Enter asset ID",
+              "placeholder": "Enter asset ID",
+              "tooltip": "Asset ID of the claim campaign"
+            },
+            "smartContractStatus": {
+              "label": "Smart Contract Status",
+              "description": "Enter smart contract status",
+              "placeholder": "Enter smart contract status",
+              "tooltip": "Smart contract status of the claim campaign"
+            },
+            "amount": {
+              "label": "Amount",
+              "description": "Enter amount",
+              "placeholder": "Enter amount",
+              "tooltip": "Amount of the claim campaign"
+            },
+            "owner": {
+              "label": "Owner",
+              "description": "Enter owner",
+              "placeholder": "Enter owner",
+              "tooltip": "Owner of the claim campaign"
+            }
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Name is required",
+        "nameTooLong": "Name must be at most 25 characters long",
+        "dateRequired": "Date is required",
+        "assetIdRequired": "Asset ID is required",
+        "smartContractStatusRequired": "Smart contract status is required",
+        "amountRequired": "Amount is required"
       }
     }
   }

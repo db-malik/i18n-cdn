@@ -1,120 +1,66 @@
 {
   "legal-compliance": {
-    "entity": {
+    "create-document": {
       "form": {
         "create": {
-          "title": "Create Legal Entity",
-          "subtitle": "Register a new legal entity",
-          "footer": "All fields marked with * are required. Please ensure all information is accurate.",
-          "description": "Fill out the form below to create a new legal entity",
+          "title": "Create Document",
+          "subtitle": "Upload a new legal document",
+          "description": "Upload and categorize a new legal document",
+          "footer": "Documents are stored securely and can be accessed by authorized users",
           "fields": {
             "name": {
-              "label": "Name",
-              "placeholder": "Enter the full legal name",
-              "tooltip": "Enter the full legal name of the entity",
-              "description": "Full legal name of the entity"
-            },
-            "number": {
-              "label": "Number",
-              "placeholder": "Enter the number",
-              "tooltip": "Unique identification number for the entity",
-              "description": "Number of the entity"
-            },
-            "email": {
-              "label": "Email",
-              "placeholder": "Enter a contact email",
-              "tooltip": "Primary contact email address for this entity",
-              "description": "Contact email for the entity"
+              "label": "Document Name",
+              "description": "Enter a descriptive name for this document",
+              "placeholder": "e.g., Contract Agreement"
             },
             "type": {
-              "label": "Type",
-              "placeholder": "Select entity type",
-              "tooltip": "Choose whether this entity represents an individual person or an organization",
-              "description": "Specify if the entity is a person or an organization",
-              "options": {
-                "person": "Individual",
-                "organization": "Organization"
-              }
+              "label": "Document Type",
+              "description": "Select the type of legal document",
+              "placeholder": "Choose document type"
             },
-            "surname": {
-              "label": "Surname",
-              "placeholder": "Enter the surname",
-              "tooltip": "Last name or family name of the individual",
-              "description": "Surname of the entity"
+            "file": {
+              "label": "Document File",
+              "description": "Upload the document file",
+              "placeholder": "Choose file"
             },
             "description": {
               "label": "Description",
-              "placeholder": "Enter the description",
-              "tooltip": "Additional details or notes about this entity",
-              "description": "Description of the entity"
+              "description": "Optional description of the document",
+              "placeholder": "Enter document description"
             }
-          },
-          "actions": {
-            "submit": "Create Entity",
-            "cancel": "Cancel",
-            "reset": "Reset Form",
-            "error": "An error occurred while creating the entity",
-            "success": "Entity created successfully",
-            "warning": "Please review the information before submitting"
-          }
-        },
-        "update": {
-          "title": "Update Legal Entity",
-          "subtitle": "Update entity information",
-          "fields": {
-            "name": {
-              "label": "Name",
-              "placeholder": "Enter the full legal name",
-              "tooltip": "Enter the full legal name of the entity",
-              "description": "Full legal name of the entity"
-            },
-            "email": {
-              "label": "Email",
-              "placeholder": "Enter a contact email",
-              "tooltip": "Primary contact email address for this entity",
-              "description": "Contact email for the entity"
-            },
-            "type": {
-              "label": "Type",
-              "placeholder": "Select entity type",
-              "tooltip": "Choose whether this entity represents an individual person or an organization",
-              "description": "Specify if the entity is a person or an organization"
-            },
-            "surname": {
-              "label": "Surname",
-              "placeholder": "Enter the surname",
-              "tooltip": "Last name or family name of the individual",
-              "description": "Surname of the entity"
-            },
-            "description": {
-              "label": "Description",
-              "placeholder": "Enter the description",
-              "tooltip": "Additional details or notes about this entity",
-              "description": "Description of the entity"
-            }
-          },
-          "actions": {
-            "submit": "Update Entity",
-            "cancel": "Cancel",
-            "reset": "Reset Form",
-            "error": "An error occurred while updating the entity",
-            "success": "Entity updated successfully",
-            "warning": "Please review the changes before submitting"
           }
         }
-      },
-      "validation": {
-        "name_too_short": "Entity name is too short (minimum {{min}} characters)",
-        "name_too_long": "Entity name is too long (maximum {{max}} characters)",
-        "numberRequired": "Entity number is required",
-        "numberTooLong": "Entity number is too long (maximum {{max}} characters)",
-        "invalidType": "Invalid entity type",
-        "surnameRequired": "Surname is required for organizations",
-        "descriptionRequired": "Description is required",
-        "descriptionTooLong": "Description is too long (maximum {{max}} characters)",
-        "email": {
-          "invalidFormat": "Invalid email format",
-          "required": "Email is required"
+      }
+    },
+    "create-mandate": {
+      "form": {
+        "create": {
+          "title": "Create Mandate",
+          "subtitle": "Create a new legal mandate",
+          "description": "Create a new mandate for legal representation",
+          "footer": "Mandates define legal representation authority",
+          "fields": {
+            "title": {
+              "label": "Mandate Title",
+              "description": "Enter the title of the mandate",
+              "placeholder": "e.g., Power of Attorney"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Describe the mandate details",
+              "placeholder": "Enter mandate description"
+            },
+            "start_date": {
+              "label": "Start Date",
+              "description": "When the mandate becomes effective",
+              "placeholder": "Select start date"
+            },
+            "end_date": {
+              "label": "End Date",
+              "description": "When the mandate expires (optional)",
+              "placeholder": "Select end date"
+            }
+          }
         }
       }
     }
