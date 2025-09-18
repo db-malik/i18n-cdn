@@ -201,6 +201,65 @@
         "smartContractStatusRequired": "Smart contract status is required",
         "amountRequired": "Amount is required"
       }
+    },
+    "walletAddress": {
+      "form": {
+        "create": {
+          "title": "Create Wallet Address",
+          "subtitle": "Add a new wallet address",
+          "description": "Create a new wallet address for blockchain transactions",
+          "footer": "Wallet addresses are used to send and receive cryptocurrency",
+          "fields": {
+            "address": {
+              "label": "Wallet Address",
+              "description": "Enter the blockchain wallet address",
+              "placeholder": "Enter blockchain address",
+              "tooltip": "The blockchain wallet address"
+            },
+            "isDefault": {
+              "label": "Default Address",
+              "description": "Whether this is the default address for this wallet",
+              "placeholder": "Set as default",
+              "tooltip": "Default address for this wallet"
+            },
+            "beneficiaryContactId": {
+              "label": "Beneficiary Contact",
+              "description": "Select the contact who will receive funds from this address",
+              "placeholder": "Choose beneficiary contact",
+              "tooltip": "Contact who will receive funds"
+            },
+            "proxyWalletId": {
+              "label": "Proxy Wallet",
+              "description": "Optional proxy wallet for this address",
+              "placeholder": "Choose proxy wallet",
+              "tooltip": "Proxy wallet for this address"
+            },
+            "metadata": {
+              "label": "Metadata",
+              "description": "Additional metadata for this address",
+              "placeholder": "Enter metadata",
+              "tooltip": "Additional address metadata"
+            }
+          },
+          "actions": {
+            "submit": "Create Address",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error creating address",
+            "success": "Address created successfully"
+          }
+        }
+      },
+      "validation": {
+        "addressRequired": "Address is required",
+        "addressTooShort": "Address is too short",
+        "addressTooLong": "Address is too long",
+        "invalidAddress": "Invalid address format",
+        "beneficiaryContactIdRequired": "Beneficiary contact is required",
+        "invalidBeneficiaryContactId": "Invalid beneficiary contact ID",
+        "invalidProxyWalletId": "Invalid proxy wallet ID",
+        "invalidMetadata": "Invalid metadata format"
+      }
     }
   }
 }

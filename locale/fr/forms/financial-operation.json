@@ -1,5 +1,83 @@
 {
   "financial-operation": {
+    "wallet": {
+      "form": {
+        "create": {
+          "title": "Créer un Portefeuille",
+          "subtitle": "Ajouter un nouveau portefeuille de cryptomonnaie",
+          "description": "Créer un nouveau portefeuille pour gérer les actifs cryptographiques",
+          "footer": "Les portefeuilles sont utilisés pour stocker et gérer vos actifs cryptographiques",
+          "fields": {
+            "name": {
+              "label": "Nom du Portefeuille",
+              "description": "Entrez un nom descriptif pour ce portefeuille",
+              "placeholder": "ex: Portefeuille Bitcoin Principal",
+              "tooltip": "Nom du portefeuille"
+            },
+            "network": {
+              "label": "Réseau",
+              "description": "Réseau blockchain pour le portefeuille",
+              "placeholder": "Sélectionnez un réseau",
+              "tooltip": "Réseau"
+            },
+            "provider": {
+              "label": "Fournisseur",
+              "description": "Service de fournisseur de portefeuille",
+              "placeholder": "Sélectionnez le fournisseur de portefeuille",
+              "tooltip": "Choisissez le service de fournisseur de portefeuille"
+            }
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Le nom est requis",
+        "nameTooShort": "Le nom est trop court",
+        "nameTooLong": "Le nom est trop long",
+        "networkRequired": "Le réseau est requis",
+        "providerRequired": "Le fournisseur est requis"
+      }
+    },
+    "transfer": {
+      "form": {
+        "create": {
+          "title": "Créer un Transfert",
+          "subtitle": "Initier un nouveau transfert",
+          "description": "Créer un nouveau transfert entre comptes ou entités",
+          "footer": "Les transferts déplacent les fonds entre différents comptes",
+          "fields": {
+            "amount": {
+              "label": "Montant",
+              "description": "Montant à transférer",
+              "placeholder": "Entrez le montant",
+              "tooltip": "Montant à transférer"
+            },
+            "asset": {
+              "label": "Actif",
+              "description": "Actif à transférer",
+              "placeholder": "Sélectionnez l'actif",
+              "tooltip": "Actif à transférer"
+            },
+            "recipientType": {
+              "label": "Type de Destinataire",
+              "description": "Type de destinataire",
+              "placeholder": "Sélectionnez le type de destinataire",
+              "tooltip": "Type de destinataire"
+            },
+            "address": {
+              "label": "Adresse",
+              "description": "Adresse du destinataire",
+              "placeholder": "Collez ou entrez l'adresse",
+              "tooltip": "Adresse du destinataire"
+            }
+          }
+        }
+      },
+      "validation": {
+        "amountRequired": "Le montant est requis",
+        "assetRequired": "L'actif est requis",
+        "addressTooShort": "L'adresse doit contenir au moins 3 caractères"
+      }
+    },
     "create-transfer": {
       "form": {
         "create": {

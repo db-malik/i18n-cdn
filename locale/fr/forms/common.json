@@ -39,297 +39,278 @@
     "sign_up": "S'inscrire",
     "register": "S'inscrire"
   },
-  "common": {
-    "create-entity": {
+  "contact": {
+    "validation": {
+      "firstNameRequired": "Le prénom est obligatoire",
+      "lastNameRequired": "Le nom de famille est obligatoire",
+      "emailRequired": "L'email est obligatoire",
+      "invalidEmail": "Format d'email invalide",
+      "invalidUrl": "Format d'URL invalide",
+      "companyNameRequired": "Le nom de l'entreprise est obligatoire",
+      "typeRequired": "Le type de contact est obligatoire"
+    },
+    "form": {
+      "create": {
+        "fields": {
+          "firstName": {
+            "label": "Prénom",
+            "placeholder": "Entrez le prénom",
+            "tooltip": "Prénom de la personne",
+            "description": "Prénom de la personne"
+          },
+          "lastName": {
+            "label": "Nom de famille",
+            "placeholder": "Entrez le nom de famille",
+            "tooltip": "Nom de famille de la personne",
+            "description": "Nom de famille de la personne"
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "nom@exemple.com",
+            "tooltip": "Adresse email de la personne",
+            "description": "Adresse email"
+          },
+          "phoneNumber": {
+            "label": "Téléphone",
+            "placeholder": "Entrez le numéro de téléphone",
+            "tooltip": "Numéro de téléphone de la personne",
+            "description": "Numéro de téléphone"
+          },
+          "nationality": {
+            "label": "Nationalité",
+            "placeholder": "Entrez la nationalité",
+            "tooltip": "Nationalité de la personne",
+            "description": "Nationalité"
+          },
+          "birthDate": {
+            "label": "Date de naissance",
+            "placeholder": "Sélectionnez la date de naissance",
+            "tooltip": "Date de naissance de la personne",
+            "description": "Date de naissance"
+          },
+          "companyName": {
+            "label": "Nom de l'entreprise",
+            "placeholder": "Entrez le nom de l'entreprise",
+            "tooltip": "Nom officiel de l'entreprise",
+            "description": "Nom de l'entreprise"
+          },
+          "legalForm": {
+            "label": "Forme juridique",
+            "placeholder": "SAS, SARL, SA...",
+            "tooltip": "Forme juridique de l'entreprise",
+            "description": "Forme juridique"
+          },
+          "registrationNumber": {
+            "label": "N° d'immatriculation",
+            "placeholder": "SIRET, SIREN...",
+            "tooltip": "Numéro d'immatriculation de l'entreprise",
+            "description": "Numéro d'immatriculation"
+          },
+          "vatNumber": {
+            "label": "N° de TVA",
+            "placeholder": "Entrez le numéro de TVA",
+            "tooltip": "Numéro de TVA de l'entreprise",
+            "description": "Numéro de TVA"
+          },
+          "websiteUrl": {
+            "label": "Site web",
+            "placeholder": "https://exemple.com",
+            "tooltip": "Site web officiel de l'entreprise",
+            "description": "URL du site web"
+          },
+          "ownerId": {
+            "description": "ID de l'entité propriétaire"
+          },
+          "type": {
+            "label": "Type de contact",
+            "placeholder": "Sélectionnez le type",
+            "tooltip": "Choisissez entre personne physique ou organisation",
+            "description": "Type de contact",
+            "options": {
+              "person": "Personne",
+              "organization": "Organisation"
+            }
+          }
+        }
+      }
+    },
+    "entityOnboarding": {
       "form": {
         "create": {
-          "title": "Créer une Entité",
-          "subtitle": "Ajouter une nouvelle entité légale",
-          "description": "Créer une nouvelle entité légale dans le système",
-          "footer": "Les entités représentent des personnes morales ou des organisations",
+          "title": "Intégration d'Entité",
+          "subtitle": "Compléter la configuration de l'entité",
+          "description": "Configurez votre entité avec toutes les informations requises",
+          "footer": "Cela créera votre entité et les contacts associés",
           "fields": {
-            "name": {
-              "label": "Nom de l'Entité",
-              "description": "Entrez le nom légal de l'entité",
-              "placeholder": "Entrez le nom de l'entité"
+            "entity": {
+              "name": {
+                "label": "Nom de l'Entité",
+                "description": "Entrez le nom de l'entité à intégrer",
+                "placeholder": "Entrez le nom de l'entité",
+                "tooltip": "Nom officiel de l'entité à intégrer"
+              },
+              "email": {
+                "label": "Email de l'Entité",
+                "description": "Entrez l'email de contact pour l'entité",
+                "placeholder": "Entrez l'email de l'entité",
+                "tooltip": "Email de contact pour l'entité"
+              },
+              "type": {
+                "label": "Type d'Entité",
+                "description": "Sélectionnez le type d'entité",
+                "placeholder": "Choisir le type d'entité",
+                "tooltip": "Type d'entité à intégrer"
+              },
+              "legalForm": {
+                "label": "Forme Juridique",
+                "description": "Sélectionnez la forme juridique de l'entité",
+                "placeholder": "Choisir la forme juridique",
+                "tooltip": "Forme juridique de l'entité"
+              },
+              "registrationNumber": {
+                "label": "Numéro d'Enregistrement",
+                "description": "Entrez le numéro d'enregistrement",
+                "placeholder": "Entrez le numéro d'enregistrement",
+                "tooltip": "Numéro d'enregistrement officiel"
+              },
+              "vatNumber": {
+                "label": "Numéro de TVA",
+                "description": "Entrez le numéro de TVA",
+                "placeholder": "Entrez le numéro de TVA",
+                "tooltip": "Numéro de Taxe sur la Valeur Ajoutée"
+              },
+              "websiteUrl": {
+                "label": "URL du Site Web",
+                "description": "Entrez l'URL du site web",
+                "placeholder": "Entrez l'URL du site web",
+                "tooltip": "URL officielle du site web"
+              },
+              "description": {
+                "label": "Description",
+                "description": "Entrez une description de l'entité",
+                "placeholder": "Entrez la description de l'entité",
+                "tooltip": "Description de l'entité"
+              }
             },
-            "type": {
-              "label": "Type d'Entité",
-              "description": "Sélectionnez le type d'entité légale",
-              "placeholder": "Choisir le type d'entité"
-            },
-            "registration_number": {
-              "label": "Numéro d'Enregistrement",
-              "description": "Entrez le numéro d'enregistrement officiel",
-              "placeholder": "Entrez le numéro d'enregistrement"
-            },
-            "country": {
-              "label": "Pays",
-              "description": "Sélectionnez le pays d'enregistrement",
-              "placeholder": "Choisir le pays"
+            "contact": {
+              "firstName": {
+                "label": "Prénom",
+                "description": "Entrez le prénom du contact",
+                "placeholder": "Entrez le prénom",
+                "tooltip": "Prénom du contact"
+              },
+              "lastName": {
+                "label": "Nom de Famille",
+                "description": "Entrez le nom de famille du contact",
+                "placeholder": "Entrez le nom de famille",
+                "tooltip": "Nom de famille du contact"
+              },
+              "email": {
+                "label": "Email du Contact",
+                "description": "Entrez l'adresse email du contact",
+                "placeholder": "Entrez l'adresse email",
+                "tooltip": "Adresse email du contact"
+              },
+              "phoneNumber": {
+                "label": "Numéro de Téléphone",
+                "description": "Entrez le numéro de téléphone du contact",
+                "placeholder": "Entrez le numéro de téléphone",
+                "tooltip": "Numéro de téléphone du contact"
+              },
+              "nationality": {
+                "label": "Nationalité",
+                "description": "Sélectionnez la nationalité du contact",
+                "placeholder": "Choisir la nationalité",
+                "tooltip": "Nationalité du contact"
+              },
+              "birthDate": {
+                "label": "Date de Naissance",
+                "description": "Entrez la date de naissance du contact",
+                "placeholder": "Entrez la date de naissance",
+                "tooltip": "Date de naissance du contact"
+              },
+              "type": {
+                "label": "Type de Contact",
+                "description": "Sélectionnez le type de contact",
+                "placeholder": "Choisir le type de contact",
+                "tooltip": "Type de contact"
+              }
             },
             "address": {
-              "label": "Adresse",
-              "description": "Entrez l'adresse enregistrée",
-              "placeholder": "Entrez l'adresse"
+              "street": {
+                "label": "Adresse de Rue",
+                "description": "Entrez l'adresse de rue",
+                "placeholder": "Entrez l'adresse de rue",
+                "tooltip": "Adresse de rue"
+              },
+              "city": {
+                "label": "Ville",
+                "description": "Entrez la ville",
+                "placeholder": "Entrez la ville",
+                "tooltip": "Ville"
+              },
+              "state": {
+                "label": "État",
+                "description": "Entrez l'état",
+                "placeholder": "Entrez l'état",
+                "tooltip": "État"
+              },
+              "zipCode": {
+                "label": "Code Postal",
+                "description": "Entrez le code postal",
+                "placeholder": "Entrez le code postal",
+                "tooltip": "Code postal"
+              },
+              "country": {
+                "label": "Pays",
+                "description": "Entrez le pays",
+                "placeholder": "Entrez le pays",
+                "tooltip": "Pays"
+              }
             }
-          }
-        }
-      }
-    },
-    "create-contact": {
-      "form": {
-        "create": {
-          "title": "Créer un Contact",
-          "subtitle": "Ajouter une nouvelle personne de contact",
-          "description": "Créer un nouvel enregistrement de personne de contact",
-          "footer": "Les contacts représentent des individus associés aux entités",
-          "fields": {
-            "first_name": {
-              "label": "Prénom",
-              "description": "Entrez le prénom du contact",
-              "placeholder": "Entrez le prénom"
-            },
-            "last_name": {
-              "label": "Nom de Famille",
-              "description": "Entrez le nom de famille du contact",
-              "placeholder": "Entrez le nom de famille"
-            },
-            "email": {
-              "label": "Adresse Email",
-              "description": "Entrez l'adresse email du contact",
-              "placeholder": "Entrez l'adresse email"
-            },
-            "phone": {
-              "label": "Numéro de Téléphone",
-              "description": "Entrez le numéro de téléphone du contact",
-              "placeholder": "Entrez le numéro de téléphone"
-            },
-            "role": {
-              "label": "Rôle",
-              "description": "Sélectionnez le rôle du contact",
-              "placeholder": "Choisir le rôle"
-            }
-          }
-        }
-      }
-    },
-    "create-postal-address": {
-      "form": {
-        "create": {
-          "title": "Créer une Adresse",
-          "subtitle": "Ajouter une nouvelle adresse postale",
-          "description": "Créer un nouvel enregistrement d'adresse postale",
-          "footer": "Les adresses sont utilisées à des fins légales et de communication",
-          "fields": {
-            "street": {
-              "label": "Adresse de Rue",
-              "description": "Entrez l'adresse de rue",
-              "placeholder": "Entrez l'adresse de rue"
-            },
-            "city": {
-              "label": "Ville",
-              "description": "Entrez la ville",
-              "placeholder": "Entrez la ville"
-            },
-            "postal_code": {
-              "label": "Code Postal",
-              "description": "Entrez le code postal",
-              "placeholder": "Entrez le code postal"
-            },
-            "country": {
-              "label": "Pays",
-              "description": "Sélectionnez le pays",
-              "placeholder": "Choisir le pays"
-            },
-            "type": {
-              "label": "Type d'Adresse",
-              "description": "Sélectionnez le type d'adresse",
-              "placeholder": "Choisir le type d'adresse"
-            }
-          }
-        }
-      }
-    }
-  },
-  "messaging-center": {
-    "sendEmail": {
-      "form": {
-        "create": {
-          "title": "Envoyer un Email",
-          "subtitle": "Composer et envoyer un email",
-          "description": "Créer et envoyer un email aux destinataires",
-          "footer": "Les emails sont envoyés via les fournisseurs configurés",
-          "fields": {
-            "email_id": {
-              "label": "Modèle d'Email",
-              "description": "Sélectionnez le modèle d'email à utiliser",
-              "placeholder": "Choisir le modèle d'email"
-            },
-            "template_id": {
-              "label": "Modèle",
-              "description": "Sélectionnez le modèle d'email",
-              "placeholder": "Choisir le modèle"
-            },
-            "recipients": {
-              "label": "Destinataires",
-              "description": "Ajouter des destinataires d'email",
-              "placeholder": "Ajouter des destinataires"
-            },
-            "subject": {
-              "label": "Sujet",
-              "description": "Entrez le sujet de l'email",
-              "placeholder": "Entrez le sujet"
-            },
-            "pre_header": {
-              "label": "Pré-en-tête",
-              "description": "Texte de pré-en-tête optionnel",
-              "placeholder": "Entrez le pré-en-tête"
-            },
-            "text": {
-              "label": "Texte Brut",
-              "description": "Contenu en texte brut pour l'email",
-              "placeholder": "Entrez le contenu en texte brut"
-            },
-            "cc": {
-              "label": "CC",
-              "description": "Destinataires en copie",
-              "placeholder": "Ajouter des destinataires CC"
-            },
-            "cci": {
-              "label": "CCI",
-              "description": "Destinataires en copie cachée",
-              "placeholder": "Ajouter des destinataires CCI"
-            },
-            "from_email_id": {
-              "label": "Email Expéditeur",
-              "description": "Sélectionnez l'adresse email de l'expéditeur",
-              "placeholder": "Choisir l'email expéditeur"
-            }
+          },
+          "actions": {
+            "submit": "Compléter l'Intégration",
+            "cancel": "Annuler",
+            "reset": "Réinitialiser",
+            "error": "Erreur lors de l'intégration",
+            "success": "Intégration terminée avec succès"
           }
         }
       },
       "validation": {
-        "emailIdRequired": "L'ID de l'email est requis",
-        "recipientsRequired": "Au moins un destinataire est requis",
-        "subjectRequired": "Le sujet est requis",
-        "subjectTooLong": "Le sujet est trop long",
-        "preHeaderTooLong": "Le pré-en-tête est trop long",
-        "textTooLong": "Le contenu texte est trop long",
-        "invalidEmail": "Adresse email invalide",
-        "recipientsTooMany": "Trop de destinataires"
-      }
-    },
-    "createEmailTemplate": {
-      "form": {
-        "create": {
-          "title": "Créer un Modèle d'Email",
-          "subtitle": "Créer un nouveau modèle d'email",
-          "description": "Créer un nouveau modèle d'email pour l'envoi d'emails",
-          "footer": "Les modèles peuvent être réutilisés pour plusieurs emails",
-          "fields": {
-            "name": {
-              "label": "Nom du Modèle",
-              "description": "Entrez un nom pour le modèle",
-              "placeholder": "Entrez le nom du modèle"
-            },
-            "subject": {
-              "label": "Sujet",
-              "description": "Entrez le sujet de l'email",
-              "placeholder": "Entrez le sujet"
-            },
-            "html_content": {
-              "label": "Contenu HTML",
-              "description": "Entrez le contenu HTML",
-              "placeholder": "Entrez le contenu HTML"
-            },
-            "text_content": {
-              "label": "Contenu Texte",
-              "description": "Entrez le contenu en texte brut",
-              "placeholder": "Entrez le contenu texte"
-            },
-            "layout_id": {
-              "label": "Mise en Page",
-              "description": "Sélectionnez la mise en page de l'email",
-              "placeholder": "Choisir la mise en page"
-            },
-            "from_id": {
-              "label": "Email Expéditeur",
-              "description": "Sélectionnez l'email de l'expéditeur",
-              "placeholder": "Choisir l'email expéditeur"
-            },
-            "variables": {
-              "label": "Variables",
-              "description": "Définir les variables du modèle",
-              "placeholder": "Ajouter des variables"
-            },
-            "description": {
-              "label": "Description",
-              "description": "Entrez la description du modèle",
-              "placeholder": "Entrez la description"
-            }
-          }
-        }
-      }
-    },
-    "createEmailLayout": {
-      "form": {
-        "create": {
-          "title": "Créer une Mise en Page d'Email",
-          "subtitle": "Créer un nouveau modèle de mise en page d'email",
-          "description": "Créer un nouveau modèle de mise en page d'email",
-          "footer": "Les mises en page définissent la structure des modèles d'email",
-          "fields": {
-            "name": {
-              "label": "Nom de la Mise en Page",
-              "description": "Entrez un nom pour la mise en page",
-              "placeholder": "Entrez le nom de la mise en page"
-            },
-            "html_content": {
-              "label": "Contenu HTML",
-              "description": "Entrez le contenu HTML de la mise en page",
-              "placeholder": "Entrez le contenu HTML"
-            },
-            "variables": {
-              "label": "Variables",
-              "description": "Définir les variables de la mise en page",
-              "placeholder": "Ajouter des variables"
-            },
-            "description": {
-              "label": "Description",
-              "description": "Entrez la description de la mise en page",
-              "placeholder": "Entrez la description"
-            }
-          }
-        }
-      }
-    },
-    "createSender": {
-      "form": {
-        "create": {
-          "title": "Créer un Expéditeur",
-          "subtitle": "Ajouter une nouvelle adresse email d'expéditeur",
-          "description": "Créer une nouvelle adresse email d'expéditeur",
-          "footer": "Les expéditeurs sont des adresses email qui peuvent envoyer des emails",
-          "fields": {
-            "name": {
-              "label": "Nom de l'Expéditeur",
-              "description": "Entrez le nom de l'expéditeur",
-              "placeholder": "Entrez le nom de l'expéditeur"
-            },
-            "email": {
-              "label": "Adresse Email",
-              "description": "Entrez l'adresse email",
-              "placeholder": "Entrez l'adresse email"
-            },
-            "provider": {
-              "label": "Fournisseur",
-              "description": "Sélectionnez le fournisseur d'email",
-              "placeholder": "Choisir le fournisseur"
-            }
-          }
+        "entity": {
+          "nameRequired": "Le nom de l'entité est requis",
+          "nameTooShort": "Le nom de l'entité est trop court",
+          "nameTooLong": "Le nom de l'entité est trop long",
+          "emailRequired": "L'email de l'entité est requis",
+          "invalidEmail": "Format d'email invalide",
+          "typeRequired": "Le type d'entité est requis",
+          "legalFormRequired": "La forme juridique est requise",
+          "registrationNumberRequired": "Le numéro d'enregistrement est requis",
+          "vatNumberRequired": "Le numéro de TVA est requis",
+          "invalidUrl": "Format d'URL invalide",
+          "descriptionTooLong": "La description est trop longue"
+        },
+        "contact": {
+          "firstNameRequired": "Le prénom est requis",
+          "lastNameRequired": "Le nom de famille est requis",
+          "emailRequired": "L'email du contact est requis",
+          "invalidEmail": "Format d'email invalide",
+          "phoneNumberRequired": "Le numéro de téléphone est requis",
+          "nationalityRequired": "La nationalité est requise",
+          "birthDateRequired": "La date de naissance est requise",
+          "typeRequired": "Le type de contact est requis"
+        },
+        "address": {
+          "streetRequired": "L'adresse de rue est requise",
+          "cityRequired": "La ville est requise",
+          "stateRequired": "L'état est requis",
+          "zipCodeRequired": "Le code postal est requis",
+          "countryRequired": "Le pays est requis"
         }
       }
     }
   }
 }
+

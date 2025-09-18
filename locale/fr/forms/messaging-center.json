@@ -52,6 +52,11 @@
               "label": "Email Expéditeur",
               "description": "Sélectionnez l'adresse email de l'expéditeur",
               "placeholder": "Choisir l'email expéditeur"
+            },
+            "provider": {
+              "label": "Fournisseur d'Email",
+              "description": "Choisissez le fournisseur de service email",
+              "placeholder": "Sélectionner le fournisseur"
             }
           }
         }
@@ -64,7 +69,13 @@
         "preHeaderTooLong": "Le pré-en-tête est trop long",
         "textTooLong": "Le contenu texte est trop long",
         "invalidEmail": "Adresse email invalide",
-        "recipientsTooMany": "Trop de destinataires"
+        "recipientsTooMany": "Trop de destinataires",
+        "invalidEmailId": "Format d'ID d'email invalide",
+        "invalidTemplateId": "Format d'ID de modèle invalide",
+        "invalidFromEmailId": "Format d'ID d'email expéditeur invalide",
+        "recipientsTooFew": "Au moins un destinataire est requis",
+        "subjectTooShort": "Le sujet ne peut pas être vide",
+        "invalidEmailFormat": "Format d'email invalide"
       }
     },
     "createEmailTemplate": {
@@ -117,6 +128,21 @@
             }
           }
         }
+      },
+      "validation": {
+        "nameRequired": "Le nom du modèle est requis",
+        "nameTooShort": "Le nom du modèle ne peut pas être vide",
+        "nameTooLong": "Le nom du modèle est trop long",
+        "subjectRequired": "Le sujet est requis",
+        "subjectTooShort": "Le sujet ne peut pas être vide",
+        "subjectTooLong": "Le sujet est trop long",
+        "descriptionTooLong": "La description est trop longue",
+        "structureInvalid": "Format de structure invalide",
+        "variablesInvalid": "Format de variables invalide",
+        "conditionsInvalid": "Format de conditions invalide",
+        "templateConfigInvalid": "Configuration de modèle invalide",
+        "layoutIdRequired": "La mise en page est requise",
+        "invalidLayoutId": "Format d'ID de mise en page invalide"
       }
     },
     "createEmailLayout": {
@@ -146,9 +172,32 @@
               "label": "Description",
               "description": "Entrez la description de la mise en page",
               "placeholder": "Entrez la description"
+            },
+            "structure": {
+              "label": "Structure de Mise en Page",
+              "description": "Définir la structure de mise en page comme objet JSON",
+              "placeholder": "{\"sections\": [{\"type\": \"header\", \"content\": \"Bienvenue!\"}]}"
+            },
+            "provider": {
+              "label": "Fournisseur d'Email",
+              "description": "Choisissez le fournisseur de service email",
+              "placeholder": "Sélectionner le fournisseur"
             }
           }
         }
+      },
+      "validation": {
+        "nameRequired": "Le nom de la mise en page est requis",
+        "nameTooShort": "Le nom de la mise en page ne peut pas être vide",
+        "nameTooLong": "Le nom de la mise en page est trop long",
+        "htmlContentRequired": "Le contenu HTML est requis",
+        "htmlContentTooShort": "Le contenu HTML ne peut pas être vide",
+        "htmlContentTooLong": "Le contenu HTML est trop long",
+        "descriptionTooLong": "La description est trop longue",
+        "structureInvalid": "Format de structure invalide",
+        "providerRequired": "Le fournisseur est requis",
+        "providerInvalid": "Fournisseur invalide",
+        "nameInvalidFormat": "Format de nom invalide"
       }
     },
     "createSender": {
@@ -176,6 +225,444 @@
             }
           }
         }
+      },
+      "validation": {
+        "nameRequired": "Le nom de l'expéditeur est requis",
+        "emailRequired": "L'adresse email est requise",
+        "emailInvalid": "Format d'email invalide"
+      }
+    },
+    "email": {
+      "form": {
+        "create": {
+          "title": "Créer un Email",
+          "subtitle": "Créer un nouvel enregistrement d'email",
+          "description": "Créer un nouvel enregistrement d'email dans le système",
+          "footer": "Les enregistrements d'email peuvent être utilisés pour le suivi et les modèles",
+          "fields": {
+            "name": {
+              "label": "Nom de l'Email",
+              "description": "Entrez un nom descriptif pour cet email",
+              "placeholder": "Entrez le nom de l'email",
+              "tooltip": "Entrez un nom descriptif pour cet email"
+            },
+            "context": {
+              "label": "Contexte de l'Email",
+              "description": "Fournir un contexte ou une description pour cet email",
+              "placeholder": "Entrez le contexte de l'email",
+              "tooltip": "Fournir un contexte ou une description pour cet email"
+            },
+            "to_user_id": {
+              "label": "Utilisateur Destinataire",
+              "description": "Choisissez un utilisateur à qui envoyer l'email",
+              "placeholder": "Sélectionner un utilisateur",
+              "tooltip": "Choisissez un utilisateur à qui envoyer l'email"
+            },
+            "to_entity_id": {
+              "label": "Entité Destinataire",
+              "description": "Choisissez une entité à qui envoyer l'email",
+              "placeholder": "Sélectionner une entité",
+              "tooltip": "Choisissez une entité à qui envoyer l'email"
+            }
+          },
+          "actions": {
+            "create": "Créer l'Email",
+            "cancel": "Annuler"
+          },
+          "validation": {
+            "nameRequired": "Le nom de l'email est requis",
+            "nameTooShort": "Le nom de l'email est trop court",
+            "nameTooLong": "Le nom de l'email est trop long",
+            "contextRequired": "Le contexte de l'email est requis",
+            "contextTooShort": "Le contexte est trop court",
+            "contextTooLong": "Le contexte est trop long",
+            "invalidUserId": "Format d'ID utilisateur invalide",
+            "invalidEntityId": "Format d'ID d'entité invalide"
+          }
+        },
+        "update": {
+          "title": "Modifier l'Email",
+          "subtitle": "Modifier l'enregistrement d'email",
+          "description": "Modifier un enregistrement d'email existant",
+          "footer": "Les modifications seront sauvegardées immédiatement",
+          "fields": {
+            "name": {
+              "label": "Nom de l'Email",
+              "description": "Entrez un nom descriptif pour cet email",
+              "placeholder": "Entrez le nom de l'email",
+              "tooltip": "Entrez un nom descriptif pour cet email"
+            },
+            "template_id": {
+              "label": "Modèle d'Email",
+              "description": "Choisissez le modèle d'email à utiliser",
+              "placeholder": "Sélectionner un modèle",
+              "tooltip": "Choisissez le modèle d'email à utiliser"
+            },
+            "context": {
+              "label": "Contexte de l'Email",
+              "description": "Fournir un contexte ou une description pour cet email",
+              "placeholder": "Entrez le contexte de l'email",
+              "tooltip": "Fournir un contexte ou une description pour cet email"
+            },
+            "to_user_id": {
+              "label": "Utilisateur Destinataire",
+              "description": "Choisissez un utilisateur à qui envoyer l'email",
+              "placeholder": "Sélectionner un utilisateur",
+              "tooltip": "Choisissez un utilisateur à qui envoyer l'email"
+            },
+            "to_entity_id": {
+              "label": "Entité Destinataire",
+              "description": "Choisissez une entité à qui envoyer l'email",
+              "placeholder": "Sélectionner une entité",
+              "tooltip": "Choisissez une entité à qui envoyer l'email"
+            }
+          },
+          "actions": {
+            "update": "Modifier l'Email",
+            "cancel": "Annuler"
+          },
+          "validation": {
+            "nameRequired": "Le nom de l'email est requis",
+            "nameTooShort": "Le nom de l'email est trop court",
+            "nameTooLong": "Le nom de l'email est trop long",
+            "templateIdRequired": "Le modèle est requis",
+            "invalidTemplateId": "Format d'ID de modèle invalide",
+            "contextRequired": "Le contexte de l'email est requis",
+            "contextTooShort": "Le contexte est trop court",
+            "contextTooLong": "Le contexte est trop long",
+            "invalidUserId": "Format d'ID utilisateur invalide",
+            "invalidEntityId": "Format d'ID d'entité invalide"
+          }
+        }
+      }
+    },
+    "emailTemplate": {
+      "form": {
+        "create": {
+          "title": "Créer un Modèle d'Email",
+          "subtitle": "Concevoir un nouveau modèle d'email",
+          "description": "Créer un modèle d'email réutilisable avec des variables et une structure",
+          "footer": "Les modèles peuvent être réutilisés pour plusieurs emails",
+          "fields": {
+            "name": {
+              "label": "Nom du Modèle",
+              "description": "Entrez un nom descriptif pour ce modèle",
+              "placeholder": "Entrez le nom du modèle",
+              "tooltip": "Entrez un nom descriptif pour ce modèle"
+            },
+            "subject": {
+              "label": "Sujet de l'Email",
+              "description": "Entrez la ligne de sujet de l'email avec des variables optionnelles comme {{firstName}}",
+              "placeholder": "Entrez le sujet de l'email",
+              "tooltip": "Entrez la ligne de sujet de l'email avec des variables optionnelles comme {{firstName}}"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Fournir une description de ce pour quoi ce modèle est utilisé",
+              "placeholder": "Entrez la description du modèle",
+              "tooltip": "Fournir une description de ce pour quoi ce modèle est utilisé"
+            },
+            "structure": {
+              "label": "Structure de l'Email",
+              "description": "Définir la structure de l'email comme objet JSON",
+              "placeholder": "{\"components\": [{\"type\": \"header\", \"content\": \"Bienvenue!\"}]}",
+              "tooltip": "Définir la structure de l'email comme objet JSON",
+              "variables": "Variables du Modèle",
+              "conditions": "Conditions",
+              "template_config": "Configuration du Modèle"
+            },
+            "html_content": {
+              "label": "Contenu HTML",
+              "description": "Contenu HTML pour le modèle",
+              "placeholder": "Entrez le contenu HTML",
+              "tooltip": "Contenu HTML pour le modèle"
+            },
+            "layout_id": {
+              "label": "Mise en Page",
+              "description": "Choisissez la mise en page de l'email",
+              "placeholder": "Sélectionner la mise en page",
+              "tooltip": "Choisissez la mise en page de l'email"
+            }
+          },
+          "actions": {
+            "create": "Créer le Modèle",
+            "cancel": "Annuler"
+          },
+          "validation": {
+            "nameRequired": "Le nom du modèle est requis",
+            "nameTooShort": "Le nom du modèle ne peut pas être vide",
+            "nameTooLong": "Le nom du modèle est trop long",
+            "subjectRequired": "Le sujet est requis",
+            "subjectTooShort": "Le sujet ne peut pas être vide",
+            "subjectTooLong": "Le sujet est trop long",
+            "descriptionTooLong": "La description est trop longue",
+            "structureInvalid": "Format de structure invalide",
+            "variablesInvalid": "Format de variables invalide",
+            "conditionsInvalid": "Format de conditions invalide",
+            "templateConfigInvalid": "Configuration de modèle invalide",
+            "layoutIdRequired": "La mise en page est requise",
+            "invalidLayoutId": "Format d'ID de mise en page invalide"
+          }
+        },
+        "update": {
+          "title": "Modifier le Modèle d'Email",
+          "subtitle": "Modifier le modèle d'email",
+          "description": "Modifier un modèle d'email existant",
+          "footer": "Les modifications seront sauvegardées immédiatement",
+          "fields": {
+            "name": {
+              "label": "Nom du Modèle",
+              "description": "Entrez un nom descriptif pour ce modèle",
+              "placeholder": "Entrez le nom du modèle",
+              "tooltip": "Entrez un nom descriptif pour ce modèle"
+            },
+            "subject": {
+              "label": "Sujet de l'Email",
+              "description": "Entrez la ligne de sujet de l'email avec des variables optionnelles comme {{firstName}}",
+              "placeholder": "Entrez le sujet de l'email",
+              "tooltip": "Entrez la ligne de sujet de l'email avec des variables optionnelles comme {{firstName}}"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Fournir une description de ce pour quoi ce modèle est utilisé",
+              "placeholder": "Entrez la description du modèle",
+              "tooltip": "Fournir une description de ce pour quoi ce modèle est utilisé"
+            },
+            "structure": {
+              "label": "Structure de l'Email",
+              "description": "Définir la structure de l'email comme objet JSON",
+              "placeholder": "{\"components\": [{\"type\": \"header\", \"content\": \"Bienvenue!\"}]}",
+              "tooltip": "Définir la structure de l'email comme objet JSON"
+            },
+            "variables": {
+              "label": "Variables du Modèle",
+              "description": "Définir les variables comme objet JSON (ex: {\"firstName\": \"John\"})",
+              "placeholder": "{\"varA\": \"valA\", \"varB\": \"valB\"}",
+              "tooltip": "Définir les variables comme objet JSON (ex: {\"firstName\": \"John\"})"
+            }
+          },
+          "actions": {
+            "update": "Modifier le Modèle",
+            "cancel": "Annuler"
+          },
+          "validation": {
+            "nameRequired": "Le nom du modèle est requis",
+            "nameTooShort": "Le nom du modèle ne peut pas être vide",
+            "nameTooLong": "Le nom du modèle est trop long",
+            "subjectRequired": "Le sujet est requis",
+            "subjectTooShort": "Le sujet ne peut pas être vide",
+            "subjectTooLong": "Le sujet est trop long",
+            "descriptionTooLong": "La description est trop longue",
+            "structureInvalid": "Format de structure invalide",
+            "variablesInvalid": "Format de variables invalide"
+          }
+        }
+      }
+    },
+    "emailLayout": {
+      "form": {
+        "create": {
+          "title": "Créer une Mise en Page d'Email",
+          "subtitle": "Concevoir une nouvelle mise en page d'email",
+          "description": "Créer une mise en page d'email réutilisable avec structure HTML",
+          "footer": "Les mises en page fournissent la structure visuelle pour les modèles d'email",
+          "fields": {
+            "name": {
+              "label": "Nom de la Mise en Page",
+              "description": "Entrez un nom descriptif pour cette mise en page",
+              "placeholder": "Entrez le nom de la mise en page",
+              "tooltip": "Entrez un nom descriptif pour cette mise en page"
+            },
+            "html_content": {
+              "label": "Contenu HTML",
+              "description": "Entrez la structure HTML pour cette mise en page",
+              "placeholder": "Entrez le contenu HTML",
+              "tooltip": "Entrez la structure HTML pour cette mise en page"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Fournir une description de cette mise en page",
+              "placeholder": "Entrez la description de la mise en page",
+              "tooltip": "Fournir une description de cette mise en page"
+            },
+            "structure": {
+              "label": "Structure de Mise en Page",
+              "description": "Définir la structure de mise en page comme objet JSON",
+              "placeholder": "{\"sections\": [{\"type\": \"header\", \"content\": \"Bienvenue!\"}]}",
+              "tooltip": "Définir la structure de mise en page comme objet JSON"
+            },
+            "provider": {
+              "label": "Fournisseur d'Email",
+              "description": "Choisissez le fournisseur de service email",
+              "placeholder": "Sélectionner le fournisseur",
+              "tooltip": "Choisissez le fournisseur de service email"
+            }
+          },
+          "actions": {
+            "create": "Créer la Mise en Page",
+            "cancel": "Annuler"
+          },
+          "validation": {
+            "nameRequired": "Le nom de la mise en page est requis",
+            "nameTooShort": "Le nom de la mise en page ne peut pas être vide",
+            "nameTooLong": "Le nom de la mise en page est trop long",
+            "htmlContentRequired": "Le contenu HTML est requis",
+            "htmlContentTooShort": "Le contenu HTML ne peut pas être vide",
+            "htmlContentTooLong": "Le contenu HTML est trop long",
+            "descriptionTooLong": "La description est trop longue",
+            "structureInvalid": "Format de structure invalide",
+            "providerRequired": "Le fournisseur est requis",
+            "providerInvalid": "Fournisseur invalide",
+            "nameInvalidFormat": "Format de nom invalide"
+          }
+        },
+        "update": {
+          "title": "Modifier la Mise en Page d'Email",
+          "subtitle": "Modifier la mise en page d'email",
+          "description": "Modifier une mise en page d'email existante",
+          "footer": "Les modifications seront sauvegardées immédiatement",
+          "fields": {
+            "name": {
+              "label": "Nom de la Mise en Page",
+              "description": "Entrez un nom descriptif pour cette mise en page",
+              "placeholder": "Entrez le nom de la mise en page",
+              "tooltip": "Entrez un nom descriptif pour cette mise en page"
+            },
+            "html_content": {
+              "label": "Contenu HTML",
+              "description": "Entrez la structure HTML pour cette mise en page",
+              "placeholder": "Entrez le contenu HTML",
+              "tooltip": "Entrez la structure HTML pour cette mise en page"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Fournir une description de cette mise en page",
+              "placeholder": "Entrez la description de la mise en page",
+              "tooltip": "Fournir une description de cette mise en page"
+            },
+            "structure": {
+              "label": "Structure de Mise en Page",
+              "description": "Définir la structure de mise en page comme objet JSON",
+              "placeholder": "{\"sections\": [{\"type\": \"header\", \"content\": \"Bienvenue!\"}]}",
+              "tooltip": "Définir la structure de mise en page comme objet JSON"
+            }
+          },
+          "actions": {
+            "update": "Modifier la Mise en Page",
+            "cancel": "Annuler"
+          },
+          "validation": {
+            "nameRequired": "Le nom de la mise en page est requis",
+            "nameTooShort": "Le nom de la mise en page ne peut pas être vide",
+            "nameTooLong": "Le nom de la mise en page est trop long",
+            "htmlContentRequired": "Le contenu HTML est requis",
+            "htmlContentTooShort": "Le contenu HTML ne peut pas être vide",
+            "htmlContentTooLong": "Le contenu HTML est trop long",
+            "descriptionTooLong": "La description est trop longue",
+            "structureInvalid": "Format de structure invalide"
+          }
+        }
+      }
+    },
+    "sender": {
+      "form": {
+        "create": {
+          "title": "Créer un Expéditeur",
+          "subtitle": "Ajouter un nouvel expéditeur d'email",
+          "description": "Créer un nouvel expéditeur d'email pour envoyer des emails",
+          "footer": "Les expéditeurs sont utilisés pour envoyer des emails via des fournisseurs configurés",
+          "fields": {
+            "nickname": {
+              "label": "Surnom",
+              "description": "Entrez un surnom pour cet expéditeur",
+              "placeholder": "Entrez un surnom pour cet expéditeur",
+              "tooltip": "Surnom pour cet expéditeur"
+            },
+            "from": {
+              "email": {
+                "label": "Email Expéditeur",
+                "description": "Entrez l'adresse email de l'expéditeur",
+                "placeholder": "Entrez l'adresse email de l'expéditeur",
+                "tooltip": "Adresse email qui apparaîtra comme expéditeur"
+              },
+              "name": {
+                "label": "Nom Expéditeur",
+                "description": "Entrez le nom de l'expéditeur ou le nom de l'entreprise",
+                "placeholder": "Entrez le nom de l'expéditeur ou le nom de l'entreprise",
+                "tooltip": "Nom qui apparaîtra comme expéditeur"
+              }
+            },
+            "replyTo": {
+              "email": {
+                "label": "Email de Réponse",
+                "description": "Entrez l'adresse email de réponse",
+                "placeholder": "Entrez l'adresse email de réponse",
+                "tooltip": "Adresse email pour les réponses"
+              },
+              "name": {
+                "label": "Nom de Réponse",
+                "description": "Entrez le nom de réponse",
+                "placeholder": "Entrez le nom de réponse",
+                "tooltip": "Nom pour les réponses"
+              }
+            },
+            "address": {
+              "label": "Adresse",
+              "description": "Entrez l'adresse de l'expéditeur",
+              "placeholder": "Entrez l'adresse de l'expéditeur",
+              "tooltip": "Adresse physique de l'expéditeur"
+            },
+            "city": {
+              "label": "Ville",
+              "description": "Entrez la ville",
+              "placeholder": "Entrez la ville",
+              "tooltip": "Ville de l'expéditeur"
+            },
+            "state": {
+              "label": "État",
+              "description": "Entrez l'état",
+              "placeholder": "Entrez l'état",
+              "tooltip": "État de l'expéditeur"
+            },
+            "zip": {
+              "label": "Code Postal",
+              "description": "Entrez le code postal",
+              "placeholder": "Entrez le code postal",
+              "tooltip": "Code postal de l'expéditeur"
+            },
+            "country": {
+              "label": "Pays",
+              "description": "Entrez le pays",
+              "placeholder": "Entrez le pays",
+              "tooltip": "Pays de l'expéditeur"
+            }
+          },
+          "actions": {
+            "submit": "Créer l'Expéditeur",
+            "cancel": "Annuler",
+            "reset": "Réinitialiser",
+            "error": "Erreur lors de la création de l'expéditeur",
+            "success": "Expéditeur créé avec succès"
+          }
+        }
+      },
+      "validation": {
+        "nicknameRequired": "Le surnom est requis",
+        "nicknameTooShort": "Le surnom est trop court",
+        "nicknameTooLong": "Le surnom est trop long",
+        "fromEmailRequired": "L'email expéditeur est requis",
+        "invalidFromEmail": "Format d'email invalide",
+        "fromNameRequired": "Le nom expéditeur est requis",
+        "fromNameTooShort": "Le nom expéditeur est trop court",
+        "fromNameTooLong": "Le nom expéditeur est trop long",
+        "invalidReplyToEmail": "Format d'email de réponse invalide",
+        "replyToNameTooShort": "Le nom de réponse est trop court",
+        "replyToNameTooLong": "Le nom de réponse est trop long",
+        "addressRequired": "L'adresse est requise",
+        "cityRequired": "La ville est requise",
+        "stateRequired": "L'état est requis",
+        "zipRequired": "Le code postal est requis",
+        "countryRequired": "Le pays est requis"
       }
     }
   }

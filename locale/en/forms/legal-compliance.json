@@ -1,5 +1,139 @@
 {
   "legal-compliance": {
+    "entity": {
+      "form": {
+        "create": {
+          "title": "Create Entity",
+          "subtitle": "Add a new entity",
+          "description": "Create a new entity (person or organization)",
+          "footer": "Entities represent legal persons or organizations in the system",
+          "fields": {
+            "name": {
+              "label": "Entity Name",
+              "description": "Enter the name of the entity",
+              "placeholder": "Enter entity name",
+              "tooltip": "Name of the entity"
+            },
+            "email": {
+              "label": "Email Address",
+              "description": "Contact email for the entity",
+              "placeholder": "Enter email address",
+              "tooltip": "Email address"
+            },
+            "type": {
+              "label": "Entity Type",
+              "description": "Select the type of entity",
+              "placeholder": "Choose entity type",
+              "tooltip": "Type of entity",
+              "options": "Entity types"
+            },
+            "surname": {
+              "label": "Surname/Legal Suffix",
+              "description": "Surname for person or legal suffix for organization",
+              "placeholder": "Enter surname or legal suffix",
+              "tooltip": "Surname or legal suffix"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Description of the entity",
+              "placeholder": "Enter description",
+              "tooltip": "Description"
+            }
+          }
+        },
+        "update": {
+          "title": "Update Entity",
+          "subtitle": "Update entity information",
+          "description": "Update existing entity details",
+          "footer": "Changes will be saved to the entity record",
+          "fields": {
+            "name": {
+              "label": "Entity Name",
+              "description": "Updated name of the entity",
+              "placeholder": "Update entity name",
+              "tooltip": "Name"
+            },
+            "email": {
+              "label": "Email Address",
+              "description": "Updated email address",
+              "placeholder": "Update email address",
+              "tooltip": "Email"
+            },
+            "type": {
+              "label": "Entity Type",
+              "description": "Updated entity type",
+              "placeholder": "Select entity type",
+              "tooltip": "Type"
+            },
+            "surname": {
+              "label": "Surname/Legal Suffix",
+              "description": "Updated surname or legal suffix",
+              "placeholder": "Update surname or legal suffix",
+              "tooltip": "Surname"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Updated description",
+              "placeholder": "Update description",
+              "tooltip": "Description"
+            }
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Entity name is required",
+        "nameTooShort": "Entity name is too short",
+        "nameTooLong": "Entity name is too long",
+        "email": {
+          "required": "Email is required",
+          "invalidFormat": "Invalid email format"
+        },
+        "invalidType": "Invalid entity type",
+        "surnameRequired": "Surname is required for organizations",
+        "descriptionRequired": "Description is required",
+        "descriptionTooLong": "Description is too long"
+      }
+    },
+    "document": {
+      "validation": {
+        "nameRequired": "Document name is required",
+        "nameTooLong": "Name cannot exceed 255 characters",
+        "descriptionTooLong": "Description cannot exceed 1000 characters",
+        "invalidTypeId": "Document type ID must be a valid UUID",
+        "invalidProvider": "Invalid storage provider",
+        "invalidUrl": "URL must be valid",
+        "urlRequired": "Document URL is required",
+        "invalidDateFormat": "Date must be in ISO format",
+        "invalidFileSize": "File size must be an integer",
+        "fileSizeTooSmall": "File size cannot be negative",
+        "fileSizeTooLarge": "File size cannot exceed 100MB",
+        "invalidMimeType": "Invalid MIME type",
+        "checksumTooShort": "Checksum is too short",
+        "checksumTooLong": "Checksum is too long",
+        "invalidVersion": "Version must be an integer",
+        "versionTooLow": "Version must be at least 1",
+        "invalidExpirationDateFormat": "Expiration date must be in ISO format",
+        "expirationDateInPast": "Expiration date must be in the future",
+        "invalidDocumentId": "Document ID must be a valid UUID",
+        "checksumRequiredForSignature": "Checksum is required for signature",
+        "searchTermRequired": "Search term is required",
+        "searchTermTooLong": "Search term cannot exceed 100 characters"
+      }
+    },
+    "documentType": {
+      "validation": {
+        "nameRequired": "Document type name is required",
+        "nameTooLong": "Name cannot exceed 100 characters",
+        "sectionRequired": "Section is required",
+        "sectionTooLong": "Section cannot exceed 50 characters",
+        "descriptionTooLong": "Description cannot exceed 500 characters",
+        "emptyFormatNotAllowed": "Empty format not allowed",
+        "tooManyFormats": "Maximum 20 formats allowed",
+        "invalidMaxSize": "Maximum size must be an integer",
+        "minSizeTooSmall": "Minimum size: 1KB",
+        "maxSizeTooLarge": "Maximum size: 500MB"
+      }
+    },
     "create-document": {
       "form": {
         "create": {

@@ -52,6 +52,11 @@
               "label": "From Email",
               "description": "Select the sender email address",
               "placeholder": "Choose sender email"
+            },
+            "provider": {
+              "label": "Email Provider",
+              "description": "Choose the email service provider",
+              "placeholder": "Select provider"
             }
           }
         }
@@ -64,7 +69,13 @@
         "preHeaderTooLong": "Pre-header is too long",
         "textTooLong": "Text content is too long",
         "invalidEmail": "Invalid email address",
-        "recipientsTooMany": "Too many recipients"
+        "recipientsTooMany": "Too many recipients",
+        "invalidEmailId": "Invalid email ID format",
+        "invalidTemplateId": "Invalid template ID format",
+        "invalidFromEmailId": "Invalid sender email ID format",
+        "recipientsTooFew": "At least one recipient is required",
+        "subjectTooShort": "Subject cannot be empty",
+        "invalidEmailFormat": "Invalid email format"
       }
     },
     "createEmailTemplate": {
@@ -117,6 +128,21 @@
             }
           }
         }
+      },
+      "validation": {
+        "nameRequired": "Template name is required",
+        "nameTooShort": "Template name cannot be empty",
+        "nameTooLong": "Template name is too long",
+        "subjectRequired": "Subject is required",
+        "subjectTooShort": "Subject cannot be empty",
+        "subjectTooLong": "Subject is too long",
+        "descriptionTooLong": "Description is too long",
+        "structureInvalid": "Invalid structure format",
+        "variablesInvalid": "Invalid variables format",
+        "conditionsInvalid": "Invalid conditions format",
+        "templateConfigInvalid": "Invalid template configuration",
+        "layoutIdRequired": "Layout is required",
+        "invalidLayoutId": "Invalid layout ID format"
       }
     },
     "createEmailLayout": {
@@ -146,9 +172,32 @@
               "label": "Description",
               "description": "Enter layout description",
               "placeholder": "Enter description"
+            },
+            "structure": {
+              "label": "Layout Structure",
+              "description": "Define layout structure as JSON object",
+              "placeholder": "{\"sections\": [{\"type\": \"header\", \"content\": \"Welcome!\"}]}"
+            },
+            "provider": {
+              "label": "Email Provider",
+              "description": "Choose the email service provider",
+              "placeholder": "Select provider"
             }
           }
         }
+      },
+      "validation": {
+        "nameRequired": "Layout name is required",
+        "nameTooShort": "Layout name cannot be empty",
+        "nameTooLong": "Layout name is too long",
+        "htmlContentRequired": "HTML content is required",
+        "htmlContentTooShort": "HTML content cannot be empty",
+        "htmlContentTooLong": "HTML content is too long",
+        "descriptionTooLong": "Description is too long",
+        "structureInvalid": "Invalid structure format",
+        "providerRequired": "Provider is required",
+        "providerInvalid": "Invalid provider",
+        "nameInvalidFormat": "Invalid name format"
       }
     },
     "createSender": {
@@ -176,6 +225,444 @@
             }
           }
         }
+      },
+      "validation": {
+        "nameRequired": "Sender name is required",
+        "emailRequired": "Email address is required",
+        "emailInvalid": "Invalid email format"
+      }
+    },
+    "email": {
+      "form": {
+        "create": {
+          "title": "Create Email",
+          "subtitle": "Create a new email record",
+          "description": "Create a new email record in the system",
+          "footer": "Email records can be used for tracking and templates",
+          "fields": {
+            "name": {
+              "label": "Email Name",
+              "description": "Enter a descriptive name for this email",
+              "placeholder": "Enter email name",
+              "tooltip": "Enter a descriptive name for this email"
+            },
+            "context": {
+              "label": "Email Context",
+              "description": "Provide context or description for this email",
+              "placeholder": "Enter email context",
+              "tooltip": "Provide context or description for this email"
+            },
+            "to_user_id": {
+              "label": "Recipient User",
+              "description": "Choose a user to send the email to",
+              "placeholder": "Select a user",
+              "tooltip": "Choose a user to send the email to"
+            },
+            "to_entity_id": {
+              "label": "Recipient Entity",
+              "description": "Choose an entity to send the email to",
+              "placeholder": "Select an entity",
+              "tooltip": "Choose an entity to send the email to"
+            }
+          },
+          "actions": {
+            "create": "Create Email",
+            "cancel": "Cancel"
+          },
+          "validation": {
+            "nameRequired": "Email name is required",
+            "nameTooShort": "Email name is too short",
+            "nameTooLong": "Email name is too long",
+            "contextRequired": "Email context is required",
+            "contextTooShort": "Context is too short",
+            "contextTooLong": "Context is too long",
+            "invalidUserId": "Invalid user ID format",
+            "invalidEntityId": "Invalid entity ID format"
+          }
+        },
+        "update": {
+          "title": "Update Email",
+          "subtitle": "Update email record",
+          "description": "Update an existing email record",
+          "footer": "Changes will be saved immediately",
+          "fields": {
+            "name": {
+              "label": "Email Name",
+              "description": "Enter a descriptive name for this email",
+              "placeholder": "Enter email name",
+              "tooltip": "Enter a descriptive name for this email"
+            },
+            "template_id": {
+              "label": "Email Template",
+              "description": "Choose the email template to use",
+              "placeholder": "Select a template",
+              "tooltip": "Choose the email template to use"
+            },
+            "context": {
+              "label": "Email Context",
+              "description": "Provide context or description for this email",
+              "placeholder": "Enter email context",
+              "tooltip": "Provide context or description for this email"
+            },
+            "to_user_id": {
+              "label": "Recipient User",
+              "description": "Choose a user to send the email to",
+              "placeholder": "Select a user",
+              "tooltip": "Choose a user to send the email to"
+            },
+            "to_entity_id": {
+              "label": "Recipient Entity",
+              "description": "Choose an entity to send the email to",
+              "placeholder": "Select an entity",
+              "tooltip": "Choose an entity to send the email to"
+            }
+          },
+          "actions": {
+            "update": "Update Email",
+            "cancel": "Cancel"
+          },
+          "validation": {
+            "nameRequired": "Email name is required",
+            "nameTooShort": "Email name is too short",
+            "nameTooLong": "Email name is too long",
+            "templateIdRequired": "Template is required",
+            "invalidTemplateId": "Invalid template ID format",
+            "contextRequired": "Email context is required",
+            "contextTooShort": "Context is too short",
+            "contextTooLong": "Context is too long",
+            "invalidUserId": "Invalid user ID format",
+            "invalidEntityId": "Invalid entity ID format"
+          }
+        }
+      }
+    },
+    "emailTemplate": {
+      "form": {
+        "create": {
+          "title": "Create Email Template",
+          "subtitle": "Design a new email template",
+          "description": "Create a reusable email template with variables and structure",
+          "footer": "Templates can be reused across multiple emails",
+          "fields": {
+            "name": {
+              "label": "Template Name",
+              "description": "Enter a descriptive name for this template",
+              "placeholder": "Enter template name",
+              "tooltip": "Enter a descriptive name for this template"
+            },
+            "subject": {
+              "label": "Email Subject",
+              "description": "Enter the email subject line with optional variables like {{firstName}}",
+              "placeholder": "Enter email subject",
+              "tooltip": "Enter the email subject line with optional variables like {{firstName}}"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Provide a description of what this template is used for",
+              "placeholder": "Enter template description",
+              "tooltip": "Provide a description of what this template is used for"
+            },
+            "structure": {
+              "label": "Email Structure",
+              "description": "Define email structure as JSON object",
+              "placeholder": "{\"components\": [{\"type\": \"header\", \"content\": \"Welcome!\"}]}",
+              "tooltip": "Define email structure as JSON object",
+              "variables": "Template Variables",
+              "conditions": "Conditions",
+              "template_config": "Template Configuration"
+            },
+            "html_content": {
+              "label": "HTML Content",
+              "description": "HTML content for the template",
+              "placeholder": "Enter HTML content",
+              "tooltip": "HTML content for the template"
+            },
+            "layout_id": {
+              "label": "Layout",
+              "description": "Choose the email layout",
+              "placeholder": "Select layout",
+              "tooltip": "Choose the email layout"
+            }
+          },
+          "actions": {
+            "create": "Create Template",
+            "cancel": "Cancel"
+          },
+          "validation": {
+            "nameRequired": "Template name is required",
+            "nameTooShort": "Template name cannot be empty",
+            "nameTooLong": "Template name is too long",
+            "subjectRequired": "Subject is required",
+            "subjectTooShort": "Subject cannot be empty",
+            "subjectTooLong": "Subject is too long",
+            "descriptionTooLong": "Description is too long",
+            "structureInvalid": "Invalid structure format",
+            "variablesInvalid": "Invalid variables format",
+            "conditionsInvalid": "Invalid conditions format",
+            "templateConfigInvalid": "Invalid template configuration",
+            "layoutIdRequired": "Layout is required",
+            "invalidLayoutId": "Invalid layout ID format"
+          }
+        },
+        "update": {
+          "title": "Update Email Template",
+          "subtitle": "Update email template",
+          "description": "Update an existing email template",
+          "footer": "Changes will be saved immediately",
+          "fields": {
+            "name": {
+              "label": "Template Name",
+              "description": "Enter a descriptive name for this template",
+              "placeholder": "Enter template name",
+              "tooltip": "Enter a descriptive name for this template"
+            },
+            "subject": {
+              "label": "Email Subject",
+              "description": "Enter the email subject line with optional variables like {{firstName}}",
+              "placeholder": "Enter email subject",
+              "tooltip": "Enter the email subject line with optional variables like {{firstName}}"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Provide a description of what this template is used for",
+              "placeholder": "Enter template description",
+              "tooltip": "Provide a description of what this template is used for"
+            },
+            "structure": {
+              "label": "Email Structure",
+              "description": "Define email structure as JSON object",
+              "placeholder": "{\"components\": [{\"type\": \"header\", \"content\": \"Welcome!\"}]}",
+              "tooltip": "Define email structure as JSON object"
+            },
+            "variables": {
+              "label": "Template Variables",
+              "description": "Define variables as JSON object (e.g., {\"firstName\": \"John\"})",
+              "placeholder": "{\"varA\": \"valA\", \"varB\": \"valB\"}",
+              "tooltip": "Define variables as JSON object (e.g., {\"firstName\": \"John\"})"
+            }
+          },
+          "actions": {
+            "update": "Update Template",
+            "cancel": "Cancel"
+          },
+          "validation": {
+            "nameRequired": "Template name is required",
+            "nameTooShort": "Template name cannot be empty",
+            "nameTooLong": "Template name is too long",
+            "subjectRequired": "Subject is required",
+            "subjectTooShort": "Subject cannot be empty",
+            "subjectTooLong": "Subject is too long",
+            "descriptionTooLong": "Description is too long",
+            "structureInvalid": "Invalid structure format",
+            "variablesInvalid": "Invalid variables format"
+          }
+        }
+      }
+    },
+    "emailLayout": {
+      "form": {
+        "create": {
+          "title": "Create Email Layout",
+          "subtitle": "Design a new email layout",
+          "description": "Create a reusable email layout with HTML structure",
+          "footer": "Layouts provide the visual structure for email templates",
+          "fields": {
+            "name": {
+              "label": "Layout Name",
+              "description": "Enter a descriptive name for this layout",
+              "placeholder": "Enter layout name",
+              "tooltip": "Enter a descriptive name for this layout"
+            },
+            "html_content": {
+              "label": "HTML Content",
+              "description": "Enter the HTML structure for this layout",
+              "placeholder": "Enter HTML content",
+              "tooltip": "Enter the HTML structure for this layout"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Provide a description of this layout",
+              "placeholder": "Enter layout description",
+              "tooltip": "Provide a description of this layout"
+            },
+            "structure": {
+              "label": "Layout Structure",
+              "description": "Define layout structure as JSON object",
+              "placeholder": "{\"sections\": [{\"type\": \"header\", \"content\": \"Welcome!\"}]}",
+              "tooltip": "Define layout structure as JSON object"
+            },
+            "provider": {
+              "label": "Email Provider",
+              "description": "Choose the email service provider",
+              "placeholder": "Select provider",
+              "tooltip": "Choose the email service provider"
+            }
+          },
+          "actions": {
+            "create": "Create Layout",
+            "cancel": "Cancel"
+          },
+          "validation": {
+            "nameRequired": "Layout name is required",
+            "nameTooShort": "Layout name cannot be empty",
+            "nameTooLong": "Layout name is too long",
+            "htmlContentRequired": "HTML content is required",
+            "htmlContentTooShort": "HTML content cannot be empty",
+            "htmlContentTooLong": "HTML content is too long",
+            "descriptionTooLong": "Description is too long",
+            "structureInvalid": "Invalid structure format",
+            "providerRequired": "Provider is required",
+            "providerInvalid": "Invalid provider",
+            "nameInvalidFormat": "Invalid name format"
+          }
+        },
+        "update": {
+          "title": "Update Email Layout",
+          "subtitle": "Update email layout",
+          "description": "Update an existing email layout",
+          "footer": "Changes will be saved immediately",
+          "fields": {
+            "name": {
+              "label": "Layout Name",
+              "description": "Enter a descriptive name for this layout",
+              "placeholder": "Enter layout name",
+              "tooltip": "Enter a descriptive name for this layout"
+            },
+            "html_content": {
+              "label": "HTML Content",
+              "description": "Enter the HTML structure for this layout",
+              "placeholder": "Enter HTML content",
+              "tooltip": "Enter the HTML structure for this layout"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Provide a description of this layout",
+              "placeholder": "Enter layout description",
+              "tooltip": "Provide a description of this layout"
+            },
+            "structure": {
+              "label": "Layout Structure",
+              "description": "Define layout structure as JSON object",
+              "placeholder": "{\"sections\": [{\"type\": \"header\", \"content\": \"Welcome!\"}]}",
+              "tooltip": "Define layout structure as JSON object"
+            }
+          },
+          "actions": {
+            "update": "Update Layout",
+            "cancel": "Cancel"
+          },
+          "validation": {
+            "nameRequired": "Layout name is required",
+            "nameTooShort": "Layout name cannot be empty",
+            "nameTooLong": "Layout name is too long",
+            "htmlContentRequired": "HTML content is required",
+            "htmlContentTooShort": "HTML content cannot be empty",
+            "htmlContentTooLong": "HTML content is too long",
+            "descriptionTooLong": "Description is too long",
+            "structureInvalid": "Invalid structure format"
+          }
+        }
+      }
+    },
+    "sender": {
+      "form": {
+        "create": {
+          "title": "Create Sender",
+          "subtitle": "Add a new email sender",
+          "description": "Create a new email sender for sending emails",
+          "footer": "Senders are used to send emails through configured providers",
+          "fields": {
+            "nickname": {
+              "label": "Nickname",
+              "description": "Enter a nickname for this sender",
+              "placeholder": "Enter a nickname for this sender",
+              "tooltip": "Nickname for this sender"
+            },
+            "from": {
+              "email": {
+                "label": "From Email",
+                "description": "Enter the sender email address",
+                "placeholder": "Enter sender email address",
+                "tooltip": "Email address that will appear as the sender"
+              },
+              "name": {
+                "label": "From Name",
+                "description": "Enter the sender name or company name",
+                "placeholder": "Enter sender name or company name",
+                "tooltip": "Name that will appear as the sender"
+              }
+            },
+            "replyTo": {
+              "email": {
+                "label": "Reply-To Email",
+                "description": "Enter the reply-to email address",
+                "placeholder": "Enter reply-to email address",
+                "tooltip": "Email address for replies"
+              },
+              "name": {
+                "label": "Reply-To Name",
+                "description": "Enter the reply-to name",
+                "placeholder": "Enter reply-to name",
+                "tooltip": "Name for replies"
+              }
+            },
+            "address": {
+              "label": "Address",
+              "description": "Enter the sender address",
+              "placeholder": "Enter sender address",
+              "tooltip": "Physical address of the sender"
+            },
+            "city": {
+              "label": "City",
+              "description": "Enter the city",
+              "placeholder": "Enter city",
+              "tooltip": "City of the sender"
+            },
+            "state": {
+              "label": "State",
+              "description": "Enter the state",
+              "placeholder": "Enter state",
+              "tooltip": "State of the sender"
+            },
+            "zip": {
+              "label": "ZIP Code",
+              "description": "Enter the ZIP code",
+              "placeholder": "Enter ZIP code",
+              "tooltip": "ZIP code of the sender"
+            },
+            "country": {
+              "label": "Country",
+              "description": "Enter the country",
+              "placeholder": "Enter country",
+              "tooltip": "Country of the sender"
+            }
+          },
+          "actions": {
+            "submit": "Create Sender",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error creating sender",
+            "success": "Sender created successfully"
+          }
+        }
+      },
+      "validation": {
+        "nicknameRequired": "Nickname is required",
+        "nicknameTooShort": "Nickname is too short",
+        "nicknameTooLong": "Nickname is too long",
+        "fromEmailRequired": "From email is required",
+        "invalidFromEmail": "Invalid email format",
+        "fromNameRequired": "From name is required",
+        "fromNameTooShort": "From name is too short",
+        "fromNameTooLong": "From name is too long",
+        "invalidReplyToEmail": "Invalid reply-to email format",
+        "replyToNameTooShort": "Reply-to name is too short",
+        "replyToNameTooLong": "Reply-to name is too long",
+        "addressRequired": "Address is required",
+        "cityRequired": "City is required",
+        "stateRequired": "State is required",
+        "zipRequired": "ZIP code is required",
+        "countryRequired": "Country is required"
       }
     }
   }

@@ -201,6 +201,65 @@
         "smartContractStatusRequired": "Le statut du contrat intelligent est requis",
         "amountRequired": "Le montant est requis"
       }
+    },
+    "walletAddress": {
+      "form": {
+        "create": {
+          "title": "Créer une Adresse de Portefeuille",
+          "subtitle": "Ajouter une nouvelle adresse de portefeuille",
+          "description": "Créer une nouvelle adresse de portefeuille pour les transactions blockchain",
+          "footer": "Les adresses de portefeuille sont utilisées pour envoyer et recevoir des cryptomonnaies",
+          "fields": {
+            "address": {
+              "label": "Adresse du Portefeuille",
+              "description": "Entrez l'adresse du portefeuille blockchain",
+              "placeholder": "Entrez l'adresse blockchain",
+              "tooltip": "L'adresse du portefeuille blockchain"
+            },
+            "isDefault": {
+              "label": "Adresse par Défaut",
+              "description": "Si cette adresse est l'adresse par défaut pour ce portefeuille",
+              "placeholder": "Définir comme par défaut",
+              "tooltip": "Adresse par défaut pour ce portefeuille"
+            },
+            "beneficiaryContactId": {
+              "label": "Contact Bénéficiaire",
+              "description": "Sélectionnez le contact qui recevra les fonds de cette adresse",
+              "placeholder": "Choisir le contact bénéficiaire",
+              "tooltip": "Contact qui recevra les fonds"
+            },
+            "proxyWalletId": {
+              "label": "Portefeuille Proxy",
+              "description": "Portefeuille proxy optionnel pour cette adresse",
+              "placeholder": "Choisir le portefeuille proxy",
+              "tooltip": "Portefeuille proxy pour cette adresse"
+            },
+            "metadata": {
+              "label": "Métadonnées",
+              "description": "Métadonnées supplémentaires pour cette adresse",
+              "placeholder": "Entrez les métadonnées",
+              "tooltip": "Métadonnées supplémentaires de l'adresse"
+            }
+          },
+          "actions": {
+            "submit": "Créer l'Adresse",
+            "cancel": "Annuler",
+            "reset": "Réinitialiser",
+            "error": "Erreur lors de la création de l'adresse",
+            "success": "Adresse créée avec succès"
+          }
+        }
+      },
+      "validation": {
+        "addressRequired": "L'adresse est requise",
+        "addressTooShort": "L'adresse est trop courte",
+        "addressTooLong": "L'adresse est trop longue",
+        "invalidAddress": "Format d'adresse invalide",
+        "beneficiaryContactIdRequired": "Le contact bénéficiaire est requis",
+        "invalidBeneficiaryContactId": "ID de contact bénéficiaire invalide",
+        "invalidProxyWalletId": "ID de portefeuille proxy invalide",
+        "invalidMetadata": "Format de métadonnées invalide"
+      }
     }
   }
 }

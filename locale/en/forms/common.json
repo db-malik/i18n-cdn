@@ -39,115 +39,275 @@
     "sign_up": "Sign Up",
     "register": "Register"
   },
-  "common": {
-    "create-entity": {
+  "contact": {
+    "validation": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "invalidEmail": "Invalid email format",
+      "invalidUrl": "Invalid URL format",
+      "companyNameRequired": "Company name is required",
+      "typeRequired": "Contact type is required"
+    },
+    "form": {
+      "create": {
+        "fields": {
+          "firstName": {
+            "label": "First Name",
+            "placeholder": "Enter first name",
+            "tooltip": "First name of the person",
+            "description": "First name of the person"
+          },
+          "lastName": {
+            "label": "Last Name",
+            "placeholder": "Enter last name",
+            "tooltip": "Last name of the person",
+            "description": "Last name of the person"
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "name@example.com",
+            "tooltip": "Email address of the person",
+            "description": "Email address"
+          },
+          "phoneNumber": {
+            "label": "Phone",
+            "placeholder": "Enter phone number",
+            "tooltip": "Phone number of the person",
+            "description": "Phone number"
+          },
+          "nationality": {
+            "label": "Nationality",
+            "placeholder": "Enter nationality",
+            "tooltip": "Nationality of the person",
+            "description": "Nationality"
+          },
+          "birthDate": {
+            "label": "Birth Date",
+            "placeholder": "Select birth date",
+            "tooltip": "Birth date of the person",
+            "description": "Birth date"
+          },
+          "companyName": {
+            "label": "Company Name",
+            "placeholder": "Enter company name",
+            "tooltip": "Official company name",
+            "description": "Company name"
+          },
+          "legalForm": {
+            "label": "Legal Form",
+            "placeholder": "SAS, SARL, SA...",
+            "tooltip": "Legal form of the company",
+            "description": "Legal form"
+          },
+          "registrationNumber": {
+            "label": "Registration Number",
+            "placeholder": "SIRET, SIREN...",
+            "tooltip": "Registration number of the company",
+            "description": "Registration number"
+          },
+          "vatNumber": {
+            "label": "VAT Number",
+            "placeholder": "Enter VAT number",
+            "tooltip": "VAT number of the company",
+            "description": "VAT number"
+          },
+          "websiteUrl": {
+            "label": "Website",
+            "placeholder": "https://example.com",
+            "tooltip": "Official website of the company",
+            "description": "Website URL"
+          },
+          "ownerId": {
+            "description": "Owner entity ID"
+          },
+          "type": {
+            "label": "Contact Type",
+            "placeholder": "Select contact type",
+            "tooltip": "Choose between person or organization",
+            "description": "Contact type",
+            "options": {
+              "person": "Person",
+              "organization": "Organization"
+            }
+          }
+        }
+      }
+    },
+    "entityOnboarding": {
       "form": {
         "create": {
-          "title": "Create Entity",
-          "subtitle": "Add a new legal entity",
-          "description": "Create a new legal entity in the system",
-          "footer": "Entities represent legal persons or organizations",
+          "title": "Entity Onboarding",
+          "subtitle": "Complete entity setup",
+          "description": "Set up your entity with all required information",
+          "footer": "This will create your entity and associated contacts",
           "fields": {
-            "name": {
-              "label": "Entity Name",
-              "description": "Enter the legal name of the entity",
-              "placeholder": "Enter entity name"
+            "entity": {
+              "name": {
+                "label": "Entity Name",
+                "description": "Enter the name of the entity being onboarded",
+                "placeholder": "Enter entity name",
+                "tooltip": "Official name of the entity being onboarded"
+              },
+              "email": {
+                "label": "Entity Email",
+                "description": "Enter the contact email for the entity",
+                "placeholder": "Enter entity email",
+                "tooltip": "Contact email for the entity"
+              },
+              "type": {
+                "label": "Entity Type",
+                "description": "Select the type of entity",
+                "placeholder": "Choose entity type",
+                "tooltip": "Type of entity being onboarded"
+              },
+              "legalForm": {
+                "label": "Legal Form",
+                "description": "Select the legal form of the entity",
+                "placeholder": "Choose legal form",
+                "tooltip": "Legal form of the entity"
+              },
+              "registrationNumber": {
+                "label": "Registration Number",
+                "description": "Enter the registration number",
+                "placeholder": "Enter registration number",
+                "tooltip": "Official registration number"
+              },
+              "vatNumber": {
+                "label": "VAT Number",
+                "description": "Enter the VAT number",
+                "placeholder": "Enter VAT number",
+                "tooltip": "Value Added Tax number"
+              },
+              "websiteUrl": {
+                "label": "Website URL",
+                "description": "Enter the website URL",
+                "placeholder": "Enter website URL",
+                "tooltip": "Official website URL"
+              },
+              "description": {
+                "label": "Description",
+                "description": "Enter a description of the entity",
+                "placeholder": "Enter entity description",
+                "tooltip": "Description of the entity"
+              }
             },
-            "type": {
-              "label": "Entity Type",
-              "description": "Select the type of legal entity",
-              "placeholder": "Choose entity type"
-            },
-            "registration_number": {
-              "label": "Registration Number",
-              "description": "Enter the official registration number",
-              "placeholder": "Enter registration number"
-            },
-            "country": {
-              "label": "Country",
-              "description": "Select the country of registration",
-              "placeholder": "Choose country"
+            "contact": {
+              "firstName": {
+                "label": "First Name",
+                "description": "Enter the contact's first name",
+                "placeholder": "Enter first name",
+                "tooltip": "First name of the contact"
+              },
+              "lastName": {
+                "label": "Last Name",
+                "description": "Enter the contact's last name",
+                "placeholder": "Enter last name",
+                "tooltip": "Last name of the contact"
+              },
+              "email": {
+                "label": "Contact Email",
+                "description": "Enter the contact's email address",
+                "placeholder": "Enter email address",
+                "tooltip": "Email address of the contact"
+              },
+              "phoneNumber": {
+                "label": "Phone Number",
+                "description": "Enter the contact's phone number",
+                "placeholder": "Enter phone number",
+                "tooltip": "Phone number of the contact"
+              },
+              "nationality": {
+                "label": "Nationality",
+                "description": "Select the contact's nationality",
+                "placeholder": "Choose nationality",
+                "tooltip": "Nationality of the contact"
+              },
+              "birthDate": {
+                "label": "Birth Date",
+                "description": "Enter the contact's birth date",
+                "placeholder": "Enter birth date",
+                "tooltip": "Birth date of the contact"
+              },
+              "type": {
+                "label": "Contact Type",
+                "description": "Select the type of contact",
+                "placeholder": "Choose contact type",
+                "tooltip": "Type of contact"
+              }
             },
             "address": {
-              "label": "Address",
-              "description": "Enter the registered address",
-              "placeholder": "Enter address"
+              "street": {
+                "label": "Street Address",
+                "description": "Enter the street address",
+                "placeholder": "Enter street address",
+                "tooltip": "Street address"
+              },
+              "city": {
+                "label": "City",
+                "description": "Enter the city",
+                "placeholder": "Enter city",
+                "tooltip": "City"
+              },
+              "state": {
+                "label": "State",
+                "description": "Enter the state",
+                "placeholder": "Enter state",
+                "tooltip": "State"
+              },
+              "zipCode": {
+                "label": "ZIP Code",
+                "description": "Enter the ZIP code",
+                "placeholder": "Enter ZIP code",
+                "tooltip": "ZIP code"
+              },
+              "country": {
+                "label": "Country",
+                "description": "Enter the country",
+                "placeholder": "Enter country",
+                "tooltip": "Country"
+              }
             }
+          },
+          "actions": {
+            "submit": "Complete Onboarding",
+            "cancel": "Cancel",
+            "reset": "Reset",
+            "error": "Error completing onboarding",
+            "success": "Onboarding completed successfully"
           }
         }
-      }
-    },
-    "create-contact": {
-      "form": {
-        "create": {
-          "title": "Create Contact",
-          "subtitle": "Add a new contact person",
-          "description": "Create a new contact person record",
-          "footer": "Contacts represent individuals associated with entities",
-          "fields": {
-            "first_name": {
-              "label": "First Name",
-              "description": "Enter the contact's first name",
-              "placeholder": "Enter first name"
-            },
-            "last_name": {
-              "label": "Last Name",
-              "description": "Enter the contact's last name",
-              "placeholder": "Enter last name"
-            },
-            "email": {
-              "label": "Email Address",
-              "description": "Enter the contact's email address",
-              "placeholder": "Enter email address"
-            },
-            "phone": {
-              "label": "Phone Number",
-              "description": "Enter the contact's phone number",
-              "placeholder": "Enter phone number"
-            },
-            "role": {
-              "label": "Role",
-              "description": "Select the contact's role",
-              "placeholder": "Choose role"
-            }
-          }
-        }
-      }
-    },
-    "create-postal-address": {
-      "form": {
-        "create": {
-          "title": "Create Address",
-          "subtitle": "Add a new postal address",
-          "description": "Create a new postal address record",
-          "footer": "Addresses are used for legal and communication purposes",
-          "fields": {
-            "street": {
-              "label": "Street Address",
-              "description": "Enter the street address",
-              "placeholder": "Enter street address"
-            },
-            "city": {
-              "label": "City",
-              "description": "Enter the city",
-              "placeholder": "Enter city"
-            },
-            "postal_code": {
-              "label": "Postal Code",
-              "description": "Enter the postal code",
-              "placeholder": "Enter postal code"
-            },
-            "country": {
-              "label": "Country",
-              "description": "Select the country",
-              "placeholder": "Choose country"
-            },
-            "type": {
-              "label": "Address Type",
-              "description": "Select the type of address",
-              "placeholder": "Choose address type"
-            }
-          }
+      },
+      "validation": {
+        "entity": {
+          "nameRequired": "Entity name is required",
+          "nameTooShort": "Entity name is too short",
+          "nameTooLong": "Entity name is too long",
+          "emailRequired": "Entity email is required",
+          "invalidEmail": "Invalid email format",
+          "typeRequired": "Entity type is required",
+          "legalFormRequired": "Legal form is required",
+          "registrationNumberRequired": "Registration number is required",
+          "vatNumberRequired": "VAT number is required",
+          "invalidUrl": "Invalid URL format",
+          "descriptionTooLong": "Description is too long"
+        },
+        "contact": {
+          "firstNameRequired": "First name is required",
+          "lastNameRequired": "Last name is required",
+          "emailRequired": "Contact email is required",
+          "invalidEmail": "Invalid email format",
+          "phoneNumberRequired": "Phone number is required",
+          "nationalityRequired": "Nationality is required",
+          "birthDateRequired": "Birth date is required",
+          "typeRequired": "Contact type is required"
+        },
+        "address": {
+          "streetRequired": "Street address is required",
+          "cityRequired": "City is required",
+          "stateRequired": "State is required",
+          "zipCodeRequired": "ZIP code is required",
+          "countryRequired": "Country is required"
         }
       }
     }

@@ -1,5 +1,139 @@
 {
   "legal-compliance": {
+    "entity": {
+      "form": {
+        "create": {
+          "title": "Créer une Entité",
+          "subtitle": "Ajouter une nouvelle entité",
+          "description": "Créer une nouvelle entité (personne ou organisation)",
+          "footer": "Les entités représentent des personnes morales ou des organisations dans le système",
+          "fields": {
+            "name": {
+              "label": "Nom de l'Entité",
+              "description": "Entrez le nom de l'entité",
+              "placeholder": "Entrez le nom de l'entité",
+              "tooltip": "Nom de l'entité"
+            },
+            "email": {
+              "label": "Adresse Email",
+              "description": "Email de contact pour l'entité",
+              "placeholder": "Entrez l'adresse email",
+              "tooltip": "Adresse email"
+            },
+            "type": {
+              "label": "Type d'Entité",
+              "description": "Sélectionnez le type d'entité",
+              "placeholder": "Choisir le type d'entité",
+              "tooltip": "Type d'entité",
+              "options": "Types d'entité"
+            },
+            "surname": {
+              "label": "Nom de Famille/Suffixe Légal",
+              "description": "Nom de famille pour une personne ou suffixe légal pour une organisation",
+              "placeholder": "Entrez le nom de famille ou le suffixe légal",
+              "tooltip": "Nom de famille ou suffixe légal"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Description de l'entité",
+              "placeholder": "Entrez la description",
+              "tooltip": "Description"
+            }
+          }
+        },
+        "update": {
+          "title": "Mettre à jour l'Entité",
+          "subtitle": "Mettre à jour les informations de l'entité",
+          "description": "Mettre à jour les détails de l'entité existante",
+          "footer": "Les modifications seront sauvegardées dans le dossier de l'entité",
+          "fields": {
+            "name": {
+              "label": "Nom de l'Entité",
+              "description": "Nom mis à jour de l'entité",
+              "placeholder": "Mettre à jour le nom de l'entité",
+              "tooltip": "Nom"
+            },
+            "email": {
+              "label": "Adresse Email",
+              "description": "Adresse email mise à jour",
+              "placeholder": "Mettre à jour l'adresse email",
+              "tooltip": "Email"
+            },
+            "type": {
+              "label": "Type d'Entité",
+              "description": "Type d'entité mis à jour",
+              "placeholder": "Sélectionner le type d'entité",
+              "tooltip": "Type"
+            },
+            "surname": {
+              "label": "Nom de Famille/Suffixe Légal",
+              "description": "Nom de famille ou suffixe légal mis à jour",
+              "placeholder": "Mettre à jour le nom de famille ou le suffixe légal",
+              "tooltip": "Nom de famille"
+            },
+            "description": {
+              "label": "Description",
+              "description": "Description mise à jour",
+              "placeholder": "Mettre à jour la description",
+              "tooltip": "Description"
+            }
+          }
+        }
+      },
+      "validation": {
+        "nameRequired": "Le nom de l'entité est obligatoire",
+        "nameTooShort": "Le nom de l'entité est trop court",
+        "nameTooLong": "Le nom de l'entité est trop long",
+        "email": {
+          "required": "L'email est obligatoire",
+          "invalidFormat": "Format d'email invalide"
+        },
+        "invalidType": "Type d'entité invalide",
+        "surnameRequired": "Le nom de famille est obligatoire pour les organisations",
+        "descriptionRequired": "La description est obligatoire",
+        "descriptionTooLong": "La description est trop longue"
+      }
+    },
+    "document": {
+      "validation": {
+        "nameRequired": "Le nom du document est obligatoire",
+        "nameTooLong": "Le nom ne peut pas dépasser 255 caractères",
+        "descriptionTooLong": "La description ne peut pas dépasser 1000 caractères",
+        "invalidTypeId": "L'ID du type de document doit être un UUID valide",
+        "invalidProvider": "Fournisseur de stockage invalide",
+        "invalidUrl": "L'URL doit être valide",
+        "urlRequired": "L'URL du document est requise",
+        "invalidDateFormat": "La date doit être au format ISO",
+        "invalidFileSize": "La taille doit être un nombre entier",
+        "fileSizeTooSmall": "La taille ne peut pas être négative",
+        "fileSizeTooLarge": "La taille ne peut pas dépasser 100MB",
+        "invalidMimeType": "Type MIME invalide",
+        "checksumTooShort": "Le checksum est trop court",
+        "checksumTooLong": "Le checksum est trop long",
+        "invalidVersion": "La version doit être un nombre entier",
+        "versionTooLow": "La version doit être au moins 1",
+        "invalidExpirationDateFormat": "La date d'expiration doit être au format ISO",
+        "expirationDateInPast": "La date d'expiration doit être dans le futur",
+        "invalidDocumentId": "L'ID du document doit être un UUID valide",
+        "checksumRequiredForSignature": "Le checksum est requis pour la signature",
+        "searchTermRequired": "Le terme de recherche est requis",
+        "searchTermTooLong": "Le terme de recherche ne peut pas dépasser 100 caractères"
+      }
+    },
+    "documentType": {
+      "validation": {
+        "nameRequired": "Le nom du type de document est requis",
+        "nameTooLong": "Le nom ne peut pas dépasser 100 caractères",
+        "sectionRequired": "La section est requise",
+        "sectionTooLong": "La section ne peut pas dépasser 50 caractères",
+        "descriptionTooLong": "La description ne peut pas dépasser 500 caractères",
+        "emptyFormatNotAllowed": "Format vide non autorisé",
+        "tooManyFormats": "Maximum 20 formats autorisés",
+        "invalidMaxSize": "La taille maximale doit être un nombre entier",
+        "minSizeTooSmall": "Taille minimale: 1KB",
+        "maxSizeTooLarge": "Taille maximale: 500MB"
+      }
+    },
     "create-document": {
       "form": {
         "create": {
